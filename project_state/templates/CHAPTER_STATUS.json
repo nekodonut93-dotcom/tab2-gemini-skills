@@ -1,0 +1,5 @@
+{
+  "chapters": [],
+  "rule": "Record stage/status and source refs; do not infer readiness.",
+  "state_scope": "PORTABLE_WEB_STATE_ONLY"
+}

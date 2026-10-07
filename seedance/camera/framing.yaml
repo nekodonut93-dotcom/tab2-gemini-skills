@@ -1,0 +1,10 @@
+status: DIRECTOR_HOW_PORTABLE_REFERENCE
+fields:
+  - shot_size
+  - framing
+  - subject_screen_position
+constraints:
+  - "Use an accepted Director choice or a clearly labeled portable composition proposal."
+  - "Do not move a subject or alter blocking when it changes Writer WHAT."
+  - "Keep reference-required identity readable."
+  - "No unsupported camera capability claim."

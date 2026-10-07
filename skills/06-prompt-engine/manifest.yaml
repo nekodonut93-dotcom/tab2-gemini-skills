@@ -1,0 +1,50 @@
+distribution_id: 06-prompt-engine
+source_skill_id: tab2.prompt-engine-syntax
+source_skill_version: 1.0.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/06-prompt-engine/SKILL.md"
+source_manifest: "skills/06-prompt-engine/manifest.yaml"
+runtime_owner: "Production PromptFacade → PromptEngine is the sole production final-assembly authority."
+source_files:
+  - "ai_agent_brain/prompt_assembly/prompt_engine.py"
+  - "application/prompt_facade.py"
+  - "ai_agent_brain/prompt_assembly/model_adapter.py"
+  - "model_profiles/"
+  - "prompt_templates/"
+source_functions:
+  - "PromptEngine.assemble"
+  - "PromptFacade.compile"
+related_tests:
+  - "tests/test_prompt_engine.py"
+  - "tests/test_external_model_final_prompt.py"
+  - "tests/test_prompt_assembly.py"
+  - "tests/test_tab2_dynamic_duration_contract.py"
+dependencies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/model_adapters.md"
+  - "references/director_prompt_structure.md"
+  - "references/TAB2_MODEL_ADAPTERS.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "model templates are not uniformly versioned"
+source_schema_version: "PromptEngine input/output contracts; see frozen and PromptEngine tests"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

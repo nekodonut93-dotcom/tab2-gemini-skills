@@ -1,0 +1,38 @@
+contract_id: SEEDANCE_PROMPT_CONTRACT_V1
+version: 1.0.0
+status: PORTABLE_PROMPT_DRAFT_ONLY
+production_authority: PromptFacade_then_PromptEngine
+required_sections:
+  - REFERENCE
+  - WHO
+  - STYLE
+  - WHERE
+  - CAMERA
+  - WHEN
+  - WHAT
+  - HOW
+  - TECHNICAL_INSTRUCTIONS
+  - SPOKEN_DIALOGUE
+  - INTERNAL_MONOLOGUE
+  - NARRATOR_VOICE_OVER
+  - ON_SCREEN_TEXT
+  - VFX
+  - END_STATE
+language_policy:
+  technical_instructions_language: PROJECT_LANGUAGE_PROFILE.prompt_language
+  spoken_language: independent_from_prompt_language
+  source_dialogue: preserve_verbatim_and_never_translate
+  source_internal_monologue: preserve_verbatim_and_never_translate
+rules:
+  - "No internal reasoning in prompt_draft."
+  - "Never mutate Writer WHAT."
+  - "Never invent dialogue or internal monologue."
+  - "No draft while PROJECT_VISUAL_PROFILE is unresolved."
+  - "No draft while PROJECT_LANGUAGE_PROFILE is unresolved."
+  - "Unknown Dola binding syntax means REFERENCE_BINDING_UNVERIFIED."
+  - "A portable prompt_draft is not production PromptEngine output."
+chibi_insert:
+  symbolic_namespace: CHIBI_SYMBOLIC_ACTION
+  representation_scope: NON_DIEGETIC
+  story_state_effect: NONE
+  returns_to_main_scene: required

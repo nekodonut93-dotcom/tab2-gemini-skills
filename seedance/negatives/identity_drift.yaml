@@ -1,0 +1,11 @@
+negative_constraints:
+  - no_face_drift
+  - no_identity_swap
+  - no_duplicate_character
+  - preserve_source_supported_face
+  - preserve_source_supported_hair
+  - preserve_source_supported_age
+  - preserve_source_supported_body_proportions
+  - preserve_character_identity
+  - preserve_main_outfit_unless_writer_scene_changes_it
+source_identity_authority: StoryMemoryService_and_CharacterBible

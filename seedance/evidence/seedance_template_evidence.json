@@ -1,0 +1,1 @@
+{"template_id":"seedance-blueprint","purpose":"structured Seedance prompt blueprint","sections":["subject","character","environment","action","camera","motion","style","technical","negative"],"required":["subject"]}

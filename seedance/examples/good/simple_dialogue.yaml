@@ -1,0 +1,12 @@
+case_id: synthetic_simple_dialogue
+status: READY_FOR_USER_REVIEW
+style_profile: modern_cdrama_realistic
+source_explicit:
+  - "Two identified characters exchange the source dialogue in the specified room."
+presentation:
+  - "Preserve the source dialogue verbatim."
+  - "Use a restrained two-person composition and source-supported listening/reaction beats."
+forbidden_in_example:
+  - invented_dialogue
+  - inferred_relationship_change
+  - final_prompt_claiming_production_promptengine_validation

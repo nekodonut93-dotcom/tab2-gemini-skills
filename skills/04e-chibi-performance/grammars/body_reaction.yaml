@@ -1,0 +1,15 @@
+grammar_id: CHIBI_BODY_REACTION_CANDIDATES_V1
+selection_policy: contextual_pool_not_fixed_emotion_mapping
+candidate_pools:
+  anger_frustration: [stomp_feet, shake_fists, rapid_pacing, tiny_punches_into_empty_air]
+  sadness_comedic: [curl_into_tiny_ball, wipe_tears_rapidly, trembling_shoulders]
+  embarrassment: [shrink_down, cover_face, finger_tapping, hide_behind_symbolic_shape]
+  surprise: [freeze, small_vertical_jump, recoil_without_contact]
+  panic: [run_in_tiny_circles, frantic_arm_movement, shake_head_rapidly]
+  excitement: [small_hop, quick_clap, eager_lean]
+  romance: [stiff_freeze, hide_face, shy_turn]
+  frustration: [short_pacing_loop, foot_tap, harmless_air_punch]
+rules:
+  - Every body action is CHIBI_SYMBOLIC_ACTION, NON_DIEGETIC, story_state_effect NONE.
+  - Do not infer a fixed gesture from an emotion label.
+  - No contact with a real character, prop or environment.

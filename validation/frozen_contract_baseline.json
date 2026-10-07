@@ -1,0 +1,9 @@
+{
+  "created_from_production_snapshot": "2026-10-07",
+  "files": {
+    "architecture/director_contract_freeze_v1.json": "7964c7e8f84bb352474989970df3d1c851ac1bc40ebbbd29db15f24cb5b282ea",
+    "architecture/writer_contract_freeze_v1.json": "5334cde125e30cdb2e13a5d8c590de4a5100dc3e4f24644a0446e12390850b50"
+  },
+  "format": "TAB2_FROZEN_CONTRACT_HASH_BASELINE_V1",
+  "note": "First generated independent-package baseline; not a substitute for frozen test gates or version-control history."
+}

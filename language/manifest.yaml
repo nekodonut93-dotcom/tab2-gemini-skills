@@ -1,0 +1,44 @@
+skill_id: tab2.gemini-language-policy
+version: 1.0.0
+owner: User-selected portable project language preferences
+category: LANGUAGE_POLICY_REFERENCE
+description: Keep technical prompt rendering language independent from source dialogue, internal monologue, voice-over and on-screen text languages.
+use_when:
+  - Preparing or reviewing a portable Gemini Seedance prompt
+avoid_when:
+  - Inferring a language preference not present in the user-selected project profile
+inputs:
+  - PROJECT_LANGUAGE_PROFILE
+  - Typed source expressions and exact source text
+outputs:
+  - Language-labeled technical prompt sections and source-faithful speech segments
+requires:
+  - Prompt language and spoken languages are independent
+  - Preserve exact source text for source dialogue and internal monologue
+conflicts_with:
+  - Translating source dialogue because prompt_language is English
+  - Inventing dialogue, monologue, narration, captions or on-screen text
+compatible_models:
+  - model-neutral portable reference
+authority:
+  - Explicit user-selected language preferences only
+must_not_change:
+  - Frozen Writer and Director contracts
+  - Story Memory authority
+  - PromptFacade / PromptEngine production authority
+source_files:
+  - ai_agent_brain/prompt_assembly/language_renderer.py
+  - ai_agent_brain/prompt_assembly/prompt_engine.py
+  - tests/test_prompt_engine.py
+source_functions:
+  - PromptLanguageRenderer.normalize_language
+  - PromptLanguageRenderer.render
+related_architecture:
+  - architecture/TAB2_FROZEN_CONTRACTS.md
+  - architecture/TAB2_DATA_AUTHORITY.md
+related_tests:
+  - tests/test_prompt_engine.py
+  - tests/test_gemini_language_chibi_contracts.py
+prompt_version: PROJECT_LANGUAGE_PROFILE_V1
+schema_version: PROJECT_LANGUAGE_PROFILE_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

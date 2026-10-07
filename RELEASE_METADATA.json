@@ -1,0 +1,17 @@
+{
+  "builder": "build_from_production.py",
+  "distribution_version": "1.1.0",
+  "known_release_gaps": [
+    "Gemini Web full-pipeline benchmark not run",
+    "Dola UI reference tag syntax unknown",
+    "Current production Director Skill-store state unknown"
+  ],
+  "live_provider_calls": false,
+  "rebuild_command": "py -3.13 tab2-gemini-skills\\build_from_production.py --build",
+  "release_date": "2026-10-07",
+  "release_status": "PARTIAL_READINESS_REFERENCE_PACKAGE",
+  "repository": "tab2-gemini-skills",
+  "runtime_authority": false,
+  "source_of_truth": "parent production repository",
+  "word_document_generator": "generate_word_guide.py"
+}

@@ -1,0 +1,8 @@
+case_id: blocked_chibi_disabled
+visual_profile:
+  chibi_insertions: false
+source_internal_monologue: "Tên này thật đáng ghét!"
+expected_mode: VOICE_ONLY
+chibi_insert: null
+expected: BLOCKED
+failure_code: CHIBI_STYLE_NOT_ENABLED

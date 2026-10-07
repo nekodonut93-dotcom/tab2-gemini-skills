@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "checks": {
+      "type": "object"
+    },
+    "failed_stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "recommended_return_stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    }
+  },
+  "required": [
+    "state_scope",
+    "status",
+    "failed_stage",
+    "reason",
+    "recommended_return_stage",
+    "checks",
+    "source_refs"
+  ],
+  "type": "object"
+}

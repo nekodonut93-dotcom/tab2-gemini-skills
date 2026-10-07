@@ -1,0 +1,26 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "08-seedance",
+  "known_gaps": [
+    "No Seedance generation API capability is established by formatting assets; PromptLanguageRenderer cache version coverage is a documented review gap."
+  ],
+  "production_sources": [
+    "ai_agent_brain/prompt_assembly/prompt_engine.py",
+    "application/prompt_facade.py",
+    "model_profiles/seedance.json",
+    "prompt_templates/seedance.json",
+    "architecture/TAB2_MODEL_ADAPTERS.md"
+  ],
+  "related_tests": [
+    "tests/test_prompt_engine.py",
+    "tests/test_prompt_assembly.py",
+    "tests/test_external_model_final_prompt.py",
+    "tests/test_tab2_dynamic_duration_contract.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "PORTABLE_SEEDANCE_SCENE_PACKAGE_V1",
+  "source_skill_id": "tab2.seedance-portable-prompt-draft",
+  "source_skill_manifest": "skills/08-seedance/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

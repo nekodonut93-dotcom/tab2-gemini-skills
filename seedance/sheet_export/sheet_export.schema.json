@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "PORTABLE_VIDEO_PROMPT_SHEET_ROW_V1",
+  "title": "Portable video prompt export row",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "state_scope": {"const": "PORTABLE_WEB_STATE_ONLY"},
+    "prompt_id": {"type": "string", "minLength": 1},
+    "chapter": {"type": ["string", "integer"]},
+    "scene_id": {"type": "string", "minLength": 1},
+    "shot_id": {"type": "string", "minLength": 1},
+    "duration_seconds": {"enum": [5, 10, 15]},
+    "model": {"const": "seedance"},
+    "platform": {"enum": ["dola", "unspecified"]},
+    "style": {"type": "string", "minLength": 1},
+    "reference_images": {"type": "array", "items": {"type": "string"}},
+    "prompt": {"type": "string"},
+    "negative_constraints": {"type": "array", "items": {"type": "string"}},
+    "status": {
+      "enum": [
+        "READY_FOR_USER_REVIEW",
+        "STYLE_UNRESOLVED",
+        "REFERENCE_BINDING_UNVERIFIED",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    },
+    "revision": {"type": "integer", "minimum": 1}
+  },
+  "required": [
+    "state_scope",
+    "prompt_id",
+    "chapter",
+    "scene_id",
+    "shot_id",
+    "duration_seconds",
+    "model",
+    "platform",
+    "style",
+    "reference_images",
+    "prompt",
+    "negative_constraints",
+    "status",
+    "revision"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "STYLE_UNRESOLVED",
+              "REFERENCE_BINDING_UNVERIFIED",
+              "BLOCKED",
+              "UNRESOLVED"
+            ]
+          }
+        }
+      },
+      "then": {"properties": {"prompt": {"const": ""}}}
+    },
+    {
+      "if": {"properties": {"status": {"const": "READY_FOR_USER_REVIEW"}}},
+      "then": {"properties": {"prompt": {"type": "string", "minLength": 1}}}
+    }
+  ]
+}

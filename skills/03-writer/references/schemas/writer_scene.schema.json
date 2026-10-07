@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "not": {
+    "anyOf": [
+      {
+        "required": [
+          "camera"
+        ]
+      },
+      {
+        "required": [
+          "camera_intent"
+        ]
+      },
+      {
+        "required": [
+          "lens"
+        ]
+      },
+      {
+        "required": [
+          "lens_intent"
+        ]
+      },
+      {
+        "required": [
+          "shot_movement"
+        ]
+      },
+      {
+        "required": [
+          "director_style"
+        ]
+      },
+      {
+        "required": [
+          "model_prompt_syntax"
+        ]
+      },
+      {
+        "required": [
+          "prompt_syntax"
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "actions": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "character_refs": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "dialogue": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "events": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "location_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outcome_state": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "relationship_facts": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scene_order": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "READY",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "visible_knowledge_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "state_scope",
+    "status",
+    "scene_id",
+    "scene_order",
+    "source_refs",
+    "events",
+    "actions",
+    "dialogue",
+    "visible_knowledge_refs",
+    "unresolved"
+  ],
+  "type": "object"
+}

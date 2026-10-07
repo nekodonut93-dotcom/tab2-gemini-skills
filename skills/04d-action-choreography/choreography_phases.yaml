@@ -1,0 +1,24 @@
+contract_id: ACTION_CHOREOGRAPHY_V1
+status: PORTABLE_PROPOSAL_ONLY
+optional_phases:
+  - pre_action
+  - anticipation
+  - primary_action
+  - follow_through
+  - reaction
+  - settle
+rules:
+  - "Include only phases supported by the action and scene."
+  - "Primary action must preserve the source action class."
+  - "Reaction is not a license to invent emotion or injury."
+  - "Settle cannot assert a new outcome or state."
+  - "Use fewer phases for simple actions."
+  - "Use more phases only when evidence and duration support them."
+example:
+  action_class: VERTICAL_DOWNWARD_SLASH
+  phases:
+    pre_action: "stable stance, if the scene establishes the actor standing"
+    anticipation: "raise the already established blade only if its current position permits"
+    primary_action: "downward slash; preserve the source target and result or leave them unspecified"
+    follow_through: "natural continuation of the slash without asserting impact"
+    settle: "omit unless the scene's end state supports a finishing position"

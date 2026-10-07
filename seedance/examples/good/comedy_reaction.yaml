@@ -1,0 +1,12 @@
+case_id: synthetic_comedy_reaction
+status: READY_FOR_USER_REVIEW
+style_profile: cn_3d_comedic_chibi
+source_explicit:
+  - "The identified character reacts to the source-established comic event."
+presentation:
+  - "Brief nonverbal chibi insert is allowed by the selected profile."
+  - "Return to the same scene and preserve its cast, dialogue, and outcome."
+forbidden:
+  - invented_spoken_line
+  - invented_confession
+  - added_reveal

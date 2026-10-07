@@ -1,0 +1,46 @@
+skill_id: tab2.prompt-engine-syntax
+version: 1.0.0
+owner: PromptEngine
+category: PROMPT_SYNTAX
+description: Preserve PromptEngine final-prompt authority and keep per-model syntax isolated in profiles, templates and adapters.
+use_when:
+  - Auditing structured prompt assembly or model-specific formatting
+avoid_when:
+  - Dispatching video-generation requests or authoring story/Director semantics
+inputs:
+  - Validated Director context, selected profile, blueprint and model template
+outputs:
+  - Compiled VideoPromptPackage.final_prompt for display/copy
+requires:
+  - PromptFacade canonical entry and PromptEngine validation
+conflicts_with:
+  - Director-owned final syntax
+  - Unverified adapter/capability assumptions
+compatible_models:
+  - Seedance
+  - Veo
+  - Kling
+  - Sora profile/registry present but template missing
+authority:
+  - PromptFacade and PromptEngine
+must_not_change:
+  - Director/PromptEngine boundary
+  - Frozen prompt context/output semantics
+  - Cache identity without explicit compatibility review
+source_files:
+  - ai_agent_brain/prompt_assembly/prompt_engine.py
+  - application/prompt_facade.py
+  - ai_agent_brain/prompt_assembly/model_adapter.py
+  - model_profiles/
+  - prompt_templates/
+source_functions:
+  - PromptEngine.assemble
+  - PromptFacade.compile
+related_tests:
+  - tests/test_prompt_engine.py
+  - tests/test_external_model_final_prompt.py
+  - tests/test_prompt_assembly.py
+  - tests/test_tab2_dynamic_duration_contract.py
+prompt_version: model templates are not uniformly versioned
+schema_version: PromptEngine input/output contracts; see frozen and PromptEngine tests
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

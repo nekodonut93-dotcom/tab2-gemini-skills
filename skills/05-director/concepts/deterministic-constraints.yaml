@@ -1,0 +1,16 @@
+id: deterministic_constraints
+type: DETERMINISTIC_CODE
+status: CODE_ENFORCED
+owner: DirectorWorkflowService
+source:
+  - application/director_workflow/
+  - application/director_intelligence/
+related_tests:
+  - tests/test_director_frozen_contracts.py
+  - tests/test_director_workflow.py
+scope:
+  - Evidence and schema validation
+  - Precedence and user locks
+  - Provider compatibility
+  - Provenance, identity and currentness
+rule: This record describes executable constraints; never substitute skill prose for code enforcement.

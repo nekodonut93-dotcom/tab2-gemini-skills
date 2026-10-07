@@ -1,0 +1,25 @@
+audit_contract_id: LANGUAGE_CHIBI_PORTABLE_AUDIT_V1
+checks:
+  PROMPT_LANGUAGE_MISMATCH:
+    fail_when: "technical instruction language conflicts with resolved prompt_language"
+  SPOKEN_LANGUAGE_CHANGED:
+    fail_when: "source speech is rendered in a language different from its resolved speech language"
+  DIALOGUE_TRANSLATED_WITHOUT_PERMISSION:
+    fail_when: "source dialogue text differs because it was translated"
+  INVENTED_DIALOGUE:
+    fail_when: "spoken words have no source or explicit user authorization"
+  INVENTED_INTERNAL_MONOLOGUE:
+    fail_when: "internal monologue has no source text"
+  CHIBI_BECAME_REAL_EVENT:
+    fail_when: "symbolic chibi behavior is represented as diegetic action"
+  REAL_ACTION_WITHOUT_SOURCE:
+    fail_when: "real-world action or crying lacks source/event evidence"
+  CHIBI_CHANGED_STORY_STATE:
+    fail_when: "chibi action changes location, relationship, injury, knowledge, outcome, possession, physical state, or plot event"
+  CHIBI_STYLE_NOT_ENABLED:
+    fail_when: "chibi insert exists while resolved profile disables chibi"
+  MONOLOGUE_TEXT_CHANGED:
+    fail_when: "source internal monologue differs from the emitted monologue"
+  MISSING_RETURN_TO_MAIN_SCENE:
+    fail_when: "bounded chibi insert does not return to the same main-world scene"
+scope: PORTABLE_REFERENCE_CHECKS_NOT_PRODUCTION_VALIDATORS

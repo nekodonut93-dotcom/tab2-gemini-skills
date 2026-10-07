@@ -1,0 +1,9 @@
+id: model_adapter_veo
+type: MODEL_ADAPTER
+status: VERIFIED_REFERENCE
+model_id: veo
+profile_source: model_profiles/veo.json
+template_source: prompt_templates/veo.json
+prompt_engine_owner: PromptEngine
+runtime_provider_capability: UNKNOWN
+note: "Formatting evidence only; does not establish API capability."

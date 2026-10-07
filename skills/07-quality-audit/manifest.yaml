@@ -1,0 +1,48 @@
+distribution_id: 07-quality-audit
+source_skill_id: tab2.quality-and-regression-audit
+source_skill_version: 1.1.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/07-quality-audit/SKILL.md"
+source_manifest: "skills/07-quality-audit/manifest.yaml"
+runtime_owner: "Production frozen tests and deterministic validators; web checks are not production certification."
+source_files:
+  - "architecture/writer_contract_freeze_v1.json"
+  - "architecture/director_contract_freeze_v1.json"
+  - "tests/fixtures/writer_action_grounding_baseline_v1.json"
+source_functions:
+  - "benchmark test in tests/test_writer_action_grounding_benchmark.py"
+related_tests:
+  - "tests/test_writer_frozen_contracts.py"
+  - "tests/test_director_frozen_contracts.py"
+  - "tests/test_writer_action_grounding_benchmark.py"
+  - "tests/test_tab2_targeted_quota_acceptance.py"
+  - "tests/test_jobs.py"
+  - "tests/test_gemini_seedance_skill_contracts.py"
+dependencies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/TAB2_FROZEN_CONTRACTS.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "not_applicable"
+source_schema_version: "Writer FROZEN_V1; DIRECTOR FROZEN_V1; DirectorHandoffV2"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

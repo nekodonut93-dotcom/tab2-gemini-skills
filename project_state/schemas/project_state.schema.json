@@ -1,0 +1,59 @@
+{
+  "$id": "PORTABLE_PROJECT_STATE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "current_chapter_order": {
+      "minimum": 1,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "current_scene_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "project_language_profile_ref": {
+      "type": "string"
+    },
+    "project_visual_profile_ref": {
+      "type": "string"
+    },
+    "source_document_refs": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "visibility_filter_status": {
+      "enum": [
+        "PASS",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    }
+  },
+  "required": [
+    "state_scope",
+    "project_id",
+    "current_chapter_order",
+    "current_scene_id",
+    "stage",
+    "visibility_filter_status",
+    "source_document_refs",
+    "project_language_profile_ref"
+  ],
+  "type": "object"
+}

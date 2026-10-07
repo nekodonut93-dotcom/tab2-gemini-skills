@@ -1,0 +1,40 @@
+skill_id: tab2.continuity-and-canon
+version: 1.0.0
+owner: FullStoryContinuityAnalyzer
+category: CONTINUITY
+description: Explain deterministic story continuity boundaries and the derived official Production Canon gate.
+use_when:
+  - Auditing evidence-bound continuity or Canon workflow
+avoid_when:
+  - Repairing source text or treating future knowledge as current
+inputs:
+  - Versioned chapters, source references, Story Memory ledgers and report context
+outputs:
+  - Derived diagnostic report and eligible source-bound overlay
+requires:
+  - Story Memory source/version context
+conflicts_with:
+  - Unvalidated future or cross-scene knowledge
+compatible_models:
+  - model-neutral
+authority:
+  - FullStoryContinuityAnalyzer for derived gate
+  - StoryMemoryService for persisted authority
+must_not_change:
+  - Temporal visibility
+  - Source immutability
+  - Official readiness gate
+source_files:
+  - application/screenwriter_intelligence/full_story_continuity.py
+  - application/screenwriter_intelligence/continuity_memory.py
+  - application/screenwriter_intelligence/screenplay_service.py
+source_functions:
+  - FullStoryContinuityAnalyzer.analyze
+  - ScreenplayApplicationService.create_draft
+related_tests:
+  - tests/test_full_story_continuity_completeness.py
+  - tests/test_continuity_engine.py
+  - tests/test_story_memory_temporal_visibility.py
+prompt_version: story-reasoning-v1 for applicable reasoning operations
+schema_version: operation-specific; see story_reasoning.py
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

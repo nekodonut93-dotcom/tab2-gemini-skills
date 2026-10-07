@@ -1,0 +1,10 @@
+candidate_family: reaction
+status: PORTABLE_PROPOSAL_ONLY
+candidates:
+  - brief_reaction_pause
+  - visible_breathing_change
+  - subtle_posture_response
+constraints:
+  - Use only when supported by current scene context.
+  - Do not assert emotion, intention, relationship meaning or new action.
+  - Never use a fixed emotion-to-gesture mapping.

@@ -1,0 +1,23 @@
+case_id: good_chibi_anger_air_pantomime
+source_internal_monologue: "Tên này thật đáng ghét!"
+visual_profile:
+  visual_type: chinese_3d_animation
+  chibi_insertions: true
+language_profile:
+  prompt_language: en
+  inner_monologue_language: vi
+mode: CHIBI_SPOKEN_MONOLOGUE
+internal_monologue_language: vi
+spoken_text: "Tên này thật đáng ghét!"
+actions:
+  - namespace: CHIBI_SYMBOLIC_ACTION
+    action: stomp_feet
+    representation_scope: NON_DIEGETIC
+    story_state_effect: NONE
+  - namespace: CHIBI_SYMBOLIC_ACTION
+    action: tiny_punches_into_empty_air
+    representation_scope: NON_DIEGETIC
+    story_state_effect: NONE
+real_world_action: NONE
+return_to_main_scene: true
+expected: PASS

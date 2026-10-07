@@ -1,0 +1,17 @@
+id: camera_motivation_and_composition
+type: DIRECTING_KNOWLEDGE
+status: SOURCE_VERIFIED_REFERENCE
+owner: DirectorReasoning
+source:
+  - application/director_reasoning/
+  - application/director_workflow/
+scope:
+  - Camera angle and movement
+  - Movement motivation and timing
+  - Lens and focus intent
+  - Composition and framing
+duplicate_risk:
+  classification: SEMANTIC_DUPLICATE
+  note: Camera-movement motivation recurs in heuristic, semantic mapping, recommendations and draft knowledge; do not merge automatically.
+selectors:
+  camera_motion: source-resolved

@@ -1,0 +1,306 @@
+index_version: 1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED
+active_skill_store_status: UNKNOWN
+default_bounded_retrieval: Target 3-8 relevant concepts per scene where supported; fewer when fewer apply; exceed eight only with evidence; web distribution only
+selection_rule: "Select only source-supported relevant records; unknown values stay UNKNOWN. Target 3-8 records per scene where supported; select fewer when fewer apply; exceed eight only with scene-specific evidence."
+knowledge_types:
+  - DIRECTING_KNOWLEDGE
+  - MODEL_ADAPTER
+  - PROMPT_STRUCTURE
+  - DETERMINISTIC_CODE
+lookup_fields:
+  - id
+  - category
+  - subcategory
+  - intent
+  - scene_type
+  - energy
+  - duration
+  - framing
+  - camera_motion
+  - blocking
+  - pacing
+  - compatible_models
+  - requires
+  - conflicts_with
+  - source_reference
+  - status
+status_values:
+  - VERIFIED_ACTIVE
+  - VERIFIED_REFERENCE
+  - DRAFT
+  - LEGACY
+  - UNKNOWN
+records:
+  - id: scene_geometry_and_continuity
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "scene geography and multi-shot consistency"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/scene-geometry-and-continuity.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: blocking_and_screen_direction
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "subject-bound blocking and screen direction"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/blocking-and-screen-direction.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: shot_design_and_coverage
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "shot purpose, size, sequence, and coverage"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/shot-design-and-coverage.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: camera_motivation_and_composition
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "motivated camera, lens/focus intent, and composition"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/camera-and-composition.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: performance_environment_and_look
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "performance, environment, lighting, and look"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/performance-environment-and-look.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: pacing_and_diagnostics
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "pacing, rhythm, complexity, and diagnostics"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/pacing-and-diagnostics.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: narrative_and_audio_recommendations
+    category: "DIRECTING_KNOWLEDGE"
+    subcategory: "SOURCE_VERIFIED_REFERENCE"
+    intent: "conditional narrative/audio recommendation"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/narrative-and-audio-recommendations.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: deterministic_constraints
+    category: "DETERMINISTIC_CODE"
+    subcategory: "CODE_ENFORCED"
+    intent: "code-enforced constraints; not selectable as creative advice"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/05-director/concepts/deterministic-constraints.yaml"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "READY Writer scene"
+      - "source-backed current scene facts"
+    conflicts_with:
+      - "Writer WHAT mutation"
+      - "unsupported facts"
+  - id: prompt_syntax
+    category: "PROMPT_STRUCTURE"
+    subcategory: "PROMPT_ENGINE_OWNED"
+    intent: "Model-specific section structure and literal syntax"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "skills/06-prompt-engine/model_adapters/README.md"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "PromptEngine profile/template/adapter evidence"
+    conflicts_with:
+      - "Director core owning literal syntax"
+  - id: model_adapter_seedance
+    category: "MODEL_ADAPTER"
+    subcategory: "PROMPT_ENGINE_OWNED"
+    intent: "Profile, template, and adapter registration found."
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "model_profiles/seedance.json; prompt_templates/seedance.json when present"
+    status: "VERIFIED_REFERENCE"
+    compatible_models:
+      - "seedance"
+    requires:
+      - "PromptEngine profile/template/adapter evidence"
+    conflicts_with:
+      - "Unverified model capability inference"
+  - id: model_adapter_veo
+    category: "MODEL_ADAPTER"
+    subcategory: "PROMPT_ENGINE_OWNED"
+    intent: "Profile, template, and adapter registration found."
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "model_profiles/veo.json; prompt_templates/veo.json when present"
+    status: "VERIFIED_REFERENCE"
+    compatible_models:
+      - "veo"
+    requires:
+      - "PromptEngine profile/template/adapter evidence"
+    conflicts_with:
+      - "Unverified model capability inference"
+  - id: model_adapter_kling
+    category: "MODEL_ADAPTER"
+    subcategory: "PROMPT_ENGINE_OWNED"
+    intent: "Profile, template, and adapter registration found."
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "model_profiles/kling.json; prompt_templates/kling.json when present"
+    status: "VERIFIED_REFERENCE"
+    compatible_models:
+      - "kling"
+    requires:
+      - "PromptEngine profile/template/adapter evidence"
+    conflicts_with:
+      - "Unverified model capability inference"
+  - id: model_adapter_sora
+    category: "MODEL_ADAPTER"
+    subcategory: "PROMPT_ENGINE_OWNED"
+    intent: "Profile and adapter registration found; checked-in template not found; UNVERIFIED / INCOMPLETE."
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "model_profiles/sora.json; prompt_templates/sora.json when present"
+    status: "UNKNOWN"
+    compatible_models:
+      - "sora"
+    requires:
+      - "PromptEngine profile/template/adapter evidence"
+    conflicts_with:
+      - "Unverified model capability inference"
+  - id: prompt_structure_sections
+    category: "PROMPT_STRUCTURE"
+    subcategory: "PROMPT_ENGINE_OWNED"
+    intent: "Template-driven section ordering and structured prompt assembly"
+    scene_type: "UNKNOWN"
+    energy: "UNKNOWN"
+    duration: "UNKNOWN"
+    framing: "UNKNOWN"
+    camera_motion: "UNKNOWN"
+    blocking: "UNKNOWN"
+    pacing: "UNKNOWN"
+    source_reference: "ai_agent_brain/prompt_assembly/prompt_assembler.py; prompt_templates/"
+    status: "VERIFIED_REFERENCE"
+    compatible_models: []
+    requires:
+      - "PromptEngine template evidence"
+    conflicts_with:
+      - "Director core owning final prompt syntax"

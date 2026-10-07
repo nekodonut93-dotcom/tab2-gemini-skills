@@ -1,0 +1,704 @@
+{
+  "$defs": {
+    "chibiInsert": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "enabled": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "returns_to_main_scene": {
+                "const": true
+              }
+            },
+            "required": [
+              "mode",
+              "representation_scope",
+              "start_time",
+              "end_time",
+              "performance",
+              "spoken_text",
+              "spoken_language",
+              "story_state_effect",
+              "returns_to_main_scene"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "CHIBI_SPOKEN_MONOLOGUE"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "spoken_language": {
+                "minLength": 2,
+                "type": "string"
+              },
+              "spoken_text": {
+                "minLength": 1,
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "CHIBI_NONVERBAL_REACTION"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "spoken_text": {
+                "const": null
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "end_time": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "mode": {
+          "enum": [
+            "CHIBI_SPOKEN_MONOLOGUE",
+            "CHIBI_NONVERBAL_REACTION",
+            "CHIBI_SYMBOLIC_PANTOMIME",
+            "CHIBI_EMOTION_BURST"
+          ]
+        },
+        "performance": {
+          "type": [
+            "string",
+            "array"
+          ]
+        },
+        "representation_scope": {
+          "const": "NON_DIEGETIC"
+        },
+        "returns_to_main_scene": {
+          "const": true
+        },
+        "spoken_language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "spoken_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "start_time": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "story_state_effect": {
+          "const": "NONE"
+        }
+      },
+      "required": [
+        "enabled"
+      ],
+      "type": "object"
+    },
+    "detail": {
+      "additionalProperties": false,
+      "properties": {
+        "changes_story_state": {
+          "const": false
+        },
+        "detail": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "origin": {
+          "enum": [
+            "SOURCE_EXPLICIT",
+            "SAFE_VISUAL_INFERENCE",
+            "DIRECTOR_CREATIVE_CHOICE"
+          ]
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "detail",
+        "origin",
+        "source_refs",
+        "changes_story_state"
+      ],
+      "type": "object"
+    },
+    "internalMonologue": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/typedExpression"
+        },
+        {
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+            "preserve_verbatim": {
+              "const": true
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "type": {
+              "const": "INTERNAL_MONOLOGUE"
+            }
+          }
+        }
+      ]
+    },
+    "narratorVoiceOver": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/typedExpression"
+        },
+        {
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+            "preserve_verbatim": {
+              "const": true
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "type": {
+              "const": "NARRATOR_VOICE_OVER"
+            }
+          }
+        }
+      ]
+    },
+    "nonverbalReaction": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/typedExpression"
+        },
+        {
+          "properties": {
+            "language": {
+              "type": "null"
+            },
+            "preserve_verbatim": {
+              "const": false
+            },
+            "source_text": {
+              "type": "null"
+            },
+            "type": {
+              "const": "NONVERBAL_REACTION"
+            }
+          }
+        }
+      ]
+    },
+    "onScreenText": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/typedExpression"
+        },
+        {
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+            "preserve_verbatim": {
+              "const": true
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "type": {
+              "const": "ON_SCREEN_TEXT"
+            }
+          }
+        }
+      ]
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "binding_status": {
+          "enum": [
+            "UI_CONFIRMED",
+            "IMPLICIT_UPLOAD",
+            "REFERENCE_BINDING_UNVERIFIED"
+          ]
+        },
+        "role": {
+          "enum": [
+            "CHARACTER_IDENTITY",
+            "CLOTHING",
+            "ENVIRONMENT",
+            "ACTION_REFERENCE",
+            "CAMERA_REFERENCE",
+            "STYLE_REFERENCE"
+          ]
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ui_tag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "asset_id",
+        "role",
+        "ui_tag",
+        "binding_status",
+        "source_refs"
+      ],
+      "type": "object"
+    },
+    "spokenDialogue": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/typedExpression"
+        },
+        {
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+            "preserve_verbatim": {
+              "const": true
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "type": {
+              "const": "SPOKEN_DIALOGUE"
+            }
+          }
+        }
+      ]
+    },
+    "timelineSegment": {
+      "additionalProperties": false,
+      "properties": {
+        "beat": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "end_seconds": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "start_seconds": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "timing_kind": {
+          "const": "TARGET_NOT_FRAME_LOCK"
+        }
+      },
+      "required": [
+        "beat",
+        "start_seconds",
+        "end_seconds",
+        "timing_kind",
+        "source_refs"
+      ],
+      "type": "object"
+    },
+    "typedExpression": {
+      "additionalProperties": false,
+      "properties": {
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "preserve_verbatim": {
+          "type": "boolean"
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "source_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "enum": [
+            "SPOKEN_DIALOGUE",
+            "INTERNAL_MONOLOGUE",
+            "NARRATOR_VOICE_OVER",
+            "NONVERBAL_REACTION",
+            "ON_SCREEN_TEXT"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "source_text",
+        "language",
+        "source_refs",
+        "preserve_verbatim"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "PORTABLE_SEEDANCE_SCENE_PACKAGE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "chibi_insert": {
+            "properties": {
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "enabled"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "chibi_insert"
+        ]
+      },
+      "then": {
+        "properties": {
+          "style_profile": {
+            "properties": {
+              "chibi_insertions": {
+                "const": true
+              }
+            },
+            "required": [
+              "chibi_insertions"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "STYLE_UNRESOLVED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "profile_ref": {
+            "type": "null"
+          },
+          "prompt_draft": {
+            "type": "null"
+          },
+          "style_profile": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "REFERENCE_BINDING_UNVERIFIED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "prompt_draft": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "BLOCKED",
+              "UNRESOLVED"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "prompt_draft": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "READY_FOR_USER_REVIEW"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "profile_ref": {
+            "type": "string"
+          },
+          "prompt_draft": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "style_profile": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "action_interpretation": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "chibi_insert": {
+      "$ref": "#/$defs/chibiInsert"
+    },
+    "choreography": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "director_plan_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "duration_seconds": {
+      "enum": [
+        5,
+        10,
+        15
+      ]
+    },
+    "internal_monologue": {
+      "items": {
+        "$ref": "#/$defs/internalMonologue"
+      },
+      "type": "array"
+    },
+    "language_profile_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "const": "seedance"
+    },
+    "negative_constraints": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "nonverbal_reaction": {
+      "items": {
+        "$ref": "#/$defs/nonverbalReaction"
+      },
+      "type": "array"
+    },
+    "on_screen_text": {
+      "items": {
+        "$ref": "#/$defs/onScreenText"
+      },
+      "type": "array"
+    },
+    "package_version": {
+      "const": "1.0.0"
+    },
+    "platform": {
+      "enum": [
+        "dola",
+        "unspecified"
+      ]
+    },
+    "profile_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_draft": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "references": {
+      "items": {
+        "$ref": "#/$defs/reference"
+      },
+      "type": "array"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_actions": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "spoken_dialogue": {
+      "items": {
+        "$ref": "#/$defs/spokenDialogue"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "READY_FOR_USER_REVIEW",
+        "STYLE_UNRESOLVED",
+        "REFERENCE_BINDING_UNVERIFIED",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    },
+    "style_profile": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "timeline": {
+      "items": {
+        "$ref": "#/$defs/timelineSegment"
+      },
+      "type": "array"
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "vfx": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "visual_completion": {
+      "items": {
+        "$ref": "#/$defs/detail"
+      },
+      "type": "array"
+    },
+    "voice_over": {
+      "items": {
+        "$ref": "#/$defs/narratorVoiceOver"
+      },
+      "type": "array"
+    },
+    "writer_what_unchanged": {
+      "const": true
+    }
+  },
+  "required": [
+    "state_scope",
+    "package_version",
+    "status",
+    "scene_id",
+    "duration_seconds",
+    "model",
+    "platform",
+    "profile_ref",
+    "style_profile",
+    "references",
+    "source_actions",
+    "visual_completion",
+    "action_interpretation",
+    "choreography",
+    "director_plan_ref",
+    "timeline",
+    "vfx",
+    "negative_constraints",
+    "writer_what_unchanged",
+    "prompt_draft",
+    "source_refs",
+    "unresolved"
+  ],
+  "type": "object"
+}

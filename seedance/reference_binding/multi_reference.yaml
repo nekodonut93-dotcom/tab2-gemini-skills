@@ -1,0 +1,18 @@
+mode: MULTI_REFERENCE
+model: Seedance
+platform_syntax_status: UI_CONFIRMATION_REQUIRED
+supported_roles:
+  - CHARACTER_IDENTITY
+  - CLOTHING
+  - ENVIRONMENT
+  - ACTION_REFERENCE
+  - CAMERA_REFERENCE
+  - STYLE_REFERENCE
+rules:
+  - "Preserve each tag exactly as displayed by the current UI."
+  - "Assign one explicit role to each reference asset."
+  - "Never blend identity, clothing, environment, action, camera, or style roles."
+  - "Do not create @ImageN or @VideoN syntax that the UI did not supply."
+  - "Unknown tag syntax or role is REFERENCE_BINDING_UNVERIFIED."
+example_tag_value: "exact tag copied verbatim from the current UI"
+example_tag_value_is_platform_evidence: false

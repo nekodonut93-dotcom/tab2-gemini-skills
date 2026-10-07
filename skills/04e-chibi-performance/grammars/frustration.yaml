@@ -1,0 +1,5 @@
+grammar_id: CHIBI_FRUSTRATION_CANDIDATES_V1
+candidates: [short_pacing_loop, foot_tap, shake_fists, puff_cheeks, harmless_air_punch]
+fixed_emotion_mapping: forbidden
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE

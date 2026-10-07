@@ -1,0 +1,128 @@
+{
+  "$defs": {
+    "visibleRecord": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": true,
+      "properties": {
+        "known_by_character_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "record_id": {
+          "type": "string"
+        },
+        "source_refs": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "value": {},
+        "visibility": {
+          "enum": [
+            "CURRENT",
+            "FROM_CHAPTER",
+            "GLOBAL_CANON",
+            "FUTURE",
+            "SUPERSEDED",
+            "UNKNOWN"
+          ]
+        },
+        "visible_from_chapter_order": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "visible_through_chapter_order": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "record_id",
+        "value",
+        "source_refs",
+        "visibility"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "characters": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "current_chapter_order": {
+      "minimum": 1,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "current_scene_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "relationships": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "visibility_filter_status": {
+      "enum": [
+        "PASS",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    },
+    "visible_facts": {
+      "items": {
+        "$ref": "#/$defs/visibleRecord"
+      },
+      "type": "array"
+    },
+    "visible_knowledge": {
+      "items": {
+        "$ref": "#/$defs/visibleRecord"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "state_scope",
+    "project_id",
+    "current_chapter_order",
+    "visibility_filter_status",
+    "visible_facts",
+    "visible_knowledge"
+  ],
+  "type": "object"
+}

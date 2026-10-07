@@ -1,0 +1,15 @@
+grammar_id: CHIBI_FIGHT_PANTOMIME_V1
+namespace: CHIBI_SYMBOLIC_ACTION
+candidates: [punch_empty_air, kick_empty_air, shadow_box, tiny_rage_flurry, hit_clearly_symbolic_dummy]
+required:
+  representation_scope: NON_DIEGETIC
+  story_state_effect: NONE
+  real_target_contact: false
+  real_injury: false
+  return_to_main_scene: true
+real_action_namespace: REAL_ACTION
+real_punch_or_kick_requires_source_event_evidence: true
+forbidden:
+  - merge_with_REAL_ACTION
+  - hit_actual_character
+  - create_real_fight_or_injury

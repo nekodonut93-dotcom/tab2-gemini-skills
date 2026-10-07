@@ -1,0 +1,39 @@
+skill_id: tab2.orchestrator-boundaries
+version: 1.1.0
+owner: ProfessionalCanonicalPipelineService
+category: ORCHESTRATION
+description: Trace the existing Professional Writer to Director to PromptEngine flow without creating a second authority.
+use_when:
+  - Auditing Tab 2 runtime ownership or request stages
+avoid_when:
+  - Mutating screenplay, Director results, prompts, or provider state
+inputs:
+  - Professional Writer request and validated persisted screenplay state
+outputs:
+  - Boundary/call-path explanation only
+requires:
+  - Writer readiness
+  - DirectorHandoffV2
+compatible_models:
+  - model-neutral
+conflicts_with: []
+authority:
+  - Production code and frozen contracts remain authoritative
+must_not_change:
+  - Writer WHAT / Director HOW ownership
+  - PromptFacade and PromptEngine final assembly authority
+source_files:
+  - application/professional_canonical_pipeline.py
+  - application/runtime/application_factory.py
+  - application/api/routes.py
+  - ui/application-adapter.js
+source_functions:
+  - ProfessionalCanonicalPipelineService.execute
+  - ApplicationFactory.create
+related_tests:
+  - tests/test_tab2_canonical_pipeline_phase1.py
+  - tests/test_professional_writer_workflow.py
+  - tests/test_tab2_output_projection_phase2.py
+prompt_version: not_applicable
+schema_version: DirectorHandoffV2
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

@@ -1,0 +1,6 @@
+grammar_id: CHIBI_ANGER_CANDIDATES_V1
+candidates: [stomp_feet, puff_cheeks, harmless_air_punches, shake_fists, short_rapid_pacing, exaggerated_glare]
+fixed_emotion_mapping: forbidden
+action_namespace: CHIBI_SYMBOLIC_ACTION
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE

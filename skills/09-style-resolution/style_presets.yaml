@@ -1,0 +1,76 @@
+presets:
+  modern_cdrama_realistic:
+    visual_type: live_action_realistic_cinematic
+    tone: grounded
+    realism_level: high
+    performance_style: moderate
+    humor_level: light
+    inner_monologue: false
+    chibi_insertions: false
+    camera_style: restrained_cinematic
+    vfx_policy: realistic_only
+    action_style: natural_story_preserving
+    continuity_rule: strict_story_truth
+  anime_romcom:
+    visual_type: anime_2d
+    tone: romantic_comedy
+    realism_level: stylized
+    performance_style: expressive
+    humor_level: medium
+    inner_monologue: false
+    chibi_insertions: false
+    camera_style: dynamic
+    vfx_policy: stylized
+    action_style: expressive_story_preserving
+    continuity_rule: strict_story_truth
+  cn_3d_comedic_chibi:
+    visual_type: chinese_3d_animation
+    tone: humorous
+    realism_level: low_to_medium
+    performance_style: exaggerated_cartoonish
+    humor_level: high
+    inner_monologue: true
+    chibi_insertions: true
+    camera_style: dynamic
+    vfx_policy: stylized
+    action_style: stylized_but_story_preserving
+    continuity_rule: strict_story_truth
+  wuxia_cinematic:
+    visual_type: wuxia_xianxia
+    tone: heroic
+    realism_level: stylized
+    performance_style: expressive
+    humor_level: none
+    inner_monologue: false
+    chibi_insertions: false
+    camera_style: dramatic
+    vfx_policy: stylized
+    action_style: stylized_physical_story_preserving
+    continuity_rule: strict_story_truth
+  xianxia_fantasy:
+    visual_type: fantasy_cinematic
+    tone: mythic
+    realism_level: stylized
+    performance_style: expressive
+    humor_level: none
+    inner_monologue: false
+    chibi_insertions: false
+    camera_style: dramatic
+    vfx_policy: fantasy_allowed
+    action_style: stylized_physical_story_preserving
+    continuity_rule: strict_story_truth
+  dark_thriller:
+    visual_type: live_action_realistic_cinematic
+    tone: dark_thriller
+    realism_level: high
+    performance_style: subtle
+    humor_level: none
+    inner_monologue: false
+    chibi_insertions: false
+    camera_style: restrained_cinematic
+    vfx_policy: realistic_only
+    action_style: restrained_story_preserving
+    continuity_rule: strict_story_truth
+  custom:
+    requires_explicit_user_values: true
+    values: {}

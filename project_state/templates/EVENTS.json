@@ -1,0 +1,5 @@
+{
+  "events": [],
+  "rule": "Preserve source order, source_refs, and temporal visibility.",
+  "state_scope": "PORTABLE_WEB_STATE_ONLY"
+}

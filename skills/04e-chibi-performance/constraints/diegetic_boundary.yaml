@@ -1,0 +1,20 @@
+constraint_id: CHIBI_DIEGETIC_BOUNDARY_V1
+namespaces:
+  real_world: REAL_ACTION
+  symbolic: CHIBI_SYMBOLIC_ACTION
+default_representation_scope: NON_DIEGETIC
+default_story_state_effect: NONE
+symbolic_action_is_real_event: false
+exceptions:
+  - condition: "The source explicitly establishes an actually chibi, dream, or fantasy reality."
+    action: "Represent only that source-established world; retain Writer/source evidence and do not infer the exception."
+must_not_mutate:
+  - location
+  - relationship
+  - injury
+  - knowledge
+  - outcome
+  - possession
+  - physical_state
+  - plot_event
+immediate_return_to_main_scene: required

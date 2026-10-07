@@ -1,0 +1,13 @@
+mode: CHIBI_SPOKEN_MONOLOGUE
+requires:
+  - source_established_internal_monologue
+  - exact_source_text
+  - resolved_inner_monologue_language
+  - profile.inner_monologue: true
+  - profile.chibi_insertions: true
+text_source: source_internal_monologue
+text_mutation: forbidden
+language_source: PROJECT_LANGUAGE_PROFILE.inner_monologue_language
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE
+does_not_create_real_spoken_dialogue: true

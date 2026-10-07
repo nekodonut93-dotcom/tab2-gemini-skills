@@ -1,0 +1,5 @@
+{
+  "open_threads": [],
+  "rule": "Do not resolve a thread without visible source evidence.",
+  "state_scope": "PORTABLE_WEB_STATE_ONLY"
+}

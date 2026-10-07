@@ -1,0 +1,11 @@
+mode: SINGLE_IMAGE_I2V
+model: Seedance
+platform_syntax_status: UI_DEPENDENT
+binding:
+  uploaded_image_role: CHARACTER_IDENTITY_OR_SCENE_START_AS_CONFIRMED_BY_USER
+  tag: null
+rules:
+  - "The uploaded source image may be implicit in the UI."
+  - "Do not insert @Image1 unless current UI or user confirms the tag."
+  - "If the UI's binding behavior is unknown, return REFERENCE_BINDING_UNVERIFIED."
+  - "Do not infer that one image binds multiple characters or an environment."

@@ -1,0 +1,37 @@
+skill_id: tab2.story-memory-authority
+version: 1.0.0
+owner: StoryMemoryService
+category: STORY_MEMORY
+description: Preserve persisted source-backed identity, provenance and temporally scoped Writer context.
+use_when:
+  - Describing Story Memory authority or context visibility
+avoid_when:
+  - Creating facts, aliases, Canon commits, or visibility exceptions
+inputs:
+  - Project, chapter, scene, source references and source position
+outputs:
+  - Persisted Story Memory records or bounded context from production services
+requires:
+  - Valid project/document/chapter/source identity
+compatible_models:
+  - model-neutral
+conflicts_with: []
+authority:
+  - StoryMemoryService and StoryMemoryRepository
+must_not_change:
+  - Canonical identity, alias ambiguity and temporal visibility semantics
+source_files:
+  - application/screenwriter_intelligence/story_memory.py
+  - application/screenwriter_intelligence/memory_models.py
+  - application/screenwriter_intelligence/story_memory_repository.py
+source_functions:
+  - StoryMemoryService.ingest_chapter
+  - StoryMemoryService.build_context_package
+  - StoryMemoryService.build_relevant_canon_slice
+related_tests:
+  - tests/test_screenwriter_story_memory.py
+  - tests/test_story_memory_canonical_character_identity.py
+  - tests/test_story_memory_temporal_visibility.py
+prompt_version: not_applicable
+schema_version: Story Memory semantic v1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

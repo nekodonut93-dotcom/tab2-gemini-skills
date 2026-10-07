@@ -1,0 +1,46 @@
+skill_id: tab2.director-cinematic-how
+version: 1.0.0
+owner: DirectorWorkflowService
+category: DIRECTOR
+description: Explain structured cinematic HOW ownership, typed concept families and advisory knowledge limits.
+use_when:
+  - Reviewing Director plan concepts or authority boundaries
+avoid_when:
+  - Mutating Writer story facts or compiling model-specific prompt syntax
+inputs:
+  - READY_FOR_DIRECTOR screenplay and DirectorHandoffV2
+outputs:
+  - Structured Director result through production workflow
+requires:
+  - Writer readiness and current screenplay state
+  - Existing precedence, provenance and compatibility validation
+conflicts_with:
+  - Writer-owned WHAT mutation
+  - Unapproved knowledge promotion
+compatible_models:
+  - model-neutral Director concepts
+authority:
+  - DirectorFacade and DirectorWorkflowService
+must_not_change:
+  - DIRECTOR FROZEN_V1
+  - DirectorHandoffV2
+  - PromptEngine final-prompt authority
+source_files:
+  - application/director_facade.py
+  - application/director_reasoning/
+  - application/director_workflow/
+  - application/director_knowledge/
+  - application/director_intelligence/
+  - application/skill_intelligence_router/
+  - application/skill_context_injection/
+source_functions:
+  - DirectorFacade
+  - DirectorWorkflowService
+related_tests:
+  - tests/test_director_frozen_contracts.py
+  - tests/test_director_workflow.py
+  - tests/test_director_quality_facade.py
+prompt_version: no active Director-owned LLM prompt template was found in inspected production scope
+schema_version: DIRECTOR FROZEN_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED
+active_skill_store_status: UNKNOWN_NOT_INSPECTED

@@ -1,0 +1,23 @@
+adapter_id: DOLA_UI_REFERENCE_V1
+model_behavior_owner: Seedance model formatting/profile evidence
+platform_ui_syntax_owner: Current Dola UI, only when directly confirmed
+current_tag_syntax_status: UNKNOWN
+single_image_i2v:
+  uploaded_image_may_be_implicit: true
+  force_image_tag: false
+  unresolved_status: REFERENCE_BINDING_UNVERIFIED
+multi_reference:
+  preserve_ui_supplied_tags_verbatim: true
+  allowed_roles:
+    - CHARACTER_IDENTITY
+    - CLOTHING
+    - ENVIRONMENT
+    - ACTION_REFERENCE
+    - CAMERA_REFERENCE
+    - STYLE_REFERENCE
+  role_blending: forbidden
+example_tag_value: "exact tag copied verbatim from the current UI"
+example_tag_value_is_platform_evidence: false
+unknown_syntax_behavior:
+  emit_invented_tag: false
+  status: REFERENCE_BINDING_UNVERIFIED

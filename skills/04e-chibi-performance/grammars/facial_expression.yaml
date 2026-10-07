@@ -1,0 +1,15 @@
+grammar_id: CHIBI_FACIAL_EXPRESSION_CANDIDATES_V1
+selection_policy: contextual_pool_not_fixed_emotion_mapping
+candidate_pools:
+  anger_frustration: [puffed_cheeks, exaggerated_glare, tightly_closed_eyes, trembling_brow]
+  sadness_comedic: [oversized_tears, trembling_lip, squeezed_shut_eyes, tiny_pout]
+  embarrassment: [bright_blush, averted_gaze, covered_face, wide_avoidant_eyes]
+  surprise: [widened_eyes, dropped_jaw, frozen_expression, tiny_shock_mouth]
+  panic: [darting_eyes, trembling_mouth, sweat_marks_as_style_effect]
+  excitement: [sparkling_eyes, broad_smile, eager_gaze]
+  romance: [blush, softened_gaze, shy_smile, averted_gaze]
+  frustration: [scrunched_brow, puffed_cheeks, side_eye]
+rules:
+  - Never infer a fixed facial expression from emotion alone.
+  - Require scene/personality/style/timing support.
+  - Expressions do not establish new story facts or relationship changes.

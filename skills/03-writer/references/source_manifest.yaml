@@ -1,0 +1,41 @@
+skill_id: tab2.writer-what
+version: 1.0.0
+owner: ScreenplayApplicationService
+category: WRITER
+description: Preserve source-grounded story WHAT and official screenplay mutation/validation boundaries.
+use_when:
+  - Tracing Professional Writer chapter processing or handoff readiness
+avoid_when:
+  - Directing camera, provider syntax, or prompt compilation
+inputs:
+  - Chapter source, Story Memory context, approved workflow inputs
+outputs:
+  - Versioned screenplay, adaptation provenance, readiness and DirectorHandoffV2
+requires:
+  - Story Memory ingestion and required Production Canon/reread gates
+conflicts_with:
+  - Downstream edits to Writer-owned facts or exact dialogue
+compatible_models:
+  - model-neutral
+authority:
+  - ProfessionalScreenwriterWorkflow and ScreenplayApplicationService
+must_not_change:
+  - Writer FROZEN_V1
+  - DirectorHandoffV2
+source_files:
+  - application/screenwriter_intelligence/professional_writer_workflow.py
+  - application/screenwriter_intelligence/screenplay_service.py
+  - application/screenwriter_intelligence/writer_provider.py
+  - application/screenwriter_intelligence/writer_maturity_service.py
+source_functions:
+  - ProfessionalScreenwriterWorkflow.process
+  - ScreenplayApplicationService.create_draft
+  - DeterministicWriterProvider.adapt_scene
+related_tests:
+  - tests/test_writer_screen_adaptation.py
+  - tests/test_writer_outcome_context_e2e.py
+  - tests/test_writer_frozen_contracts.py
+  - tests/test_professional_writer_workflow.py
+prompt_version: no separate Writer-generation prompt in the default deterministic adaptation path
+schema_version: Writer FROZEN_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

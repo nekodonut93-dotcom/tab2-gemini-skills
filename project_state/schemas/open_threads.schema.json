@@ -1,0 +1,25 @@
+{
+  "$id": "PORTABLE_OPEN_THREADS_COLLECTION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "open_threads": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    }
+  },
+  "required": [
+    "state_scope",
+    "open_threads"
+  ],
+  "title": "Portable open_threads collection",
+  "type": "object"
+}

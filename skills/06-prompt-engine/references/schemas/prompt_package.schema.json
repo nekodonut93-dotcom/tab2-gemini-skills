@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "adapter_status": {
+      "enum": [
+        "VERIFIED_ACTIVE",
+        "VERIFIED_REFERENCE",
+        "DRAFT",
+        "LEGACY",
+        "UNKNOWN"
+      ]
+    },
+    "director_plan_ref": {
+      "type": "string"
+    },
+    "final_prompt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_sections": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "READY",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    },
+    "validation_warnings": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "writer_scene_ref": {
+      "type": "string"
+    },
+    "writer_what_preserved": {
+      "const": true
+    }
+  },
+  "required": [
+    "state_scope",
+    "status",
+    "scene_id",
+    "writer_scene_ref",
+    "director_plan_ref",
+    "prompt_sections",
+    "writer_what_preserved",
+    "source_refs"
+  ],
+  "type": "object"
+}

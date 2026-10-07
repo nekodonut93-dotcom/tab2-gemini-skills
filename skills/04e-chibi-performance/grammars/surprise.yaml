@@ -1,0 +1,5 @@
+grammar_id: CHIBI_SURPRISE_CANDIDATES_V1
+candidates: [freeze, small_vertical_jump, widened_eyes, dropped_jaw, stylized_shock_lines]
+fixed_emotion_mapping: forbidden
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE

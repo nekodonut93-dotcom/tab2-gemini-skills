@@ -1,0 +1,9 @@
+case_id: synthetic_emotional_hospital
+status: READY_FOR_USER_REVIEW
+style_profile: modern_cdrama_realistic
+source_explicit:
+  - "The named character is in the source-identified hospital room."
+  - "Only source dialogue and established condition are included."
+presentation:
+  - "Keep performance subtle unless the source explicitly specifies a stronger reaction."
+  - "Do not invent medical equipment, diagnosis, crying, or prognosis."

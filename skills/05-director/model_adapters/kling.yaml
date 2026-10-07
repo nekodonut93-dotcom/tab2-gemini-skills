@@ -1,0 +1,9 @@
+id: model_adapter_kling
+type: MODEL_ADAPTER
+status: VERIFIED_REFERENCE
+model_id: kling
+profile_source: model_profiles/kling.json
+template_source: prompt_templates/kling.json
+prompt_engine_owner: PromptEngine
+runtime_provider_capability: UNKNOWN
+note: "Formatting evidence only; does not establish API capability."

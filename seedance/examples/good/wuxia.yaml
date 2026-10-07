@@ -1,0 +1,7 @@
+case_id: synthetic_wuxia_style
+status: READY_FOR_USER_REVIEW
+style_profile: wuxia_cinematic
+rules:
+  - "Stylized physical motion may follow the classified source action."
+  - "A restrained blade trail is still conditional on scene context and profile policy."
+  - "Do not create impact, injury, or magic."

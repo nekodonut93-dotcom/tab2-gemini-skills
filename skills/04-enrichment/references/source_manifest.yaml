@@ -1,0 +1,43 @@
+skill_id: tab2.writer-enrichment
+version: 1.0.0
+owner: ScreenplayApplicationService
+category: ENRICHMENT
+description: Explain optional source-grounded visual enrichment and its deterministic rejection boundary.
+use_when:
+  - Reviewing an eligible official scene enrichment proposal
+avoid_when:
+  - Creating story events or bypassing production gates
+inputs:
+  - Current official scene, bound source evidence, scoped canon and Story Memory identity
+outputs:
+  - Accepted derived visual action or explicit rejection report
+requires:
+  - Production Canon complete
+  - Writer full-canon reread complete
+  - Valid anchor and bound evidence
+conflicts_with:
+  - Story-state changes
+  - Unsupported actors, props, dialogue, knowledge or location
+compatible_models:
+  - model-neutral proposal semantics; existing configured reasoning provider only
+authority:
+  - DeterministicWriterProvider and ScreenplayApplicationService enforce acceptance
+must_not_change:
+  - Writer/Director frozen contracts
+  - Story Memory and temporal visibility authority
+  - Existing prompt/schema/cache identities
+source_files:
+  - application/screenwriter_intelligence/writer_provider.py
+  - application/screenwriter_intelligence/screenplay_service.py
+  - application/screenwriter_intelligence/story_reasoning.py
+  - application/screenwriter_intelligence/story_memory.py
+source_functions:
+  - DeterministicWriterProvider.enrich_official_scene
+  - _visual_enrichment_rejection
+  - StoryMemoryService.build_action_actor_aliases
+related_tests:
+  - tests/test_writer_scene_action_enrichment.py
+  - tests/test_writer_action_grounding_benchmark.py
+prompt_version: story-reasoning-v1:scene-visual-v1
+schema_version: scene-visual-schema-v2
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

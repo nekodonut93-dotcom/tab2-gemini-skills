@@ -1,0 +1,9 @@
+case_id: synthetic_bad_unsupported_action_and_vfx
+status: REJECT
+source_action: "He attacked."
+invalid_additions:
+  - "He spins into an airborne strike."
+  - "A magical energy arc hits and injures the opponent."
+reasons:
+  - "Unsupported action subtype and acrobatics."
+  - "Invented VFX, contact, injury and outcome."

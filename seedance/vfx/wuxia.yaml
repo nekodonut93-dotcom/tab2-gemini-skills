@@ -1,0 +1,8 @@
+profile_policy: stylized
+allowed_when_scene_and_profile_support:
+  - flowing_costume_secondary_motion
+  - restrained_blade_motion_trail
+forbidden_without_explicit_evidence_or_user_choice:
+  - supernatural_energy_arc
+  - magical_impact
+  - new_attack_or_result

@@ -1,0 +1,13 @@
+id: pacing_and_diagnostics
+type: DIRECTING_KNOWLEDGE
+status: SOURCE_VERIFIED_REFERENCE
+owner: DirectorReasoning
+source:
+  - application/director_reasoning/
+  - application/director_intelligence/
+scope:
+  - Semantic pacing and rhythm
+  - Complexity
+  - Quality diagnostics
+constraints:
+  - Do not bypass deterministic validation or result-currentness gates

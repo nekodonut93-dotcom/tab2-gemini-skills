@@ -1,0 +1,109 @@
+{
+  "fixture_id": "GEMINI_LANGUAGE_CHIBI_CASES_V1",
+  "status": "OFFLINE_PORTABLE_CONTRACT_CASES",
+  "live_model_benchmark": false,
+  "cases": [
+    {
+      "case_id": "vi_source_en_prompt_vi_dialogue",
+      "expected": "PASS",
+      "prompt_language": "en",
+      "source_language": "vi",
+      "spoken_dialogue": "Anh đến đây làm gì?",
+      "spoken_language": "vi",
+      "preserve_verbatim": true
+    },
+    {
+      "case_id": "vi_source_en_prompt_vi_monologue",
+      "expected": "PASS",
+      "prompt_language": "en",
+      "source_language": "vi",
+      "internal_monologue": "Tên này thật đáng ghét!",
+      "inner_monologue_language": "vi",
+      "preserve_verbatim": true
+    },
+    {
+      "case_id": "cn3d_chibi_spoken_monologue",
+      "expected": "PASS",
+      "visual_profile": {"visual_type": "chinese_3d_animation", "chibi_insertions": true},
+      "source_internal_monologue": "Tên này thật đáng ghét!",
+      "mode": "CHIBI_SPOKEN_MONOLOGUE",
+      "representation_scope": "NON_DIEGETIC",
+      "story_state_effect": "NONE"
+    },
+    {
+      "case_id": "anger_symbolic_stomp_air_punch",
+      "expected": "PASS",
+      "mode": "CHIBI_SYMBOLIC_PANTOMIME",
+      "symbolic_actions": ["stomp_feet", "tiny_punches_into_empty_air"],
+      "representation_scope": "NON_DIEGETIC",
+      "story_state_effect": "NONE"
+    },
+    {
+      "case_id": "real_punch_without_source_evidence",
+      "expected": "FAIL",
+      "namespace": "REAL_ACTION",
+      "action": "PUNCH",
+      "source_event_evidence": false,
+      "failure_code": "REAL_ACTION_WITHOUT_SOURCE"
+    },
+    {
+      "case_id": "chibi_punch_injures_real_character",
+      "expected": "FAIL",
+      "namespace": "CHIBI_SYMBOLIC_ACTION",
+      "representation_scope": "NON_DIEGETIC",
+      "story_state_effect": "INJURY",
+      "real_target_contact": true,
+      "failure_code": "CHIBI_BECAME_REAL_EVENT"
+    },
+    {
+      "case_id": "symbolic_waterfall_crying_not_real_crying",
+      "expected": "PASS",
+      "emotional_beat_is_source_established": true,
+      "REAL_WORLD_CRYING": false,
+      "CHIBI_SYMBOLIC_CRYING": true,
+      "representation_scope": "NON_DIEGETIC",
+      "story_state_effect": "NONE"
+    },
+    {
+      "case_id": "real_crying_invented_from_weak_sadness",
+      "expected": "FAIL",
+      "source_establishes_crying": false,
+      "proposed_real_world_crying": true,
+      "failure_code": "REAL_ACTION_WITHOUT_SOURCE"
+    },
+    {
+      "case_id": "chibi_disabled",
+      "expected": "BLOCKED",
+      "chibi_insertions": false,
+      "proposed_chibi_insert": true,
+      "failure_code": "CHIBI_STYLE_NOT_ENABLED"
+    },
+    {
+      "case_id": "invented_inner_monologue",
+      "expected": "FAIL",
+      "source_internal_monologue": null,
+      "proposed_internal_monologue": "I will reveal a new secret.",
+      "failure_code": "INVENTED_INTERNAL_MONOLOGUE"
+    },
+    {
+      "case_id": "nonverbal_comedic_chibi_reaction",
+      "expected": "PASS",
+      "source_internal_monologue": null,
+      "chibi_insertions": true,
+      "source_supported_reaction": true,
+      "spoken_text": null,
+      "mode": "CHIBI_NONVERBAL_REACTION",
+      "representation_scope": "NON_DIEGETIC",
+      "story_state_effect": "NONE"
+    },
+    {
+      "case_id": "return_to_main_scene_preserves_continuity",
+      "expected": "PASS",
+      "return_to_main_scene": true,
+      "same_identity": true,
+      "same_location": true,
+      "same_dialogue_state": true,
+      "same_story_outcome": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "case_id": "vi_source_en_technical_prompt_vi_speech",
+  "profile": {
+    "state_scope": "PORTABLE_WEB_STATE_ONLY",
+    "profile_status": "RESOLVED",
+    "selected_by": "USER",
+    "source_language": "vi",
+    "prompt_language": "en",
+    "spoken_dialogue_language": "vi",
+    "inner_monologue_language": "vi",
+    "voice_over_enabled": true,
+    "voice_over_language": "vi",
+    "on_screen_text_language": "vi",
+    "project_id": "synthetic-language-example",
+    "revision": 1,
+    "source_refs": ["synthetic-example:line-1"]
+  },
+  "content": [
+    {
+      "type": "SPOKEN_DIALOGUE",
+      "source_text": "Anh đến đây làm gì?",
+      "rendered_text": "Anh đến đây làm gì?",
+      "language": "vi",
+      "technical_instruction_language": "en"
+    }
+  ],
+  "expected": {
+    "prompt_language": "en",
+    "spoken_language": "vi",
+    "source_text_unchanged": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "actions": [],
+  "dialogue": [],
+  "events": [],
+  "scene_id": "fixture-scene-1",
+  "scene_order": 1,
+  "source_refs": [
+    "fixture://chapter/1#scene/1"
+  ],
+  "state_scope": "PORTABLE_WEB_STATE_ONLY",
+  "status": "READY",
+  "unresolved": [],
+  "visible_knowledge_refs": []
+}

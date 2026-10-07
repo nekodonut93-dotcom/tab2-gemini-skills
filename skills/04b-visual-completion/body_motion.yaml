@@ -1,0 +1,13 @@
+candidate_family: body_motion
+status: PORTABLE_PROPOSAL_ONLY
+candidates:
+  - posture_adjustment
+  - body_orientation
+  - hand_position
+  - foot_placement
+  - weight_shift
+constraints:
+  - Resolve actor from current scene authority; do not guess identity.
+  - Select motion from visible context, action and physical continuity.
+  - Do not infer emotion as a fixed physical response.
+  - Do not move a character to a new location unless Writer WHAT says so.

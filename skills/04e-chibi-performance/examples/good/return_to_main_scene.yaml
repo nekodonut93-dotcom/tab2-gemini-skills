@@ -1,0 +1,9 @@
+case_id: good_chibi_insert_returns_to_scene
+main_world_before: "Hạ Oánh remains facing the same person in the same room."
+insert:
+  mode: CHIBI_NONVERBAL_REACTION
+  representation_scope: NON_DIEGETIC
+  story_state_effect: NONE
+main_world_after: "Hạ Oánh remains in the same room, cast, position continuity, and source-established outcome."
+return_to_main_scene: true
+expected: PASS

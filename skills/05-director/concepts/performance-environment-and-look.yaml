@@ -1,0 +1,13 @@
+id: performance_environment_and_look
+type: DIRECTING_KNOWLEDGE
+status: SOURCE_VERIFIED_REFERENCE
+owner: DirectorReasoning
+source:
+  - application/director_reasoning/
+scope:
+  - Environment motion
+  - Performance realization
+  - Lighting motivation
+  - Visual style and look
+constraints:
+  - Typed axes are implemented; this reference adds no new axes

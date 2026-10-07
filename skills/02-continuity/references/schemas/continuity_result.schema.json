@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "current_chapter_order": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "derived_only": {
+      "const": true
+    },
+    "findings": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    }
+  },
+  "required": [
+    "state_scope",
+    "status",
+    "current_chapter_order",
+    "source_refs",
+    "findings",
+    "derived_only"
+  ],
+  "type": "object"
+}

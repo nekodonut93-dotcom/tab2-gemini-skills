@@ -1,0 +1,11 @@
+mode: CHIBI_SYMBOLIC_PANTOMIME
+namespace: CHIBI_SYMBOLIC_ACTION
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE
+real_target_contact: false
+real_injury: false
+requires:
+  - resolved_visual_profile
+  - profile.chibi_insertions: true
+  - source_established_emotional_beat_or_context_supported_reaction
+  - immediate_return_to_same_main_scene

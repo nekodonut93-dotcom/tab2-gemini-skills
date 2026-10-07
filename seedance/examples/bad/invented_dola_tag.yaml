@@ -1,0 +1,4 @@
+case_id: synthetic_bad_invented_platform_syntax
+status: REJECT
+invalid_output: "@Image1 = protagonist identity"
+reason: "The Dola UI did not confirm the tag syntax."

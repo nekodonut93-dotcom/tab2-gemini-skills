@@ -1,0 +1,23 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "01-story-memory",
+  "known_gaps": [
+    "Gemini's portable state is not persisted Story Memory and cannot certify database currentness."
+  ],
+  "production_sources": [
+    "application/screenwriter_intelligence/story_memory.py",
+    "application/screenwriter_intelligence/memory_models.py",
+    "architecture/TAB2_DATA_AUTHORITY.md"
+  ],
+  "related_tests": [
+    "tests/test_screenwriter_story_memory.py",
+    "tests/test_story_memory_canonical_character_identity.py",
+    "tests/test_story_memory_temporal_visibility.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "Story Memory semantic v1",
+  "source_skill_id": "tab2.story-memory-authority",
+  "source_skill_manifest": "skills/01-story-memory/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

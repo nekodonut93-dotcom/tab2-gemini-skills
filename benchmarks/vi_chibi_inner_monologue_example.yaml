@@ -1,0 +1,45 @@
+case_id: synthetic_vi_chibi_inner_monologue
+status: READY_FOR_USER_REVIEW
+source_language: vi
+prompt_language: en
+visual_profile:
+  visual_type: chinese_3d_animation
+  chibi_insertions: true
+  full_chibi_scene: false
+language_profile:
+  spoken_dialogue_language: vi
+  inner_monologue_language: vi
+source_internal_monologue: "Tên này thật đáng ghét!"
+source_spoken_dialogue: "Anh đến đây làm gì?"
+timeline:
+  - target: 0-3s
+    technical_instruction: "Hạ Oánh turns toward him. Her brows tighten and she pauses."
+    symbolic_insert:
+      mode: CHIBI_SPOKEN_MONOLOGUE
+      performance: [stomp_feet, tiny_punches_into_empty_air]
+      representation_scope: NON_DIEGETIC
+      story_state_effect: NONE
+      spoken_text: "Tên này thật đáng ghét!"
+      spoken_language: vi
+  - target: 3-6s
+    technical_instruction: "Return immediately to the real scene. Hạ Oánh keeps her gaze on him and regains composure."
+    return_to_main_scene: true
+    spoken_dialogue:
+      text: "Anh đến đây làm gì?"
+      language: vi
+      preserve_verbatim: true
+prompt_sections:
+  - label: "Technical instructions in English:"
+    text: "Hạ Oánh turns toward him. Her brows tighten and she pauses."
+  - label: "Internal monologue in Vietnamese:"
+    text: "“Tên này thật đáng ghét!”"
+  - label: "Technical instructions in English:"
+    text: "Return immediately to the real scene. Hạ Oánh keeps her gaze on him and regains composure."
+  - label: "Spoken dialogue in Vietnamese:"
+    text: "“Anh đến đây làm gì?”"
+negative_constraints:
+  - "The chibi beat is symbolic only and does not occur in story reality."
+  - "Do not translate spoken lines into English."
+  - "Do not create a real punch, target contact, injury, event or changed outcome."
+  - "Do not change identity, location, cast or main-world style."
+expected: PASS

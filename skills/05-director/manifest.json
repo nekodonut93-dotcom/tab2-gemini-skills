@@ -1,0 +1,25 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "05-director",
+  "known_gaps": [
+    "Current persisted Director Skill-store contents/version/activation remain UNKNOWN; portable index is not production router.",
+    "A scored production Skill ranking/order algorithm is not evidenced; no score or tie-break behavior is invented."
+  ],
+  "production_sources": [
+    "application/director_facade.py",
+    "application/director_workflow/",
+    "architecture/TAB2_DIRECTOR_ARCHITECTURE.md"
+  ],
+  "related_tests": [
+    "tests/test_director_frozen_contracts.py",
+    "tests/test_director_workflow.py",
+    "tests/test_director_quality_facade.py",
+    "tests/test_director_knowledge_selector.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "DIRECTOR FROZEN_V1",
+  "source_skill_id": "tab2.director-cinematic-how",
+  "source_skill_manifest": "skills/05-director/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

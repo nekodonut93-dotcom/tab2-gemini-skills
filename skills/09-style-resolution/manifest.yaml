@@ -1,0 +1,35 @@
+skill_id: tab2.project-visual-style-resolution
+version: 1.0.0
+owner: User project preference
+category: STYLE_RESOLUTION
+description: Resolve an explicit project visual preference before portable video prompt drafting.
+use_when:
+  - A project has no resolved PROJECT_VISUAL_PROFILE
+avoid_when:
+  - Inferring visual style from story content or model identity
+inputs:
+  - Portable project state and explicit user selections
+outputs:
+  - Validated PROJECT_VISUAL_PROFILE or STYLE_UNRESOLVED question
+requires:
+  - Explicit user choice for the visual style
+conflicts_with:
+  - Style inference from genre, plot, language, or character traits
+compatible_models:
+  - model-neutral
+authority:
+  - User-selected project visual preference only
+must_not_change:
+  - Story Memory or Production Canon
+  - Writer WHAT or Director HOW ownership
+  - PromptFacade / PromptEngine authority
+source_files:
+  - skills/09-style-resolution/
+source_functions: []
+related_architecture:
+  - architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md
+related_tests:
+  - tests/test_gemini_seedance_skill_contracts.py
+prompt_version: STYLE_RESOLUTION_SKILL_V1
+schema_version: PROJECT_VISUAL_PROFILE_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

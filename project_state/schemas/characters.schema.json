@@ -1,0 +1,25 @@
+{
+  "$id": "PORTABLE_CHARACTERS_COLLECTION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "characters": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    }
+  },
+  "required": [
+    "state_scope",
+    "characters"
+  ],
+  "title": "Portable characters collection",
+  "type": "object"
+}

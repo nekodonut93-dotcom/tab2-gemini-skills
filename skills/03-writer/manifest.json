@@ -1,0 +1,24 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "03-writer",
+  "known_gaps": [
+    "Gemini Web output is not official screenplay state and cannot claim frozen readiness."
+  ],
+  "production_sources": [
+    "application/screenwriter_intelligence/professional_writer_workflow.py",
+    "application/screenwriter_intelligence/screenplay_service.py",
+    "architecture/TAB2_FROZEN_CONTRACTS.md"
+  ],
+  "related_tests": [
+    "tests/test_writer_screen_adaptation.py",
+    "tests/test_writer_outcome_context_e2e.py",
+    "tests/test_writer_frozen_contracts.py",
+    "tests/test_professional_writer_workflow.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "Writer FROZEN_V1",
+  "source_skill_id": "tab2.writer-what",
+  "source_skill_manifest": "skills/03-writer/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

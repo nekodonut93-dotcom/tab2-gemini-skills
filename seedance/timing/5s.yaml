@@ -1,0 +1,17 @@
+duration_seconds: 5
+contract: TIMING_TARGET_NOT_FRAME_LOCK
+strategy: compact_single_beat_or_one_action
+segments:
+  - beat: establish_or_begin
+    allocation: brief
+    required: false
+  - beat: primary_sourced_action
+    allocation: dominant
+    required: true
+  - beat: source_supported_reaction_or_end_state
+    allocation: remaining
+    required: false
+rules:
+  - "Avoid stacking multiple complex actions into five seconds."
+  - "Omit unsupported anticipation, reaction or settle beats."
+  - "Use adaptive boundaries; total target duration is five seconds."

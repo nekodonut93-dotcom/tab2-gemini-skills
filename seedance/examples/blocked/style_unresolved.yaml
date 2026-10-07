@@ -1,0 +1,5 @@
+case_id: synthetic_blocked_style_unresolved
+status: STYLE_UNRESOLVED
+profile_ref: null
+prompt_draft: null
+expected: "Ask the user for a visual style and stop prompt drafting."

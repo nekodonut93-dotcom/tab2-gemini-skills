@@ -1,0 +1,32 @@
+skill_id: tab2.source-action-interpreter-reference
+version: 1.0.0
+owner: Portable source action classification
+category: ACTION_INTERPRETATION
+description: Classify literary actions conservatively for downstream physical realization.
+use_when:
+  - A visible source-grounded action needs a semantic class before choreography
+avoid_when:
+  - Inferring an action subtype, target, contact or outcome
+inputs:
+  - Writer-owned action, source references, visible context, resolved actor
+outputs:
+  - Action class with evidence, certainty and unresolved fields
+requires:
+  - Current-scene visibility and identity resolution
+conflicts_with:
+  - Unsupported subtype or cinematic embellishment
+compatible_models:
+  - model-neutral
+authority:
+  - Writer action remains authoritative; classification is derivative
+must_not_change:
+  - Writer WHAT or frozen Writer/Director contracts
+  - Story Memory temporal visibility
+source_files:
+  - skills/04c-action-interpreter/
+source_functions: []
+related_tests:
+  - tests/test_gemini_seedance_skill_contracts.py
+prompt_version: GEMINI_CREATIVE_BOUNDARY_CONTRACT_V1
+schema_version: ACTION_INTERPRETATION_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

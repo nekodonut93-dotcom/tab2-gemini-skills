@@ -1,0 +1,32 @@
+{
+  "no_provider_calls": true,
+  "portable_contract_tests": [
+    "tests/test_gemini_seedance_skill_contracts.py",
+    "tests/test_gemini_language_chibi_contracts.py"
+  ],
+  "status": "TRACEABILITY_ONLY_NOT_EXECUTION",
+  "tests": [
+    "tests/test_continuity_engine.py",
+    "tests/test_director_frozen_contracts.py",
+    "tests/test_director_knowledge_selector.py",
+    "tests/test_director_quality_facade.py",
+    "tests/test_director_workflow.py",
+    "tests/test_external_model_final_prompt.py",
+    "tests/test_full_story_continuity_completeness.py",
+    "tests/test_gemini_language_chibi_contracts.py",
+    "tests/test_gemini_seedance_skill_contracts.py",
+    "tests/test_professional_writer_workflow.py",
+    "tests/test_prompt_assembly.py",
+    "tests/test_prompt_engine.py",
+    "tests/test_screenwriter_story_memory.py",
+    "tests/test_story_memory_canonical_character_identity.py",
+    "tests/test_story_memory_temporal_visibility.py",
+    "tests/test_tab2_canonical_pipeline_phase1.py",
+    "tests/test_tab2_dynamic_duration_contract.py",
+    "tests/test_writer_action_grounding_benchmark.py",
+    "tests/test_writer_frozen_contracts.py",
+    "tests/test_writer_outcome_context_e2e.py",
+    "tests/test_writer_scene_action_enrichment.py",
+    "tests/test_writer_screen_adaptation.py"
+  ]
+}

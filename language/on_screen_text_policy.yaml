@@ -1,0 +1,15 @@
+policy_id: PORTABLE_ON_SCREEN_TEXT_POLICY_V1
+language_field: on_screen_text_language
+source_text:
+  preserve_verbatim: true
+  translate: false
+  paraphrase: false
+  invent: false
+do_not_add:
+  - captions
+  - signs
+  - messages
+  - labels
+  - subtitles
+  - readable_background_text
+unless_source_or_user_explicitly_requires_them: true

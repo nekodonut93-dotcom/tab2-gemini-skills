@@ -1,0 +1,8 @@
+profile_policy: fantasy_allowed
+allowed_only_when_scene_context_and_profile_allow:
+  - energy_arc
+  - light_trail
+  - magical_impact
+rules:
+  - "A fantasy style alone does not establish that magic occurs in this scene."
+  - "Do not invent a spell, target, hit, injury, reveal or outcome."

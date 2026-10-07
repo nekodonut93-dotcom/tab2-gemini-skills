@@ -1,0 +1,23 @@
+duration_seconds: 15
+contract: TIMING_TARGET_NOT_FRAME_LOCK
+strategy: spacious_adaptive_scene_rhythm
+segments:
+  - beat: establish
+    allocation: adaptive
+    required: false
+  - beat: source_supported_setup
+    allocation: adaptive
+    required: false
+  - beat: primary_sourced_action
+    allocation: adaptive
+    required: true
+  - beat: follow_through_or_reaction
+    allocation: adaptive
+    required: false
+  - beat: source_supported_end_state
+    allocation: adaptive
+    required: false
+rules:
+  - "Use additional time for evidenced pauses or action phases, not invented events."
+  - "Choose adaptive boundaries; do not pad a simple action."
+  - "Target segments sum to fifteen seconds; they are not frame-perfect locks."

@@ -1,0 +1,139 @@
+{
+  "note": "Portable guidance only. Production gates and return semantics are enforced by production code and frozen contracts.",
+  "return_rules": [
+    {
+      "condition": "source/provenance missing",
+      "retain": "no downstream claims",
+      "return_to": "INGEST"
+    },
+    {
+      "condition": "identity, knowledge or temporal visibility unresolved",
+      "retain": "accepted source and upstream state only",
+      "return_to": "STORY_MEMORY"
+    },
+    {
+      "condition": "continuity/readiness blocker",
+      "retain": "Story Memory as authority",
+      "return_to": "CONTINUITY"
+    },
+    {
+      "condition": "Writer WHAT/readiness unsupported",
+      "retain": "accepted source and visible memory",
+      "return_to": "WRITER"
+    },
+    {
+      "condition": "visual/action proposal adds state",
+      "retain": "accepted upstream outputs; discard proposal",
+      "return_to": "WRITER"
+    },
+    {
+      "condition": "style unresolved",
+      "retain": "all prior accepted content",
+      "return_to": "STYLE_INTAKE"
+    },
+    {
+      "condition": "reference binding unverified",
+      "retain": "reference files and roles, no tags",
+      "return_to": "REFERENCE_CONFIRMATION"
+    },
+    {
+      "condition": "portable prompt structure invalid",
+      "retain": "Writer WHAT and Director HOW",
+      "return_to": "SEEDANCE_DRAFT"
+    }
+  ],
+  "runtime_authority": false,
+  "stages": [
+    [
+      "INGEST",
+      "source text and project id",
+      "source refs and initial state",
+      "unreadable source or missing id",
+      "INGEST"
+    ],
+    [
+      "STORY_MEMORY",
+      "source refs and visible chapter boundary",
+      "identity/facts/knowledge with provenance and visibility",
+      "ambiguous identity or unsupported extraction",
+      "INGEST"
+    ],
+    [
+      "CONTINUITY",
+      "Story Memory and current chapter",
+      "derived continuity/readiness result",
+      "future visibility or unresolved contradiction",
+      "STORY_MEMORY"
+    ],
+    [
+      "WRITER",
+      "source, visible Story Memory, continuity gate",
+      "WHAT scene and readiness/handoff status",
+      "missing evidence or blocked readiness",
+      "STORY_MEMORY or CONTINUITY"
+    ],
+    [
+      "ENRICHMENT",
+      "accepted Writer scene",
+      "conditionally accepted grounded enrichment or NONE",
+      "unsupported addition",
+      "WRITER"
+    ],
+    [
+      "VISUAL_COMPLETION",
+      "accepted scene and visible context",
+      "bounded non-state-changing visual proposal",
+      "identity/context unresolved or state change",
+      "WRITER"
+    ],
+    [
+      "ACTION_INTERPRETER",
+      "source-backed action and resolved actor",
+      "supported action class or UNRESOLVED",
+      "unsupported target/subtype/outcome",
+      "WRITER"
+    ],
+    [
+      "ACTION_CHOREOGRAPHY",
+      "resolved action class and current visible context",
+      "optional supported physical phases",
+      "any unsupported story/physical outcome",
+      "ACTION_INTERPRETER"
+    ],
+    [
+      "DIRECTOR",
+      "accepted Writer WHAT and bounded read-only context",
+      "HOW plan under production Director authority",
+      "missing handoff or authority conflict",
+      "WRITER"
+    ],
+    [
+      "SEEDANCE_DRAFT",
+      "accepted scene, HOW, resolved user style and confirmed references",
+      "portable prompt_draft and sheet row",
+      "STYLE_UNRESOLVED or REFERENCE_BINDING_UNVERIFIED",
+      "STYLE_INTAKE or DIRECTOR"
+    ],
+    [
+      "PROMPT_ENGINE_AUTHORITY_CHECK",
+      "portable draft or production facade result",
+      "labelled portable draft OR production final prompt",
+      "Gemini claims production compile without facade",
+      "DIRECTOR"
+    ],
+    [
+      "QUALITY_AUDIT",
+      "all required stage statuses and output",
+      "PASS or BLOCKED/UNRESOLVED with trace refs",
+      "any failed gate or missing provenance",
+      "responsible failed stage"
+    ]
+  ],
+  "visibility": {
+    "as_of": "explicit current chapter/scene boundary",
+    "do_not_advance_on_blocked_or_unresolved": true,
+    "future_facts": "BLOCKED",
+    "unknown_or_missing_visibility": "UNRESOLVED"
+  },
+  "workflow_id": "GEMINI_TAB2_PORTABLE_REFERENCE_V1"
+}

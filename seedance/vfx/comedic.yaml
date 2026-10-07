@@ -1,0 +1,8 @@
+profile_policy: humor_and_visual_profile_dependent
+allowed_when_explicitly_enabled:
+  - nonverbal_reaction_emphasis
+  - brief_chibi_visual_insert
+forbidden:
+  - invented_spoken_line
+  - invented_inner_confession
+  - reaction_that_changes_relationship_or_outcome

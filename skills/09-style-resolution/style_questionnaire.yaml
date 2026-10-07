@@ -1,0 +1,63 @@
+questionnaire_id: STYLE_RESOLUTION_QUESTIONNAIRE_V1
+required_before_prompt_draft: true
+questions:
+  - id: visual_type
+    required: true
+    prompt: "Which visual style should this project use?"
+    options:
+      - live_action_realistic_cinematic
+      - anime_2d
+      - chinese_3d_animation
+      - chibi_comedy
+      - wuxia_xianxia
+      - fantasy_cinematic
+      - custom
+  - id: preset_id
+    required: false
+    prompt: "Optional: choose a preset or custom settings."
+    options:
+      - modern_cdrama_realistic
+      - anime_romcom
+      - cn_3d_comedic_chibi
+      - wuxia_cinematic
+      - xianxia_fantasy
+      - dark_thriller
+      - custom
+  - id: performance_style
+    required: true
+    prompt: "How expressive should performances be?"
+    options: [subtle, moderate, expressive, exaggerated_cartoonish]
+  - id: humor_level
+    required: true
+    prompt: "How much humor should the visual treatment use?"
+    options: [none, light, medium, high]
+  - id: inner_monologue
+    required: true
+    prompt: "Should sourced internal monologue be included when present?"
+    options: [true, false]
+  - id: chibi_insertions
+    required: true
+    prompt: "Should brief nonverbal chibi reaction inserts be allowed?"
+    options: [true, false]
+  - id: full_chibi_scene
+    required: false
+    prompt: "Should the entire scene be chibi rather than using only brief inserts?"
+    options: [true, false]
+    default: false
+  - id: vfx_policy
+    required: true
+    prompt: "Which visual-effects policy should apply?"
+    options: [none, realistic_only, stylized, fantasy_allowed]
+  - id: camera_style
+    required: true
+    prompt: "Which camera treatment do you prefer?"
+    options:
+      - restrained_cinematic
+      - dynamic
+      - comedic
+      - dramatic
+      - auto_within_style
+notes:
+  - "A selected preset supplies its listed profile values unless the user overrides them."
+  - "Do not infer an answer from the novel."
+  - "A custom profile requires explicit user values for all required fields."

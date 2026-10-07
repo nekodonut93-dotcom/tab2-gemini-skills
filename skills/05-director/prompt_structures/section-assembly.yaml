@@ -1,0 +1,7 @@
+id: prompt_structure_sections
+type: PROMPT_STRUCTURE
+status: VERIFIED_REFERENCE
+owner: PromptEngine
+source_reference: ai_agent_brain/prompt_assembly/prompt_assembler.py
+template_directory: prompt_templates/
+rule: "Templates provide section ordering; this record does not assert a model-specific required field list."

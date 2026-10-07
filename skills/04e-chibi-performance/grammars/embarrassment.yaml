@@ -1,0 +1,5 @@
+grammar_id: CHIBI_EMBARRASSMENT_CANDIDATES_V1
+candidates: [cover_face, shrink_down, blush, finger_tapping, avert_gaze, hide_behind_symbolic_shape]
+fixed_emotion_mapping: forbidden
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "continuity": "BLOCKED"
+  },
+  "failed_stage": "CONTINUITY",
+  "reason": "Required continuity result is blocked.",
+  "recommended_return_stage": "CONTINUITY",
+  "source_refs": [],
+  "state_scope": "PORTABLE_WEB_STATE_ONLY",
+  "status": "BLOCKED"
+}

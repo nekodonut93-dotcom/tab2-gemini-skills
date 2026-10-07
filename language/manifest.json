@@ -1,0 +1,20 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "language-policy",
+  "known_gaps": [
+    "This profile and typed export policy are Gemini-facing additions, not production runtime behavior."
+  ],
+  "production_sources": [
+    "ai_agent_brain/prompt_assembly/language_renderer.py",
+    "ai_agent_brain/prompt_assembly/prompt_engine.py"
+  ],
+  "related_tests": [
+    "tests/test_gemini_language_chibi_contracts.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "PROJECT_LANGUAGE_PROFILE_V1",
+  "source_skill_id": "tab2.gemini-language-policy",
+  "source_skill_manifest": "skills/language-policy/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

@@ -1,0 +1,12 @@
+policy_id: PORTABLE_VOICE_OVER_POLICY_V1
+enabled_by_project_profile: voice_over_enabled
+language_field: voice_over_language
+source_narrator_text:
+  preserve_verbatim: true
+  preserve_language: true
+  invent: false
+  translate: false
+if_disabled:
+  add_narrator_voice_over: false
+if_enabled_but_source_absent:
+  invent_narration: false

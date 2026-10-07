@@ -1,0 +1,9 @@
+candidate_family: secondary_motion
+status: PORTABLE_PROPOSAL_ONLY
+candidates:
+  - hair_motion_from_explicit_or_neutral_body_motion
+  - clothing_motion_from_explicit_or_neutral_body_motion
+constraints:
+  - Do not invent wind, weather, force, contact, or a new environmental cause.
+  - Keep secondary motion subordinate to the sourced primary action.
+  - Avoid material/wardrobe changes and identity drift.

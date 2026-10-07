@@ -1,0 +1,4296 @@
+{
+  "distribution_version": "1.1.0",
+  "file_provenance": "files map to source_production_files, source_skill_version, schema_version, distribution_version, status, known_gaps",
+  "files": {
+    "00_CORE/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_CORE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "00_CORE/CREATIVE_BOUNDARY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_CORE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "00_CORE/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_CORE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "00_CORE/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_CORE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "00_CORE/GEMINI_OPERATING_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_CORE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "00_CORE/WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_CORE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "CHANGELOG.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Release notes describe this independent package, not production runtime changes."
+      ],
+      "schema_version": "GEMINI_SKILLS_CHANGELOG_V1",
+      "source_production_files": [
+        "dist/build_distribution.py",
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "GEMINI_REPOSITORY_README_V1",
+      "source_production_files": [
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md",
+        "dist/README.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "RELEASE_METADATA.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Partial readiness; see audit/production_capability_audit.json."
+      ],
+      "schema_version": "GEMINI_SKILLS_RELEASE_METADATA_V1",
+      "source_production_files": [
+        "dist/build_distribution.py",
+        "architecture/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "audit/USER_GAP_CHECKLIST.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "USER_GAP_CHECKLIST_V1",
+      "source_production_files": [
+        "architecture/TAB2_DIRECTOR_ARCHITECTURE.md",
+        "architecture/TAB2_MODEL_ADAPTERS.md",
+        "architecture/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "audit/language_chibi_prebuild_audit.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Statuses describe reviewed evidence before the targeted portable package addition; they do not assert provider behavior."
+      ],
+      "schema_version": "LANGUAGE_CHIBI_PREBUILD_AUDIT_V1",
+      "source_production_files": [
+        "skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json",
+        "skills/08-seedance/vfx/comedic.yaml",
+        "skills/03-writer/SKILL.md",
+        "ai_agent_brain/prompt_assembly/language_renderer.py",
+        "ai_agent_brain/prompt_assembly/prompt_engine.py",
+        "tests/test_prompt_engine.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "audit/production_capability_audit.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Capability statuses describe checked-in production evidence, not live Gemini Web behavior."
+      ],
+      "schema_version": "PRODUCTION_CAPABILITY_AUDIT_V1",
+      "source_production_files": [
+        "architecture/audits/tab2_prompt_skill_inventory.json",
+        "architecture/TAB2_CALL_GRAPH.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "benchmarks/END_TO_END_PORTABLE_EXAMPLE.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable style example only; not an observed Gemini full-pipeline output."
+      ],
+      "schema_version": "PORTABLE_EXAMPLE_NOT_PIPELINE_ACCEPTANCE",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/vi_chibi_inner_monologue.yaml"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "benchmarks/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Full-pipeline Gemini Web benchmark is NOT IMPLEMENTED."
+      ],
+      "schema_version": "GEMINI_FULL_PIPELINE_BENCHMARK_STATUS_V1",
+      "source_production_files": [
+        "tests/fixtures/gemini_seedance_skill_cases_v1.json",
+        "architecture/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "benchmarks/REGRESSION_MAPPING.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Production regression tests are not Gemini quality benchmarks."
+      ],
+      "schema_version": "PRODUCTION_REGRESSION_MAP_V1",
+      "source_production_files": [
+        "tests/test_writer_frozen_contracts.py",
+        "tests/test_director_frozen_contracts.py",
+        "tests/test_gemini_seedance_skill_contracts.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "benchmarks/gemini_language_chibi_cases_v1.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Offline deterministic package contract cases; no live Gemini execution."
+      ],
+      "schema_version": "GEMINI_LANGUAGE_CHIBI_CASES_V1",
+      "source_production_files": [
+        "tests/fixtures/gemini_language_chibi_cases_v1.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "benchmarks/gemini_seedance_skill_cases_v1.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Offline portable contract cases only; not a Gemini Web or Gemini Pro quality benchmark."
+      ],
+      "schema_version": "GEMINI_SEEDANCE_SKILL_CASES_V1",
+      "source_production_files": [
+        "tests/fixtures/gemini_seedance_skill_cases_v1.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "benchmarks/vi_chibi_inner_monologue_example.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Synthetic authored example for package behavior; not production or Gemini output."
+      ],
+      "schema_version": "PORTABLE_SYNTHETIC_EXAMPLE_V1",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/vi_chibi_inner_monologue.yaml"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "build_from_production.py": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Requires the production workspace as its parent directory."
+      ],
+      "schema_version": "DETERMINISTIC_EXPORT_BUILDER_V1",
+      "source_production_files": [
+        "dist/build_distribution.py",
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "docs/generated/TAB2_GEMINI_SKILLS_KIEN_TRUC_VAN_HANH_VI.docx": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Documents describe portable package behavior only; production-only unknowns are explicitly listed in the document."
+      ],
+      "schema_version": "VIETNAMESE_TAB2_GEMINI_GUIDE_V1",
+      "source_production_files": [
+        "ai_agent_brain/prompt_assembly/language_renderer.py",
+        "ai_agent_brain/prompt_assembly/prompt_engine.py",
+        "architecture/GEMINI_LIVE_STORY_REPAIR_ACCEPTANCE.md",
+        "architecture/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md",
+        "architecture/GEMINI_STABLE_LIVE_ACCEPTANCE.md",
+        "architecture/SCENE_ACTION_ENRICHMENT.md",
+        "architecture/TAB2_CALL_GRAPH.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_DIRECTOR_ARCHITECTURE.md",
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_MODEL_ADAPTERS.md",
+        "architecture/TAB2_OUTPUT_SHEETS_SCENE_COPY_PHASE2.md",
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md",
+        "architecture/audits/tab2_prompt_skill_inventory.json",
+        "architecture/director_contract_freeze_v1.json",
+        "architecture/writer_contract_freeze_v1.json",
+        "dist/README.md",
+        "dist/build_distribution.py",
+        "dist/common/project-template/CHAPTER_STATUS.json",
+        "dist/common/project-template/CHARACTERS.json",
+        "dist/common/project-template/EVENTS.json",
+        "dist/common/project-template/KNOWLEDGE.json",
+        "dist/common/project-template/OPEN_THREADS.json",
+        "dist/common/project-template/PROJECT_STATE.json",
+        "dist/common/project-template/PROJECT_VISUAL_PROFILE.json",
+        "dist/common/project-template/README.md",
+        "dist/common/project-template/RELATIONSHIPS.json",
+        "dist/common/project-template/STORY_MEMORY.json",
+        "dist/common/schemas/project_visual_profile.schema.json",
+        "dist/common/schemas/story_memory_state.schema.json",
+        "dist/gemini/00-long-novel-orchestrator/SKILL.md",
+        "dist/gemini/00-long-novel-orchestrator/examples/00-long-novel-orchestrator.json",
+        "dist/gemini/00-long-novel-orchestrator/examples/BAD.md",
+        "dist/gemini/00-long-novel-orchestrator/examples/BLOCKED.md",
+        "dist/gemini/00-long-novel-orchestrator/examples/GOOD.md",
+        "dist/gemini/00-long-novel-orchestrator/manifest.yaml",
+        "dist/gemini/00-long-novel-orchestrator/references/CORE_CONTRACTS.md",
+        "dist/gemini/00-long-novel-orchestrator/references/DATA_AUTHORITY.md",
+        "dist/gemini/00-long-novel-orchestrator/references/FAILURE_RULES.md",
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_CHANGELOG.md",
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_READINESS_AUDIT_REPORT.md",
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_WEB_REGRESSION_MATRIX.md",
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_WEB_SAFE_STOP.md",
+        "dist/gemini/00-long-novel-orchestrator/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/00-long-novel-orchestrator/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/00-long-novel-orchestrator/references/SOURCE_TRACE.md",
+        "dist/gemini/00-long-novel-orchestrator/references/STAGE_REFERENCE.md",
+        "dist/gemini/00-long-novel-orchestrator/references/TAB2_CALL_GRAPH.md",
+        "dist/gemini/00-long-novel-orchestrator/references/TAB2_DATA_AUTHORITY.md",
+        "dist/gemini/00-long-novel-orchestrator/references/TAB2_WORKFLOW.md",
+        "dist/gemini/00-long-novel-orchestrator/references/schemas/quality_audit.schema.json",
+        "dist/gemini/00-long-novel-orchestrator/references/source_manifest.yaml",
+        "dist/gemini/00-long-novel-orchestrator/references/source_skill.md",
+        "dist/gemini/01-story-memory/SKILL.md",
+        "dist/gemini/01-story-memory/examples/01-story-memory.json",
+        "dist/gemini/01-story-memory/examples/BAD.md",
+        "dist/gemini/01-story-memory/examples/BLOCKED.md",
+        "dist/gemini/01-story-memory/examples/GOOD.md",
+        "dist/gemini/01-story-memory/manifest.yaml",
+        "dist/gemini/01-story-memory/references/CORE_CONTRACTS.md",
+        "dist/gemini/01-story-memory/references/DATA_AUTHORITY.md",
+        "dist/gemini/01-story-memory/references/FAILURE_RULES.md",
+        "dist/gemini/01-story-memory/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/01-story-memory/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/01-story-memory/references/SOURCE_TRACE.md",
+        "dist/gemini/01-story-memory/references/STAGE_REFERENCE.md",
+        "dist/gemini/01-story-memory/references/TAB2_DATA_AUTHORITY.md",
+        "dist/gemini/01-story-memory/references/TAB2_WORKFLOW.md",
+        "dist/gemini/01-story-memory/references/WRITER_STORY_MEMORY_SEMANTIC_INTEGRATION.md",
+        "dist/gemini/01-story-memory/references/schemas/story_memory_state.schema.json",
+        "dist/gemini/01-story-memory/references/source_manifest.yaml",
+        "dist/gemini/01-story-memory/references/source_skill.md",
+        "dist/gemini/02-continuity/SKILL.md",
+        "dist/gemini/02-continuity/examples/02-continuity.json",
+        "dist/gemini/02-continuity/examples/BAD.md",
+        "dist/gemini/02-continuity/examples/BLOCKED.md",
+        "dist/gemini/02-continuity/examples/GOOD.md",
+        "dist/gemini/02-continuity/manifest.yaml",
+        "dist/gemini/02-continuity/references/CORE_CONTRACTS.md",
+        "dist/gemini/02-continuity/references/DATA_AUTHORITY.md",
+        "dist/gemini/02-continuity/references/FAILURE_RULES.md",
+        "dist/gemini/02-continuity/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/02-continuity/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/02-continuity/references/SOURCE_TRACE.md",
+        "dist/gemini/02-continuity/references/STAGE_REFERENCE.md",
+        "dist/gemini/02-continuity/references/TAB2_DATA_AUTHORITY.md",
+        "dist/gemini/02-continuity/references/TAB2_FROZEN_CONTRACTS.md",
+        "dist/gemini/02-continuity/references/TAB2_WORKFLOW.md",
+        "dist/gemini/02-continuity/references/schemas/continuity_result.schema.json",
+        "dist/gemini/02-continuity/references/source_manifest.yaml",
+        "dist/gemini/02-continuity/references/source_skill.md",
+        "dist/gemini/03-writer/SKILL.md",
+        "dist/gemini/03-writer/examples/03-writer.json",
+        "dist/gemini/03-writer/examples/BAD.md",
+        "dist/gemini/03-writer/examples/BLOCKED.md",
+        "dist/gemini/03-writer/examples/GOOD.md",
+        "dist/gemini/03-writer/manifest.yaml",
+        "dist/gemini/03-writer/references/CORE_CONTRACTS.md",
+        "dist/gemini/03-writer/references/DATA_AUTHORITY.md",
+        "dist/gemini/03-writer/references/FAILURE_RULES.md",
+        "dist/gemini/03-writer/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/03-writer/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/03-writer/references/SOURCE_TRACE.md",
+        "dist/gemini/03-writer/references/STAGE_REFERENCE.md",
+        "dist/gemini/03-writer/references/TAB2_DATA_AUTHORITY.md",
+        "dist/gemini/03-writer/references/TAB2_FROZEN_CONTRACTS.md",
+        "dist/gemini/03-writer/references/TAB2_WORKFLOW.md",
+        "dist/gemini/03-writer/references/schemas/writer_scene.schema.json",
+        "dist/gemini/03-writer/references/source_manifest.yaml",
+        "dist/gemini/03-writer/references/source_skill.md",
+        "dist/gemini/04-enrichment/SKILL.md",
+        "dist/gemini/04-enrichment/examples/04-enrichment.json",
+        "dist/gemini/04-enrichment/examples/BAD.md",
+        "dist/gemini/04-enrichment/examples/BLOCKED.md",
+        "dist/gemini/04-enrichment/examples/GOOD.md",
+        "dist/gemini/04-enrichment/examples/benchmark_README.md",
+        "dist/gemini/04-enrichment/examples/writer_action_grounding_baseline_v1.json",
+        "dist/gemini/04-enrichment/manifest.yaml",
+        "dist/gemini/04-enrichment/references/CORE_CONTRACTS.md",
+        "dist/gemini/04-enrichment/references/DATA_AUTHORITY.md",
+        "dist/gemini/04-enrichment/references/FAILURE_RULES.md",
+        "dist/gemini/04-enrichment/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/04-enrichment/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/04-enrichment/references/SCENE_ACTION_ENRICHMENT.md",
+        "dist/gemini/04-enrichment/references/SOURCE_TRACE.md",
+        "dist/gemini/04-enrichment/references/STAGE_REFERENCE.md",
+        "dist/gemini/04-enrichment/references/TAB2_FROZEN_CONTRACTS.md",
+        "dist/gemini/04-enrichment/references/TAB2_WORKFLOW.md",
+        "dist/gemini/04-enrichment/references/schemas/enrichment_result.schema.json",
+        "dist/gemini/04-enrichment/references/source_manifest.yaml",
+        "dist/gemini/04-enrichment/references/source_skill.md",
+        "dist/gemini/05-director/INDEX.json",
+        "dist/gemini/05-director/INDEX.yaml",
+        "dist/gemini/05-director/SKILL.md",
+        "dist/gemini/05-director/concepts/blocking-and-screen-direction.yaml",
+        "dist/gemini/05-director/concepts/camera-and-composition.yaml",
+        "dist/gemini/05-director/concepts/deterministic-constraints.yaml",
+        "dist/gemini/05-director/concepts/narrative-and-audio-recommendations.yaml",
+        "dist/gemini/05-director/concepts/pacing-and-diagnostics.yaml",
+        "dist/gemini/05-director/concepts/performance-environment-and-look.yaml",
+        "dist/gemini/05-director/concepts/scene-geometry-and-continuity.yaml",
+        "dist/gemini/05-director/concepts/shot-design-and-coverage.yaml",
+        "dist/gemini/05-director/examples/05-director.json",
+        "dist/gemini/05-director/examples/BAD.md",
+        "dist/gemini/05-director/examples/BLOCKED.md",
+        "dist/gemini/05-director/examples/GOOD.md",
+        "dist/gemini/05-director/manifest.yaml",
+        "dist/gemini/05-director/model_adapters/README.md",
+        "dist/gemini/05-director/model_adapters/kling.yaml",
+        "dist/gemini/05-director/model_adapters/seedance.yaml",
+        "dist/gemini/05-director/model_adapters/sora.yaml",
+        "dist/gemini/05-director/model_adapters/veo.yaml",
+        "dist/gemini/05-director/prompt_structures/README.md",
+        "dist/gemini/05-director/prompt_structures/section-assembly.yaml",
+        "dist/gemini/05-director/references/CORE_CONTRACTS.md",
+        "dist/gemini/05-director/references/DATA_AUTHORITY.md",
+        "dist/gemini/05-director/references/FAILURE_RULES.md",
+        "dist/gemini/05-director/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/05-director/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/05-director/references/SOURCE_TRACE.md",
+        "dist/gemini/05-director/references/STAGE_REFERENCE.md",
+        "dist/gemini/05-director/references/TAB2_DIRECTOR_ARCHITECTURE.md",
+        "dist/gemini/05-director/references/TAB2_FROZEN_CONTRACTS.md",
+        "dist/gemini/05-director/references/TAB2_WORKFLOW.md",
+        "dist/gemini/05-director/references/director_authority_excerpt.md",
+        "dist/gemini/05-director/references/director_contract.md",
+        "dist/gemini/05-director/references/director_data_authority.md",
+        "dist/gemini/05-director/references/director_index.md",
+        "dist/gemini/05-director/references/director_prompt_structure.md",
+        "dist/gemini/05-director/references/schemas/director_plan.schema.json",
+        "dist/gemini/05-director/references/source_manifest.yaml",
+        "dist/gemini/05-director/references/source_skill.md",
+        "dist/gemini/06-prompt-engine/SKILL.md",
+        "dist/gemini/06-prompt-engine/examples/06-prompt-engine.json",
+        "dist/gemini/06-prompt-engine/examples/BAD.md",
+        "dist/gemini/06-prompt-engine/examples/BLOCKED.md",
+        "dist/gemini/06-prompt-engine/examples/GOOD.md",
+        "dist/gemini/06-prompt-engine/manifest.yaml",
+        "dist/gemini/06-prompt-engine/references/CORE_CONTRACTS.md",
+        "dist/gemini/06-prompt-engine/references/DATA_AUTHORITY.md",
+        "dist/gemini/06-prompt-engine/references/FAILURE_RULES.md",
+        "dist/gemini/06-prompt-engine/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/06-prompt-engine/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/06-prompt-engine/references/SOURCE_TRACE.md",
+        "dist/gemini/06-prompt-engine/references/STAGE_REFERENCE.md",
+        "dist/gemini/06-prompt-engine/references/TAB2_MODEL_ADAPTERS.md",
+        "dist/gemini/06-prompt-engine/references/TAB2_QUOTA_CACHE_RETRY.md",
+        "dist/gemini/06-prompt-engine/references/TAB2_WORKFLOW.md",
+        "dist/gemini/06-prompt-engine/references/director_prompt_structure.md",
+        "dist/gemini/06-prompt-engine/references/model_adapters.md",
+        "dist/gemini/06-prompt-engine/references/schemas/prompt_package.schema.json",
+        "dist/gemini/06-prompt-engine/references/source_manifest.yaml",
+        "dist/gemini/06-prompt-engine/references/source_skill.md",
+        "dist/gemini/07-quality-audit/SKILL.md",
+        "dist/gemini/07-quality-audit/examples/07-quality-audit.json",
+        "dist/gemini/07-quality-audit/examples/BAD.md",
+        "dist/gemini/07-quality-audit/examples/BLOCKED.md",
+        "dist/gemini/07-quality-audit/examples/GOOD.md",
+        "dist/gemini/07-quality-audit/manifest.yaml",
+        "dist/gemini/07-quality-audit/references/CORE_CONTRACTS.md",
+        "dist/gemini/07-quality-audit/references/DATA_AUTHORITY.md",
+        "dist/gemini/07-quality-audit/references/FAILURE_RULES.md",
+        "dist/gemini/07-quality-audit/references/MODEL_NEUTRAL_RULES.md",
+        "dist/gemini/07-quality-audit/references/OUTPUT_SCHEMAS.md",
+        "dist/gemini/07-quality-audit/references/SOURCE_TRACE.md",
+        "dist/gemini/07-quality-audit/references/STAGE_REFERENCE.md",
+        "dist/gemini/07-quality-audit/references/TAB2_FROZEN_CONTRACTS.md",
+        "dist/gemini/07-quality-audit/references/TAB2_QUOTA_CACHE_RETRY.md",
+        "dist/gemini/07-quality-audit/references/TAB2_WORKFLOW.md",
+        "dist/gemini/07-quality-audit/references/schemas/quality_audit.schema.json",
+        "dist/gemini/07-quality-audit/references/source_manifest.yaml",
+        "dist/gemini/07-quality-audit/references/source_skill.md",
+        "model_profiles/seedance.json",
+        "prompt_templates/seedance.json",
+        "skills/00-orchestrator/manifest.yaml",
+        "skills/01-story-memory/manifest.yaml",
+        "skills/02-continuity/manifest.yaml",
+        "skills/03-writer/SKILL.md",
+        "skills/03-writer/manifest.yaml",
+        "skills/04-enrichment/manifest.yaml",
+        "skills/04b-visual-completion/SKILL.md",
+        "skills/04b-visual-completion/body_motion.yaml",
+        "skills/04b-visual-completion/examples/README.md",
+        "skills/04b-visual-completion/forbidden_story_inference.yaml",
+        "skills/04b-visual-completion/gaze.yaml",
+        "skills/04b-visual-completion/manifest.yaml",
+        "skills/04b-visual-completion/reaction.yaml",
+        "skills/04b-visual-completion/safe_visual_inference.yaml",
+        "skills/04b-visual-completion/secondary_motion.yaml",
+        "skills/04c-action-interpreter/SKILL.md",
+        "skills/04c-action-interpreter/action_taxonomy.yaml",
+        "skills/04c-action-interpreter/examples/README.md",
+        "skills/04c-action-interpreter/manifest.yaml",
+        "skills/04d-action-choreography/SKILL.md",
+        "skills/04d-action-choreography/choreography_phases.yaml",
+        "skills/04d-action-choreography/examples/README.md",
+        "skills/04d-action-choreography/manifest.yaml",
+        "skills/04e-chibi-performance/SKILL.md",
+        "skills/04e-chibi-performance/constraints/diegetic_boundary.yaml",
+        "skills/04e-chibi-performance/constraints/quality_audit.yaml",
+        "skills/04e-chibi-performance/constraints/story_state.yaml",
+        "skills/04e-chibi-performance/examples/README.md",
+        "skills/04e-chibi-performance/examples/bad/chibi_injures_real_character.yaml",
+        "skills/04e-chibi-performance/examples/bad/real_punch_without_source.yaml",
+        "skills/04e-chibi-performance/examples/blocked/chibi_disabled.yaml",
+        "skills/04e-chibi-performance/examples/blocked/no_source_monologue.yaml",
+        "skills/04e-chibi-performance/examples/good/anger_symbolic_insert.yaml",
+        "skills/04e-chibi-performance/examples/good/nonverbal_reaction.yaml",
+        "skills/04e-chibi-performance/examples/good/return_to_main_scene.yaml",
+        "skills/04e-chibi-performance/examples/good/symbolic_crying.yaml",
+        "skills/04e-chibi-performance/examples/good/vi_chibi_inner_monologue.yaml",
+        "skills/04e-chibi-performance/grammars/anger.yaml",
+        "skills/04e-chibi-performance/grammars/body_reaction.yaml",
+        "skills/04e-chibi-performance/grammars/comedy_motion.yaml",
+        "skills/04e-chibi-performance/grammars/crying.yaml",
+        "skills/04e-chibi-performance/grammars/embarrassment.yaml",
+        "skills/04e-chibi-performance/grammars/excitement.yaml",
+        "skills/04e-chibi-performance/grammars/facial_expression.yaml",
+        "skills/04e-chibi-performance/grammars/fight_pantomime.yaml",
+        "skills/04e-chibi-performance/grammars/frustration.yaml",
+        "skills/04e-chibi-performance/grammars/panic.yaml",
+        "skills/04e-chibi-performance/grammars/romance.yaml",
+        "skills/04e-chibi-performance/grammars/surprise.yaml",
+        "skills/04e-chibi-performance/inner_monologue/nonverbal_chibi.yaml",
+        "skills/04e-chibi-performance/inner_monologue/routing.yaml",
+        "skills/04e-chibi-performance/inner_monologue/spoken_chibi.yaml",
+        "skills/04e-chibi-performance/inner_monologue/symbolic_action.yaml",
+        "skills/04e-chibi-performance/manifest.yaml",
+        "skills/05-director/manifest.yaml",
+        "skills/06-prompt-engine/manifest.yaml",
+        "skills/07-quality-audit/manifest.yaml",
+        "skills/08-seedance/SKILL.md",
+        "skills/08-seedance/action_grammar/README.md",
+        "skills/08-seedance/camera/continuity.yaml",
+        "skills/08-seedance/camera/framing.yaml",
+        "skills/08-seedance/camera/movement.yaml",
+        "skills/08-seedance/examples/README.md",
+        "skills/08-seedance/examples/bad/invented_dola_tag.yaml",
+        "skills/08-seedance/examples/bad/unsupported_action_and_vfx.yaml",
+        "skills/08-seedance/examples/blocked/style_unresolved.yaml",
+        "skills/08-seedance/examples/blocked/unsupported_action.yaml",
+        "skills/08-seedance/examples/good/chinese_3d_chibi.yaml",
+        "skills/08-seedance/examples/good/comedy_reaction.yaml",
+        "skills/08-seedance/examples/good/emotional_hospital.yaml",
+        "skills/08-seedance/examples/good/multi_reference.yaml",
+        "skills/08-seedance/examples/good/realistic.yaml",
+        "skills/08-seedance/examples/good/simple_dialogue.yaml",
+        "skills/08-seedance/examples/good/sword_slash.yaml",
+        "skills/08-seedance/examples/good/vehicle_arrival.yaml",
+        "skills/08-seedance/examples/good/wuxia.yaml",
+        "skills/08-seedance/manifest.yaml",
+        "skills/08-seedance/negatives/continuity_break.yaml",
+        "skills/08-seedance/negatives/extra_character.yaml",
+        "skills/08-seedance/negatives/identity_drift.yaml",
+        "skills/08-seedance/platforms/dola.yaml",
+        "skills/08-seedance/prompt_structure/seedance_prompt_v1.yaml",
+        "skills/08-seedance/reference_binding/multi_reference.yaml",
+        "skills/08-seedance/reference_binding/single_image_i2v.yaml",
+        "skills/08-seedance/schemas/seedance_scene_package.schema.json",
+        "skills/08-seedance/sheet_export/README.md",
+        "skills/08-seedance/sheet_export/sheet_export.schema.json",
+        "skills/08-seedance/timing/10s.yaml",
+        "skills/08-seedance/timing/15s.yaml",
+        "skills/08-seedance/timing/5s.yaml",
+        "skills/08-seedance/vfx/comedic.yaml",
+        "skills/08-seedance/vfx/fantasy.yaml",
+        "skills/08-seedance/vfx/realistic.yaml",
+        "skills/08-seedance/vfx/wuxia.yaml",
+        "skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json",
+        "skills/09-style-resolution/SKILL.md",
+        "skills/09-style-resolution/examples/README.md",
+        "skills/09-style-resolution/manifest.yaml",
+        "skills/09-style-resolution/style_presets.yaml",
+        "skills/09-style-resolution/style_questionnaire.yaml",
+        "skills/language-policy/LANGUAGE_POLICY.md",
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.schema.json",
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.template.json",
+        "skills/language-policy/dialogue_policy.yaml",
+        "skills/language-policy/examples/README.md",
+        "skills/language-policy/examples/vi_source_en_prompt_vi_speech.json",
+        "skills/language-policy/inner_monologue_policy.yaml",
+        "skills/language-policy/manifest.yaml",
+        "skills/language-policy/on_screen_text_policy.yaml",
+        "skills/language-policy/prompt_rendering_policy.yaml",
+        "skills/language-policy/voice_over_policy.yaml",
+        "tab2-gemini-skills/00_CORE/",
+        "tab2-gemini-skills/audit/",
+        "tab2-gemini-skills/seedance/",
+        "tab2-gemini-skills/skills/",
+        "tests/fixtures/gemini_language_chibi_cases_v1.json",
+        "tests/fixtures/gemini_seedance_skill_cases_v1.json",
+        "tests/test_director_frozen_contracts.py",
+        "tests/test_gemini_seedance_skill_contracts.py",
+        "tests/test_prompt_engine.py",
+        "tests/test_writer_frozen_contracts.py"
+      ],
+      "source_skill_version": null,
+      "status": "GENERATED_FROM_VALIDATED_PORTABLE_REPOSITORY"
+    },
+    "generate_word_guide.py": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Requires python-docx; output is descriptive of this repository, not production runtime."
+      ],
+      "schema_version": "VIETNAMESE_WORD_GUIDE_GENERATOR_V1",
+      "source_production_files": [
+        "tab2-gemini-skills/00_CORE/",
+        "tab2-gemini-skills/skills/",
+        "tab2-gemini-skills/seedance/",
+        "tab2-gemini-skills/audit/"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/LANGUAGE_POLICY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/LANGUAGE_POLICY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/PROJECT_LANGUAGE_PROFILE.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "This profile and typed export policy are Gemini-facing additions, not production runtime behavior."
+      ],
+      "schema_version": "PROJECT_LANGUAGE_PROFILE_V1",
+      "source_production_files": [
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/PROJECT_LANGUAGE_PROFILE.template.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.template.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/dialogue_policy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/dialogue_policy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/examples/vi_source_en_prompt_vi_speech.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "skills/language-policy/examples/vi_source_en_prompt_vi_speech.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/inner_monologue_policy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/inner_monologue_policy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "This profile and typed export policy are Gemini-facing additions, not production runtime behavior."
+      ],
+      "schema_version": "PORTABLE_LANGUAGE_MANIFEST_V1",
+      "source_production_files": [
+        "skills/language-policy/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/on_screen_text_policy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/on_screen_text_policy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/prompt_rendering_policy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/prompt_rendering_policy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "language/voice_over_policy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/language-policy/voice_over_policy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "PORTABLE_PROJECT_STATE_V1",
+      "source_production_files": [
+        "dist/common/project-template/README.md",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/chapter_status.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_CHAPTER_STATUS_COLLECTION_V1",
+      "source_production_files": [
+        "dist/common/project-template/CHAPTER_STATUS.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/characters.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_CHARACTERS_COLLECTION_V1",
+      "source_production_files": [
+        "dist/common/project-template/CHARACTERS.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/events.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_EVENTS_COLLECTION_V1",
+      "source_production_files": [
+        "dist/common/project-template/EVENTS.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/knowledge.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_KNOWLEDGE_COLLECTION_V1",
+      "source_production_files": [
+        "dist/common/project-template/KNOWLEDGE.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/open_threads.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_OPEN_THREADS_COLLECTION_V1",
+      "source_production_files": [
+        "dist/common/project-template/OPEN_THREADS.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/project_state.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_PROJECT_STATE_V1",
+      "source_production_files": [
+        "dist/common/project-template/PROJECT_STATE.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/project_visual_profile.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "The optional full-scene chibi flag is a portable preference and defaults false; it is not a production contract."
+      ],
+      "schema_version": "PROJECT_VISUAL_PROFILE_V1",
+      "source_production_files": [
+        "dist/common/schemas/project_visual_profile.schema.json",
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/relationships.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable permissive collection schema; does not claim equivalence to a production DTO."
+      ],
+      "schema_version": "PORTABLE_RELATIONSHIPS_COLLECTION_V1",
+      "source_production_files": [
+        "dist/common/project-template/RELATIONSHIPS.json",
+        "dist/build_distribution.py"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/schemas/story_memory_state.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable interchange schema; production validators remain authoritative."
+      ],
+      "schema_version": "story_memory_state.schema.json",
+      "source_production_files": [
+        "dist/common/schemas/story_memory_state.schema.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/CHAPTER_STATUS.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/CHAPTER_STATUS.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/CHARACTERS.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/CHARACTERS.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/EVENTS.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/EVENTS.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/KNOWLEDGE.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/KNOWLEDGE.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/OPEN_THREADS.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/OPEN_THREADS.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/PROJECT_LANGUAGE_PROFILE.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable project preference only; not production persistence."
+      ],
+      "schema_version": "PROJECT_LANGUAGE_PROFILE_V1",
+      "source_production_files": [
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.template.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/PROJECT_STATE.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable template and profile reference; not production persistence."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/PROJECT_STATE.json",
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.template.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/PROJECT_VISUAL_PROFILE.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "full_chibi_scene defaults to false; an enabled full-scene mode requires explicit user selection."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/PROJECT_VISUAL_PROFILE.json",
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/RELATIONSHIPS.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/RELATIONSHIPS.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "project_state/templates/STORY_MEMORY.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template is not a production DTO or persistence authority."
+      ],
+      "schema_version": "PORTABLE_WEB_STATE_ONLY",
+      "source_production_files": [
+        "dist/common/project-template/STORY_MEMORY.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/PROMPT_CONTRACT.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Additional rendered sections are portable guidance; production formatter owns its compiled section behavior."
+      ],
+      "schema_version": "SEEDANCE_PROMPT_CONTRACT_V1",
+      "source_production_files": [
+        "skills/08-seedance/prompt_structure/seedance_prompt_v1.yaml",
+        "skills/language-policy/LANGUAGE_POLICY.md",
+        "skills/04e-chibi-performance/SKILL.md",
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "SEEDANCE_PROMPT_CONTRACT_V1",
+      "source_production_files": [
+        "skills/08-seedance/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/README_STRUCTURE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "SEEDANCE_PROMPT_CONTRACT_V1",
+      "source_production_files": [
+        "skills/08-seedance/manifest.yaml",
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/action_grammar/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/action_grammar/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/body_mechanics/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No production body-mechanics action executor is claimed."
+      ],
+      "schema_version": "GEMINI_CREATIVE_BOUNDARY_CONTRACT_V1",
+      "source_production_files": [
+        "skills/04b-visual-completion/body_motion.yaml",
+        "skills/04d-action-choreography/choreography_phases.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/camera/continuity.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/camera/continuity.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/camera/framing.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/camera/framing.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/camera/movement.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/camera/movement.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/evidence/seedance_profile_summary_source.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Copied source profile is reference evidence only; it does not prove provider capability."
+      ],
+      "schema_version": "production-model-profile-evidence",
+      "source_production_files": [
+        "model_profiles/seedance.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/evidence/seedance_template_evidence.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Template evidence is not a Gemini-generated prompt or generation API guarantee."
+      ],
+      "schema_version": "production-prompt-template-evidence",
+      "source_production_files": [
+        "prompt_templates/seedance.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/bad/invented_dola_tag.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/bad/invented_dola_tag.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/bad/unsupported_action_and_vfx.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/bad/unsupported_action_and_vfx.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/blocked/style_unresolved.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/blocked/style_unresolved.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/blocked/unsupported_action.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/blocked/unsupported_action.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/chinese_3d_chibi.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/chinese_3d_chibi.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/comedy_reaction.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/comedy_reaction.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/emotional_hospital.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/emotional_hospital.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/multi_reference.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/multi_reference.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/realistic.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/realistic.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/simple_dialogue.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/simple_dialogue.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/sword_slash.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/sword_slash.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/vehicle_arrival.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/vehicle_arrival.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/vi_chibi_inner_monologue.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Synthetic portable example; not production or observed Gemini output."
+      ],
+      "schema_version": "PORTABLE_SYNTHETIC_EXAMPLE_V1",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/vi_chibi_inner_monologue.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/examples/good/wuxia.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/examples/good/wuxia.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/negatives/continuity_break.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/negatives/continuity_break.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/negatives/extra_character.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/negatives/extra_character.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/negatives/identity_drift.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/negatives/identity_drift.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/platforms/dola.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/platforms/dola.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/prompt_structure/seedance_prompt_v1.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/prompt_structure/seedance_prompt_v1.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/reference_binding/multi_reference.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/reference_binding/multi_reference.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/reference_binding/single_image_i2v.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/reference_binding/single_image_i2v.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/schemas/seedance_scene_package.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Additive portable fields only; no production or frozen contract is changed."
+      ],
+      "schema_version": "PORTABLE_SEEDANCE_SCENE_PACKAGE_V1",
+      "source_production_files": [
+        "skills/08-seedance/schemas/seedance_scene_package.schema.json",
+        "skills/language-policy/PROJECT_LANGUAGE_PROFILE.schema.json",
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/sheet_export/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/sheet_export/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/sheet_export/sheet_export.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "PORTABLE_VIDEO_PROMPT_SHEET_ROW_V1",
+      "source_production_files": [
+        "skills/08-seedance/sheet_export/sheet_export.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/timing/10s.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/timing/10s.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/timing/15s.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/timing/15s.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/timing/5s.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/timing/5s.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/timing/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "SEEDANCE_ADAPTIVE_TIMING_V1",
+      "source_production_files": [
+        "skills/08-seedance/timing/5s.yaml",
+        "skills/08-seedance/timing/10s.yaml",
+        "skills/08-seedance/timing/15s.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/vfx/comedic.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/vfx/comedic.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/vfx/fantasy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/vfx/fantasy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/vfx/realistic.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/vfx/realistic.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "seedance/vfx/wuxia.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/08-seedance/vfx/wuxia.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini Web cannot execute production deterministic validators; portable compliance is not production certification."
+      ],
+      "schema_version": "DirectorHandoffV2",
+      "source_production_files": [
+        "skills/00-orchestrator/manifest.yaml",
+        "dist/gemini/00-long-novel-orchestrator/SKILL.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/examples/00-long-novel-orchestrator.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/examples/00-long-novel-orchestrator.json"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/examples/BAD.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini Web cannot execute production deterministic validators; portable compliance is not production certification."
+      ],
+      "schema_version": "DirectorHandoffV2",
+      "source_production_files": [
+        "skills/00-orchestrator/manifest.yaml",
+        "dist/gemini/00-long-novel-orchestrator/manifest.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/manifest.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/GEMINI_CHANGELOG.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_CHANGELOG.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/GEMINI_READINESS_AUDIT_REPORT.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_READINESS_AUDIT_REPORT.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/GEMINI_WEB_REGRESSION_MATRIX.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_WEB_REGRESSION_MATRIX.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/GEMINI_WEB_SAFE_STOP.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/GEMINI_WEB_SAFE_STOP.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/TAB2_CALL_GRAPH.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/TAB2_DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/schemas/quality_audit.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/schemas/quality_audit.schema.json"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/references/source_skill.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/00-orchestrator/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/00-long-novel-orchestrator/SKILL.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini's portable state is not persisted Story Memory and cannot certify database currentness."
+      ],
+      "schema_version": "Story Memory semantic v1",
+      "source_production_files": [
+        "skills/01-story-memory/manifest.yaml",
+        "dist/gemini/01-story-memory/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/examples/01-story-memory.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/examples/01-story-memory.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/examples/BAD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini's portable state is not persisted Story Memory and cannot certify database currentness."
+      ],
+      "schema_version": "Story Memory semantic v1",
+      "source_production_files": [
+        "skills/01-story-memory/manifest.yaml",
+        "dist/gemini/01-story-memory/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/TAB2_DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/WRITER_STORY_MEMORY_SEMANTIC_INTEGRATION.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/WRITER_STORY_MEMORY_SEMANTIC_INTEGRATION.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/schemas/story_memory_state.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/schemas/story_memory_state.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/references/source_skill.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/01-story-memory/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/01-story-memory/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini Web execution of the production analyzer is not established."
+      ],
+      "schema_version": "operation-specific; see story_reasoning.py",
+      "source_production_files": [
+        "skills/02-continuity/manifest.yaml",
+        "dist/gemini/02-continuity/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/examples/02-continuity.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/02-continuity/examples/02-continuity.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/examples/BAD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini Web execution of the production analyzer is not established."
+      ],
+      "schema_version": "operation-specific; see story_reasoning.py",
+      "source_production_files": [
+        "skills/02-continuity/manifest.yaml",
+        "dist/gemini/02-continuity/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/TAB2_DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/TAB2_FROZEN_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/schemas/continuity_result.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/schemas/continuity_result.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/references/source_skill.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/02-continuity/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/02-continuity/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini Web output is not official screenplay state and cannot claim frozen readiness."
+      ],
+      "schema_version": "Writer FROZEN_V1",
+      "source_production_files": [
+        "skills/03-writer/manifest.yaml",
+        "dist/gemini/03-writer/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/examples/03-writer.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/03-writer/examples/03-writer.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/examples/BAD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Gemini Web output is not official screenplay state and cannot claim frozen readiness."
+      ],
+      "schema_version": "Writer FROZEN_V1",
+      "source_production_files": [
+        "skills/03-writer/manifest.yaml",
+        "dist/gemini/03-writer/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/TAB2_DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/TAB2_FROZEN_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/schemas/writer_scene.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/schemas/writer_scene.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/references/source_skill.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/03-writer/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/03-writer/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable micro-motion candidates do not imply production acceptance beyond existing test evidence; historical benchmark equivalence is unclaimed."
+      ],
+      "schema_version": "scene-visual-schema-v2",
+      "source_production_files": [
+        "skills/04-enrichment/manifest.yaml",
+        "dist/gemini/04-enrichment/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/examples/04-enrichment.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/examples/04-enrichment.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/examples/BAD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/examples/benchmark_README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/examples/benchmark_README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/examples/writer_action_grounding_baseline_v1.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/examples/writer_action_grounding_baseline_v1.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable micro-motion candidates do not imply production acceptance beyond existing test evidence; historical benchmark equivalence is unclaimed."
+      ],
+      "schema_version": "scene-visual-schema-v2",
+      "source_production_files": [
+        "skills/04-enrichment/manifest.yaml",
+        "dist/gemini/04-enrichment/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/SCENE_ACTION_ENRICHMENT.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/SCENE_ACTION_ENRICHMENT.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/TAB2_FROZEN_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/schemas/enrichment_result.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/schemas/enrichment_result.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/references/source_skill.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04-enrichment/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/04-enrichment/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No production acceptance matrix was found for every new portable visual-completion candidate."
+      ],
+      "schema_version": "VISUAL_COMPLETION_CANDIDATE_V1",
+      "source_production_files": [
+        "skills/04b-visual-completion/manifest.yaml",
+        "skills/04b-visual-completion/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/body_motion.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/body_motion.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/forbidden_story_inference.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/forbidden_story_inference.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/gaze.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/gaze.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/reaction.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/reaction.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/safe_visual_inference.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/safe_visual_inference.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04b-visual-completion/secondary_motion.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04b-visual-completion/secondary_motion.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04c-action-interpreter/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No production action-classification API, semantic contract, or acceptance suite is claimed."
+      ],
+      "schema_version": "ACTION_INTERPRETATION_V1",
+      "source_production_files": [
+        "skills/04c-action-interpreter/manifest.yaml",
+        "skills/04c-action-interpreter/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04c-action-interpreter/action_taxonomy.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04c-action-interpreter/action_taxonomy.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04c-action-interpreter/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04c-action-interpreter/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04c-action-interpreter/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04c-action-interpreter/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04d-action-choreography/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No production phase-by-phase action choreography executor or contract is claimed."
+      ],
+      "schema_version": "ACTION_CHOREOGRAPHY_V1",
+      "source_production_files": [
+        "skills/04d-action-choreography/manifest.yaml",
+        "skills/04d-action-choreography/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04d-action-choreography/choreography_phases.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04d-action-choreography/choreography_phases.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04d-action-choreography/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04d-action-choreography/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04d-action-choreography/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04d-action-choreography/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/constraints/diegetic_boundary.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/constraints/diegetic_boundary.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/constraints/quality_audit.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/constraints/quality_audit.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/constraints/story_state.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/constraints/story_state.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/bad/chibi_injures_real_character.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/bad/chibi_injures_real_character.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/bad/real_punch_without_source.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/bad/real_punch_without_source.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/blocked/chibi_disabled.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/blocked/chibi_disabled.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/blocked/no_source_monologue.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/blocked/no_source_monologue.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/good/anger_symbolic_insert.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/anger_symbolic_insert.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/good/nonverbal_reaction.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/nonverbal_reaction.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/good/return_to_main_scene.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/return_to_main_scene.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/good/symbolic_crying.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/symbolic_crying.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/examples/good/vi_chibi_inner_monologue.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/examples/good/vi_chibi_inner_monologue.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/anger.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/anger.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/body_reaction.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/body_reaction.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/comedy_motion.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/comedy_motion.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/crying.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/crying.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/embarrassment.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/embarrassment.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/excitement.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/excitement.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/facial_expression.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/facial_expression.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/fight_pantomime.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/fight_pantomime.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/frustration.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/frustration.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/panic.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/panic.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/romance.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/romance.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/grammars/surprise.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/grammars/surprise.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/inner_monologue/nonverbal_chibi.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/inner_monologue/nonverbal_chibi.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/inner_monologue/routing.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/inner_monologue/routing.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/inner_monologue/spoken_chibi.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/inner_monologue/spoken_chibi.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/inner_monologue/symbolic_action.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/inner_monologue/symbolic_action.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No production chibi performance service or frozen contract is evidenced."
+      ],
+      "schema_version": "CHIBI_PERFORMANCE_REFERENCE_V1",
+      "source_production_files": [
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/04e-chibi-performance/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/INDEX.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/05-director/INDEX.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/INDEX.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/INDEX.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Current persisted Director Skill-store contents/version/activation remain UNKNOWN; portable index is not production router.",
+        "A scored production Skill ranking/order algorithm is not evidenced; no score or tie-break behavior is invented."
+      ],
+      "schema_version": "DIRECTOR FROZEN_V1",
+      "source_production_files": [
+        "skills/05-director/manifest.yaml",
+        "dist/gemini/05-director/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/blocking-and-screen-direction.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/blocking-and-screen-direction.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/camera-and-composition.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/camera-and-composition.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/deterministic-constraints.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/deterministic-constraints.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/narrative-and-audio-recommendations.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/narrative-and-audio-recommendations.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/pacing-and-diagnostics.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/pacing-and-diagnostics.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/performance-environment-and-look.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/performance-environment-and-look.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/scene-geometry-and-continuity.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/scene-geometry-and-continuity.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/concepts/shot-design-and-coverage.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/concepts/shot-design-and-coverage.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/examples/05-director.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/05-director/examples/05-director.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/examples/BAD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Current persisted Director Skill-store contents/version/activation remain UNKNOWN; portable index is not production router.",
+        "A scored production Skill ranking/order algorithm is not evidenced; no score or tie-break behavior is invented."
+      ],
+      "schema_version": "DIRECTOR FROZEN_V1",
+      "source_production_files": [
+        "skills/05-director/manifest.yaml",
+        "dist/gemini/05-director/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/model_adapters/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/model_adapters/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/model_adapters/kling.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/model_adapters/kling.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/model_adapters/seedance.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/model_adapters/seedance.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/model_adapters/sora.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/model_adapters/sora.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/model_adapters/veo.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/model_adapters/veo.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/prompt_structures/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/prompt_structures/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/prompt_structures/section-assembly.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/prompt_structures/section-assembly.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/TAB2_DIRECTOR_ARCHITECTURE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/TAB2_DIRECTOR_ARCHITECTURE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/TAB2_FROZEN_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/director_authority_excerpt.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/director_authority_excerpt.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/director_contract.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/director_contract.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/director_data_authority.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/director_data_authority.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/director_index.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/director_index.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/director_prompt_structure.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/director_prompt_structure.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/schemas/director_plan.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/05-director/references/schemas/director_plan.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/references/source_skill.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/05-director/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/05-director/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No Seedance generation API capability is established by formatting assets; PromptLanguageRenderer cache version coverage is a documented review gap."
+      ],
+      "schema_version": "PromptEngine input/output contracts; see frozen and PromptEngine tests",
+      "source_production_files": [
+        "skills/06-prompt-engine/manifest.yaml",
+        "dist/gemini/06-prompt-engine/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/examples/06-prompt-engine.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/examples/06-prompt-engine.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/examples/BAD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No Seedance generation API capability is established by formatting assets; PromptLanguageRenderer cache version coverage is a documented review gap."
+      ],
+      "schema_version": "PromptEngine input/output contracts; see frozen and PromptEngine tests",
+      "source_production_files": [
+        "skills/06-prompt-engine/manifest.yaml",
+        "dist/gemini/06-prompt-engine/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/TAB2_MODEL_ADAPTERS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/TAB2_QUOTA_CACHE_RETRY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/TAB2_QUOTA_CACHE_RETRY.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/director_prompt_structure.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/director_prompt_structure.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/model_adapters.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/model_adapters.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/schemas/prompt_package.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/schemas/prompt_package.schema.json"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/references/source_skill.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/06-prompt-engine/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/06-prompt-engine/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/LANGUAGE_CHIBI_RULES.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable reference checks only; not production validators."
+      ],
+      "schema_version": "LANGUAGE_CHIBI_PORTABLE_AUDIT_V1",
+      "source_production_files": [
+        "skills/04e-chibi-performance/constraints/quality_audit.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No Gemini Web full-pipeline benchmark or quality threshold is present."
+      ],
+      "schema_version": "Writer FROZEN_V1; DIRECTOR FROZEN_V1; DirectorHandoffV2",
+      "source_production_files": [
+        "skills/07-quality-audit/manifest.yaml",
+        "dist/gemini/07-quality-audit/SKILL.md",
+        "skills/04e-chibi-performance/constraints/quality_audit.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/examples/07-quality-audit.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/examples/07-quality-audit.json"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/examples/BAD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/examples/BAD.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/examples/BLOCKED.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/examples/BLOCKED.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/examples/GOOD.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/examples/GOOD.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No Gemini Web full-pipeline benchmark or quality threshold is present."
+      ],
+      "schema_version": "Writer FROZEN_V1; DIRECTOR FROZEN_V1; DirectorHandoffV2",
+      "source_production_files": [
+        "skills/07-quality-audit/manifest.yaml",
+        "dist/gemini/07-quality-audit/manifest.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/manifest.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/CORE_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/CORE_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/FAILURE_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/FAILURE_RULES.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/MODEL_NEUTRAL_RULES.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/MODEL_NEUTRAL_RULES.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/OUTPUT_SCHEMAS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/OUTPUT_SCHEMAS.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/SOURCE_TRACE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/SOURCE_TRACE.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/STAGE_REFERENCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/STAGE_REFERENCE.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/TAB2_FROZEN_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/TAB2_QUOTA_CACHE_RETRY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/TAB2_QUOTA_CACHE_RETRY.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/TAB2_WORKFLOW.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/TAB2_WORKFLOW.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/schemas/quality_audit.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "portable-schema-unversioned",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/schemas/quality_audit.schema.json"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/source_manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/source_manifest.yaml"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/references/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/references/source_skill.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/07-quality-audit/source_skill.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "dist/gemini/07-quality-audit/SKILL.md"
+      ],
+      "source_skill_version": "1.1.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/08-seedance/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No Gemini Web full-pipeline benchmark or quality threshold is present."
+      ],
+      "schema_version": "SEEDANCE_PROMPT_CONTRACT_V1",
+      "source_production_files": [
+        "skills/08-seedance/manifest.yaml",
+        "skills/08-seedance/SKILL.md",
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/08-seedance/manifest.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "PORTABLE_SKILL_MANIFEST_V1",
+      "source_production_files": [
+        "skills/08-seedance/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "The optional full-scene chibi flag is a portable preference and defaults false; it is not a production contract."
+      ],
+      "schema_version": "PROJECT_VISUAL_PROFILE_V1",
+      "source_production_files": [
+        "skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json",
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/09-style-resolution/SKILL.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "No production persistence or runtime gate for PROJECT_VISUAL_PROFILE."
+      ],
+      "schema_version": "PROJECT_VISUAL_PROFILE_V1",
+      "source_production_files": [
+        "skills/09-style-resolution/manifest.yaml",
+        "skills/09-style-resolution/SKILL.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/09-style-resolution/examples/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/09-style-resolution/examples/README.md"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/09-style-resolution/manifest.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/09-style-resolution/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/09-style-resolution/style_presets.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "not_applicable",
+      "source_production_files": [
+        "skills/09-style-resolution/style_presets.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "skills/09-style-resolution/style_questionnaire.yaml": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "STYLE_RESOLUTION_QUESTIONNAIRE_V1",
+      "source_production_files": [
+        "skills/09-style-resolution/style_questionnaire.yaml",
+        "skills/04e-chibi-performance/manifest.yaml"
+      ],
+      "source_skill_version": "1.0.0",
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/GEMINI_LIVE_STORY_REPAIR_ACCEPTANCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/GEMINI_LIVE_STORY_REPAIR_ACCEPTANCE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/GEMINI_STABLE_LIVE_ACCEPTANCE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/GEMINI_STABLE_LIVE_ACCEPTANCE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/README.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "SOURCE_EVIDENCE_INDEX_V1",
+      "source_production_files": [
+        "architecture/TAB2_CALL_GRAPH.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DIRECTOR_ARCHITECTURE.md",
+        "architecture/TAB2_MODEL_ADAPTERS.md",
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md",
+        "architecture/SCENE_ACTION_ENRICHMENT.md",
+        "architecture/GEMINI_MODEL_ROUTING_AND_LIVE_ACCEPTANCE.md",
+        "architecture/GEMINI_STABLE_LIVE_ACCEPTANCE.md",
+        "architecture/GEMINI_LIVE_STORY_REPAIR_ACCEPTANCE.md",
+        "architecture/TAB2_OUTPUT_SHEETS_SCENE_COPY_PHASE2.md",
+        "architecture/writer_contract_freeze_v1.json",
+        "architecture/director_contract_freeze_v1.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/SCENE_ACTION_ENRICHMENT.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/SCENE_ACTION_ENRICHMENT.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_CALL_GRAPH.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_CALL_GRAPH.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_DATA_AUTHORITY.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_DIRECTOR_ARCHITECTURE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_DIRECTOR_ARCHITECTURE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_FROZEN_CONTRACTS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_MODEL_ADAPTERS.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_OUTPUT_SHEETS_SCENE_COPY_PHASE2.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_OUTPUT_SHEETS_SCENE_COPY_PHASE2.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/TAB2_PROMPT_SKILL_ARCHITECTURE.md": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Architecture document is evidence-linked guidance; production code/tests remain executable authority."
+      ],
+      "schema_version": "architecture-reference",
+      "source_production_files": [
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "source_evidence/frozen_contracts/director_contract_freeze_v1.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "frozen-contract-registry",
+      "source_production_files": [
+        "architecture/director_contract_freeze_v1.json"
+      ],
+      "source_skill_version": null,
+      "status": "FROZEN_PRODUCTION_CONTRACT_REFERENCE_ONLY"
+    },
+    "source_evidence/frozen_contracts/writer_contract_freeze_v1.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "frozen-contract-registry",
+      "source_production_files": [
+        "architecture/writer_contract_freeze_v1.json"
+      ],
+      "source_skill_version": null,
+      "status": "FROZEN_PRODUCTION_CONTRACT_REFERENCE_ONLY"
+    },
+    "validation/frozen_contract_baseline.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Baseline is initialized from the production snapshot at first package build; repository has no git metadata."
+      ],
+      "schema_version": "TAB2_FROZEN_CONTRACT_HASH_BASELINE_V1",
+      "source_production_files": [
+        "architecture/writer_contract_freeze_v1.json",
+        "architecture/director_contract_freeze_v1.json"
+      ],
+      "source_skill_version": null,
+      "status": "FROZEN_PRODUCTION_CONTRACT_REFERENCE_ONLY"
+    },
+    "validation/production_test_map.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [],
+      "schema_version": "PRODUCTION_TEST_MAP_V1",
+      "source_production_files": [
+        "architecture/audits/tab2_prompt_skill_inventory.json"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    },
+    "workflow/STAGE_TRANSITIONS.json": {
+      "distribution_version": "1.1.0",
+      "known_gaps": [
+        "Portable stage list extends labels for reference-only visual/action layers; it is not a changed production runtime pipeline."
+      ],
+      "schema_version": "GEMINI_TAB2_PORTABLE_REFERENCE_V1",
+      "source_production_files": [
+        "architecture/TAB2_CALL_GRAPH.md",
+        "architecture/TAB2_FROZEN_CONTRACTS.md",
+        "architecture/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill_version": null,
+      "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+    }
+  },
+  "generated_at": "2026-10-07",
+  "manifest_provenance": {
+    "distribution_version": "1.1.0",
+    "known_gaps": [
+      "The manifest indexes all package files except itself to avoid recursive self-hashing."
+    ],
+    "schema_version": "SOURCE_MANIFEST_V1",
+    "source_production_files": [
+      "dist/build_distribution.py",
+      "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md"
+    ],
+    "source_skill_version": null,
+    "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+  },
+  "repository": "tab2-gemini-skills",
+  "runtime_authority": false,
+  "source_of_truth": "parent production repository"
+}

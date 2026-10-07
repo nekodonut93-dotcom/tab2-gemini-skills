@@ -1,0 +1,21 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "04e-chibi-performance",
+  "known_gaps": [
+    "No production chibi performance service or frozen contract is evidenced."
+  ],
+  "production_sources": [
+    "skills/03-writer/SKILL.md",
+    "skills/08-seedance/vfx/comedic.yaml",
+    "skills/08-seedance/examples/good/chinese_3d_chibi.yaml"
+  ],
+  "related_tests": [
+    "tests/test_gemini_language_chibi_contracts.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "CHIBI_PERFORMANCE_REFERENCE_V1",
+  "source_skill_id": "tab2.gemini-chibi-inner-monologue-performance",
+  "source_skill_manifest": "skills/04e-chibi-performance/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

@@ -1,0 +1,6 @@
+negative_constraints:
+  - no_extra_character
+  - no_duplicate_character
+  - no_unresolved_identity_substitution
+character_count_source: accepted_writer_scene
+failure_status_when_identity_unclear: UNRESOLVED

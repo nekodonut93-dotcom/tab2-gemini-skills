@@ -1,0 +1,32 @@
+skill_id: tab2.action-choreography-reference
+version: 1.0.0
+owner: Portable physical presentation proposal
+category: ACTION_CHOREOGRAPHY
+description: Realize classified source actions through context-aware optional physical phases.
+use_when:
+  - A source-grounded action has a resolved actor and semantic class
+avoid_when:
+  - Actor, target, direction or action outcome is unresolved
+inputs:
+  - Writer action, action classification, visible scene context, resolved project style
+outputs:
+  - Optional choreography phases with evidence and state-preservation metadata
+requires:
+  - Action classification remains subordinate to source semantics
+conflicts_with:
+  - Invented action, contact, injury, outcome or acrobatics
+compatible_models:
+  - model-neutral portable guidance
+authority:
+  - Writer owns WHAT; choreography is a presentation proposal
+must_not_change:
+  - Writer FROZEN_V1 or Director FROZEN_V1
+  - Story Memory or PromptEngine authority
+source_files:
+  - skills/04d-action-choreography/
+source_functions: []
+related_tests:
+  - tests/test_gemini_seedance_skill_contracts.py
+prompt_version: GEMINI_CREATIVE_BOUNDARY_CONTRACT_V1
+schema_version: ACTION_CHOREOGRAPHY_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

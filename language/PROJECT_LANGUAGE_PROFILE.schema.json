@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "PROJECT_LANGUAGE_PROFILE_V1",
+  "title": "Portable user-selected project language profile",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "state_scope": {"const": "PORTABLE_WEB_STATE_ONLY"},
+    "profile_status": {"enum": ["LANGUAGE_UNRESOLVED", "RESOLVED"]},
+    "selected_by": {"enum": ["USER", "UNRESOLVED"]},
+    "source_language": {"type": ["string", "null"], "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+    "prompt_language": {"type": ["string", "null"], "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+    "spoken_dialogue_language": {"type": ["string", "null"], "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+    "inner_monologue_language": {"type": ["string", "null"], "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+    "voice_over_enabled": {"type": "boolean"},
+    "voice_over_language": {"type": ["string", "null"], "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+    "on_screen_text_language": {"type": ["string", "null"], "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"},
+    "project_id": {"type": "string", "minLength": 1},
+    "revision": {"type": "integer", "minimum": 1},
+    "source_refs": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": [
+    "state_scope",
+    "profile_status",
+    "selected_by",
+    "source_language",
+    "prompt_language",
+    "spoken_dialogue_language",
+    "inner_monologue_language",
+    "voice_over_enabled",
+    "voice_over_language",
+    "on_screen_text_language",
+    "project_id",
+    "revision",
+    "source_refs"
+  ],
+  "allOf": [
+    {
+      "if": {"properties": {"profile_status": {"const": "RESOLVED"}}},
+      "then": {
+        "properties": {
+          "selected_by": {"const": "USER"},
+          "source_language": {"type": "string"},
+          "prompt_language": {"type": "string"},
+          "spoken_dialogue_language": {"type": "string"},
+          "inner_monologue_language": {"type": "string"},
+          "on_screen_text_language": {"type": "string"},
+          "voice_over_language": {"type": ["string", "null"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"voice_over_enabled": {"const": true}}},
+      "then": {"properties": {"voice_over_language": {"type": "string"}}}
+    },
+    {
+      "if": {"properties": {"profile_status": {"const": "LANGUAGE_UNRESOLVED"}}},
+      "then": {
+        "properties": {
+          "selected_by": {"const": "UNRESOLVED"},
+          "source_language": {"type": "null"},
+          "prompt_language": {"type": "null"},
+          "spoken_dialogue_language": {"type": "null"},
+          "inner_monologue_language": {"type": "null"},
+          "voice_over_enabled": {"const": false},
+          "voice_over_language": {"type": "null"},
+          "on_screen_text_language": {"type": "null"}
+        },
+        "required": [
+          "source_language",
+          "prompt_language",
+          "spoken_dialogue_language",
+          "inner_monologue_language",
+          "voice_over_enabled",
+          "voice_over_language",
+          "on_screen_text_language"
+        ]
+      }
+    }
+  ]
+}

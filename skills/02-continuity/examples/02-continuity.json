@@ -1,0 +1,10 @@
+{
+  "current_chapter_order": 2,
+  "derived_only": true,
+  "findings": [],
+  "source_refs": [
+    "fixture://chapter/2"
+  ],
+  "state_scope": "PORTABLE_WEB_STATE_ONLY",
+  "status": "PASS"
+}

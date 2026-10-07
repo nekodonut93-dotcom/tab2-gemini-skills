@@ -1,0 +1,8 @@
+case_id: synthetic_blocked_unsupported_action
+status: UNRESOLVED
+source_action: "He attacked."
+unresolved:
+  - actor_identity
+  - action_method
+  - target
+fallback: "Do not choose a strike, slash, target, or outcome."

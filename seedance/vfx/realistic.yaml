@@ -1,0 +1,9 @@
+profile_policy: realistic_only
+allowed:
+  - natural_motion_blur_when_motion_is_present
+  - physically_plausible_light_and_material_response_when_scene_supports_it
+forbidden_without_explicit_source_and_user_policy:
+  - energy_trail
+  - magical_impact
+  - supernatural_glow
+  - invented_explosion

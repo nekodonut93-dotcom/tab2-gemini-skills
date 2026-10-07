@@ -1,0 +1,16 @@
+contract_id: GEMINI_CREATIVE_BOUNDARY_CONTRACT_V1
+version: 1.0.0
+forbidden:
+  - new_event
+  - future_knowledge
+  - new_relationship_semantic
+  - unsupported_dialogue
+  - unsupported_location
+  - unsupported_important_prop
+  - invented_injury
+  - invented_death
+  - invented_reveal
+  - changed_outcome
+  - changed_story_state
+on_violation: REJECT
+authority_note: Portable guidance only; production deterministic validators remain authoritative.

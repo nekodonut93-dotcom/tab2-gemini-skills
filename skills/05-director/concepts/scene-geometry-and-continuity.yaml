@@ -1,0 +1,19 @@
+id: scene_geometry_and_continuity
+type: DIRECTING_KNOWLEDGE
+status: SOURCE_VERIFIED_REFERENCE
+owner: DirectorReasoning
+source:
+  - application/director_reasoning/
+  - application/director_workflow/
+related_tests:
+  - tests/test_director_workflow.py
+scope:
+  - Scene geography
+  - Continuity memory
+  - Multi-shot consistency
+constraints:
+  - Evidence and screenplay identity remain production-validated
+  - Does not establish Writer story facts
+selectors:
+  scene_type: unknown
+  energy: unknown

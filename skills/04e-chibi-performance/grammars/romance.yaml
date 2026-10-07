@@ -1,0 +1,6 @@
+grammar_id: CHIBI_ROMANCE_CANDIDATES_V1
+candidates: [blush, avert_gaze, tiny_heart_accent, hide_face, stiff_freeze]
+fixed_emotion_mapping: forbidden
+heart_accent_is_literal_story_object: false
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE

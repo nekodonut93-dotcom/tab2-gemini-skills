@@ -1,0 +1,8 @@
+status: PORTABLE_QA_RULES
+checks:
+  - preserve_screen_direction_when_established
+  - preserve_character_identity_and_count
+  - preserve_scene_location_and_time
+  - preserve_source_supported_start_and_end_state
+  - preserve_reference_roles
+failure_status: BLOCKED_OR_UNRESOLVED

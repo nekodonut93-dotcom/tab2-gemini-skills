@@ -1,0 +1,110 @@
+{
+  "audit_date": "2026-10-07",
+  "classification_values": [
+    "VERIFIED",
+    "PARTIAL",
+    "MISSING",
+    "UNKNOWN"
+  ],
+  "contracts_changed": false,
+  "findings": [
+    {
+      "capability": "User-resolved visual style, inner_monologue and chibi_insertions flags",
+      "evidence": [
+        "skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json",
+        "skills/09-style-resolution/style_questionnaire.yaml",
+        "skills/09-style-resolution/style_presets.yaml"
+      ],
+      "gap": "Existing profile had no explicit full_chibi_scene scope before this package update.",
+      "status": "VERIFIED"
+    },
+    {
+      "capability": "Brief nonverbal chibi insert and comedy restrictions",
+      "evidence": [
+        "skills/08-seedance/vfx/comedic.yaml",
+        "skills/08-seedance/examples/good/comedy_reaction.yaml"
+      ],
+      "gap": "Did not type monologue modes or enforce a diegetic/state boundary for every symbolic action.",
+      "status": "PARTIAL"
+    },
+    {
+      "capability": "Chinese 3D chibi example",
+      "evidence": [
+        "skills/08-seedance/examples/good/chinese_3d_chibi.yaml"
+      ],
+      "gap": "Style example contains no concrete typed language, source monologue, safe symbolic-action, or return-to-main-world example.",
+      "status": "PARTIAL"
+    },
+    {
+      "capability": "Writer exact source dialogue",
+      "evidence": [
+        "skills/03-writer/SKILL.md",
+        "tests/test_writer_frozen_contracts.py"
+      ],
+      "gap": "Portable Seedance did not have language-typed fields for each speech category.",
+      "status": "VERIFIED"
+    },
+    {
+      "capability": "PromptLanguageRenderer target prompt language",
+      "evidence": [
+        "ai_agent_brain/prompt_assembly/language_renderer.py",
+        "ai_agent_brain/prompt_assembly/prompt_engine.py",
+        "tests/test_prompt_engine.py"
+      ],
+      "gap": "Renderer target language does not itself establish a separate project source/spoken-language profile.",
+      "status": "VERIFIED"
+    },
+    {
+      "capability": "Protected source speech through every rendering path",
+      "evidence": [
+        "ai_agent_brain/prompt_assembly/prompt_engine.py",
+        "ai_agent_brain/prompt_assembly/language_renderer.py"
+      ],
+      "gap": "Renderer protects caller-supplied exact text; no evidence that a separate project profile guarantees every speech/VO path end-to-end.",
+      "status": "PARTIAL"
+    },
+    {
+      "capability": "Independent PROJECT_LANGUAGE_PROFILE and typed speech categories",
+      "evidence": [
+        "tests/test_prompt_engine.py"
+      ],
+      "gap": "No frozen production project language profile or typed portable speech policy existed.",
+      "status": "MISSING"
+    },
+    {
+      "capability": "Chibi spoken monologue, symbolic pantomime and real-vs-symbolic action boundary",
+      "evidence": [
+        "skills/08-seedance/vfx/comedic.yaml",
+        "skills/04d-action-choreography/manifest.yaml"
+      ],
+      "gap": "No production chibi performance authority or complete portable contract existed.",
+      "status": "MISSING"
+    },
+    {
+      "capability": "PromptLanguageRenderer spoken-language schema",
+      "evidence": [
+        "ai_agent_brain/prompt_assembly/language_renderer.py"
+      ],
+      "gap": "Production rendering only accepts a prompt target language; no separate spoken language routing interface is evidenced.",
+      "status": "UNKNOWN"
+    }
+  ],
+  "production_changed": false,
+  "runtime_authority_added": false,
+  "scope": [
+    "style resolution",
+    "inner_monologue",
+    "chibi_insertions",
+    "comedic VFX",
+    "dialogue",
+    "dialogue performance",
+    "action interpreter",
+    "action choreography",
+    "visual completion",
+    "Seedance prompt structure",
+    "PromptLanguageRenderer",
+    "prompt language",
+    "Chinese 3D chibi example",
+    "comedy reaction example"
+  ]
+}

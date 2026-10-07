@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "not": {
+    "anyOf": [
+      {
+        "required": [
+          "new_event"
+        ]
+      },
+      {
+        "required": [
+          "new_prop"
+        ]
+      },
+      {
+        "required": [
+          "new_location"
+        ]
+      },
+      {
+        "required": [
+          "new_dialogue"
+        ]
+      },
+      {
+        "required": [
+          "future_knowledge"
+        ]
+      },
+      {
+        "required": [
+          "relationship_escalation"
+        ]
+      },
+      {
+        "required": [
+          "outcome_state_change"
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "candidate_actions": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rejection_reasons": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "ACCEPT",
+        "NONE",
+        "BLOCKED",
+        "UNRESOLVED",
+        "REJECTED"
+      ]
+    },
+    "story_state_unchanged": {
+      "const": true
+    }
+  },
+  "required": [
+    "state_scope",
+    "status",
+    "scene_id",
+    "candidate_actions",
+    "source_refs",
+    "rejection_reasons",
+    "story_state_unchanged"
+  ],
+  "type": "object"
+}

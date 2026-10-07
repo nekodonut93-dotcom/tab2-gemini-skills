@@ -1,0 +1,17 @@
+id: shot_design_and_coverage
+type: DIRECTING_KNOWLEDGE
+status: SOURCE_VERIFIED_REFERENCE
+owner: DirectorReasoning
+source:
+  - application/director_reasoning/
+  - application/director_workflow/
+related_tests:
+  - tests/test_director_workflow.py
+scope:
+  - Shot purpose and coverage
+  - Shot size and sequence
+  - Shot splitting
+constraints:
+  - Structured planning is distinct from final prompt syntax
+selectors:
+  framing: unknown

@@ -1,0 +1,24 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "07-quality-audit",
+  "known_gaps": [
+    "No Gemini Web full-pipeline benchmark or quality threshold is present."
+  ],
+  "production_sources": [
+    "architecture/writer_contract_freeze_v1.json",
+    "architecture/director_contract_freeze_v1.json",
+    "architecture/TAB2_FROZEN_CONTRACTS.md"
+  ],
+  "related_tests": [
+    "tests/test_writer_frozen_contracts.py",
+    "tests/test_director_frozen_contracts.py",
+    "tests/test_writer_action_grounding_benchmark.py",
+    "tests/test_tab2_canonical_pipeline_phase1.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "Writer FROZEN_V1; DIRECTOR FROZEN_V1; DirectorHandoffV2",
+  "source_skill_id": "tab2.quality-and-regression-audit",
+  "source_skill_manifest": "skills/07-quality-audit/manifest.yaml",
+  "source_skill_version": "1.1.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

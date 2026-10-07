@@ -1,0 +1,10 @@
+status: DIRECTOR_HOW_PORTABLE_REFERENCE
+fields:
+  - movement_type
+  - movement_direction
+  - movement_target
+  - movement_purpose
+constraints:
+  - "Camera movement is Director HOW, not source fact."
+  - "Unknown Seedance/Dola controls remain unspecified."
+  - "Do not introduce motion that implies an unsupported event or reveal."

@@ -1,0 +1,15 @@
+{
+  "inner_monologue_language": null,
+  "on_screen_text_language": null,
+  "profile_status": "LANGUAGE_UNRESOLVED",
+  "project_id": "UNRESOLVED",
+  "prompt_language": null,
+  "revision": 1,
+  "selected_by": "UNRESOLVED",
+  "source_language": null,
+  "source_refs": [],
+  "spoken_dialogue_language": null,
+  "state_scope": "PORTABLE_WEB_STATE_ONLY",
+  "voice_over_enabled": false,
+  "voice_over_language": null
+}

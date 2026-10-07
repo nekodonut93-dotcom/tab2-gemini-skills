@@ -1,0 +1,256 @@
+{
+  "$id": "PROJECT_VISUAL_PROFILE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "profile_status": {
+            "const": "RESOLVED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "camera_style": {
+            "type": "string"
+          },
+          "chibi_insertions": {
+            "type": "boolean"
+          },
+          "full_chibi_scene": {
+            "type": "boolean"
+          },
+          "humor_level": {
+            "type": "string"
+          },
+          "inner_monologue": {
+            "type": "boolean"
+          },
+          "performance_style": {
+            "type": "string"
+          },
+          "profile_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "selected_by": {
+            "const": "USER"
+          },
+          "vfx_policy": {
+            "type": "string"
+          },
+          "visual_type": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "profile_status": {
+            "const": "STYLE_UNRESOLVED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "profile_id": {
+            "type": "null"
+          },
+          "selected_by": {
+            "const": "UNRESOLVED"
+          },
+          "visual_type": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "action_style": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "camera_style": {
+      "enum": [
+        "restrained_cinematic",
+        "dynamic",
+        "comedic",
+        "dramatic",
+        "auto_within_style",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chibi_insertions": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "continuity_rule": {
+      "const": "strict_story_truth"
+    },
+    "full_chibi_scene": {
+      "default": false,
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "humor_level": {
+      "enum": [
+        "none",
+        "light",
+        "medium",
+        "high",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "inner_monologue": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "performance_style": {
+      "enum": [
+        "subtle",
+        "moderate",
+        "expressive",
+        "exaggerated_cartoonish",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "preset_id": {
+      "enum": [
+        "modern_cdrama_realistic",
+        "anime_romcom",
+        "cn_3d_comedic_chibi",
+        "wuxia_cinematic",
+        "xianxia_fantasy",
+        "dark_thriller",
+        "custom",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "profile_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "profile_status": {
+      "enum": [
+        "STYLE_UNRESOLVED",
+        "RESOLVED"
+      ]
+    },
+    "project_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "realism_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "selected_by": {
+      "enum": [
+        "USER",
+        "UNRESOLVED"
+      ]
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "tone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vfx_policy": {
+      "enum": [
+        "none",
+        "realistic_only",
+        "stylized",
+        "fantasy_allowed",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "visual_type": {
+      "enum": [
+        "live_action_realistic_cinematic",
+        "anime_2d",
+        "chinese_3d_animation",
+        "chibi_comedy",
+        "wuxia_xianxia",
+        "fantasy_cinematic",
+        "custom",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "state_scope",
+    "profile_id",
+    "profile_status",
+    "project_id",
+    "selected_by",
+    "preset_id",
+    "visual_type",
+    "performance_style",
+    "humor_level",
+    "inner_monologue",
+    "chibi_insertions",
+    "camera_style",
+    "vfx_policy",
+    "continuity_rule",
+    "revision",
+    "source_refs"
+  ],
+  "title": "Portable project visual preference",
+  "type": "object"
+}

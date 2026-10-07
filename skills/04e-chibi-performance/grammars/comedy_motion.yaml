@@ -1,0 +1,13 @@
+grammar_id: CHIBI_COMEDY_MOTION_CANDIDATES_V1
+selection_policy: scene_rhythm_and_style_supported_pool
+candidate_pools:
+  punctuation: [brief_freeze, quick_pop_in, tiny_recoil, short_shake]
+  exasperation: [rapid_pacing, harmless_empty_air_punch, puffed_cheeks]
+  surprise: [vertical_bob, hold_then_snap_look, stylized_shock_lines]
+  panic: [tiny_circle_run, frantic_arms, symbolic_sweat_marks]
+  embarrassment: [shrink_down, face_cover, blush_hold]
+constraints:
+  - Motion is symbolic and non-diegetic.
+  - Use short duration and preserve main-scene timing.
+  - No fixed emotion-to-motion mapping.
+  - No collision, damage, target, injury or diegetic prop.

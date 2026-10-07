@@ -1,0 +1,8 @@
+case_id: synthetic_vehicle_arrival
+status: READY_FOR_USER_REVIEW
+style_profile: modern_cdrama_realistic
+source_explicit:
+  - "A named vehicle stops in front of the identified character beside the road."
+presentation:
+  - "Optional head turn toward the arriving vehicle when supported by the scene."
+  - "Do not add rain, a driver reveal, fear, flight, or another character."

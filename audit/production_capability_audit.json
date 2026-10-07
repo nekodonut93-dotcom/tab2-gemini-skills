@@ -1,0 +1,366 @@
+{
+  "audit_date": "2026-10-07",
+  "capabilities": [
+    {
+      "id": "production-authority-and-workflow",
+      "known_gaps": [
+        "Gemini Web cannot execute production deterministic validators; portable compliance is not production certification."
+      ],
+      "production_sources": [
+        "architecture/TAB2_CALL_GRAPH.md",
+        "architecture/TAB2_DATA_AUTHORITY.md",
+        "architecture/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill": "skills/00-orchestrator/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_tab2_canonical_pipeline_phase1.py",
+        "tests/test_professional_writer_workflow.py",
+        "tests/test_writer_frozen_contracts.py",
+        "tests/test_director_frozen_contracts.py"
+      ],
+      "what_is_evidenced": "Canonical call graph, source authorities, frozen ownership, and production facade flow are documented and tested."
+    },
+    {
+      "id": "story-memory-identity-provenance-temporal-visibility",
+      "known_gaps": [
+        "Gemini's portable state is not persisted Story Memory and cannot certify database currentness."
+      ],
+      "production_sources": [
+        "application/screenwriter_intelligence/story_memory.py",
+        "application/screenwriter_intelligence/memory_models.py",
+        "architecture/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill": "skills/01-story-memory/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_screenwriter_story_memory.py",
+        "tests/test_story_memory_canonical_character_identity.py",
+        "tests/test_story_memory_temporal_visibility.py"
+      ],
+      "what_is_evidenced": "Production StoryMemoryService owns persisted identity/provenance and chapter-scoped visibility; future and superseded knowledge is filtered by production behavior."
+    },
+    {
+      "id": "production-continuity-canon-gate",
+      "known_gaps": [
+        "Gemini Web execution of the production analyzer is not established."
+      ],
+      "production_sources": [
+        "application/screenwriter_intelligence/full_story_continuity.py",
+        "architecture/TAB2_DATA_AUTHORITY.md"
+      ],
+      "source_skill": "skills/02-continuity/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_full_story_continuity_completeness.py",
+        "tests/test_continuity_engine.py",
+        "tests/test_story_memory_temporal_visibility.py"
+      ],
+      "what_is_evidenced": "FullStoryContinuityAnalyzer produces the derived continuity/Canon gate; Story Memory remains persisted authority."
+    },
+    {
+      "id": "writer-what-readiness-and-handoff",
+      "known_gaps": [
+        "Gemini Web output is not official screenplay state and cannot claim frozen readiness."
+      ],
+      "production_sources": [
+        "application/screenwriter_intelligence/professional_writer_workflow.py",
+        "application/screenwriter_intelligence/screenplay_service.py",
+        "architecture/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill": "skills/03-writer/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_writer_screen_adaptation.py",
+        "tests/test_writer_outcome_context_e2e.py",
+        "tests/test_writer_frozen_contracts.py",
+        "tests/test_professional_writer_workflow.py"
+      ],
+      "what_is_evidenced": "Writer owns story WHAT and official screenplay mutation/readiness before DirectorHandoffV2; frozen Writer contracts are tested."
+    },
+    {
+      "id": "writer-enrichment-deterministic-grounding",
+      "known_gaps": [
+        "Portable micro-motion candidates do not imply production acceptance beyond existing test evidence; historical benchmark equivalence is unclaimed."
+      ],
+      "production_sources": [
+        "application/screenwriter_intelligence/writer_provider.py",
+        "application/screenwriter_intelligence/screenplay_service.py",
+        "architecture/SCENE_ACTION_ENRICHMENT.md"
+      ],
+      "source_skill": "skills/04-enrichment/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_writer_scene_action_enrichment.py",
+        "tests/test_writer_action_grounding_benchmark.py"
+      ],
+      "what_is_evidenced": "Production enrichment is conditional; deterministic grounding and acceptance/rejection are covered by tests and BASELINE_V1."
+    },
+    {
+      "id": "visual-completion",
+      "known_gaps": [
+        "No production acceptance matrix was found for every new portable visual-completion candidate."
+      ],
+      "production_sources": [
+        "architecture/SCENE_ACTION_ENRICHMENT.md",
+        "application/screenwriter_intelligence/writer_provider.py"
+      ],
+      "source_skill": "skills/04b-visual-completion/manifest.yaml",
+      "status": "PARTIAL",
+      "tests": [
+        "tests/test_writer_scene_action_enrichment.py",
+        "tests/test_writer_action_grounding_benchmark.py"
+      ],
+      "what_is_evidenced": "Production has evidence-bounded scene visual enrichment; the separate broad gaze/body/secondary-motion candidate catalog is a portable proposal layer."
+    },
+    {
+      "id": "action-interpreter",
+      "known_gaps": [
+        "No production action-classification API, semantic contract, or acceptance suite is claimed."
+      ],
+      "production_sources": [
+        "architecture/SCENE_ACTION_ENRICHMENT.md"
+      ],
+      "source_skill": "skills/04c-action-interpreter/manifest.yaml",
+      "status": "NOT_IMPLEMENTED",
+      "tests": [
+        "tests/test_gemini_seedance_skill_contracts.py"
+      ],
+      "what_is_evidenced": "The action taxonomy/interpreter is a new portable classification reference, not an identified production service."
+    },
+    {
+      "id": "action-choreography",
+      "known_gaps": [
+        "No production phase-by-phase action choreography executor or contract is claimed."
+      ],
+      "production_sources": [
+        "architecture/TAB2_DIRECTOR_ARCHITECTURE.md",
+        "architecture/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill": "skills/04d-action-choreography/manifest.yaml",
+      "status": "NOT_IMPLEMENTED",
+      "tests": [
+        "tests/test_gemini_seedance_skill_contracts.py"
+      ],
+      "what_is_evidenced": "Production Director contains structured HOW planning; the separate portable six-phase choreography guide is not a production contract."
+    },
+    {
+      "id": "director-how-and-advisory-skills",
+      "known_gaps": [
+        "Current persisted Director Skill-store contents/version/activation remain UNKNOWN; portable index is not production router.",
+        "A scored production Skill ranking/order algorithm is not evidenced; no score or tie-break behavior is invented."
+      ],
+      "production_sources": [
+        "application/director_facade.py",
+        "application/director_workflow/",
+        "architecture/TAB2_DIRECTOR_ARCHITECTURE.md"
+      ],
+      "source_skill": "skills/05-director/manifest.yaml",
+      "status": "PARTIAL",
+      "tests": [
+        "tests/test_director_frozen_contracts.py",
+        "tests/test_director_workflow.py",
+        "tests/test_director_quality_facade.py",
+        "tests/test_director_knowledge_selector.py"
+      ],
+      "what_is_evidenced": "DirectorFacade/DirectorWorkflowService own structured HOW and are frozen/tested; exported Director INDEX defines bounded retrieval, source-supported selection, status and conflicts_with fields; Skill advice remains approval/compatibility gated."
+    },
+    {
+      "id": "promptengine-seedance-formatting",
+      "known_gaps": [
+        "No Seedance generation API capability is established by formatting assets; PromptLanguageRenderer cache version coverage is a documented review gap."
+      ],
+      "production_sources": [
+        "ai_agent_brain/prompt_assembly/prompt_engine.py",
+        "application/prompt_facade.py",
+        "model_profiles/seedance.json",
+        "prompt_templates/seedance.json",
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill": "skills/06-prompt-engine/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_prompt_engine.py",
+        "tests/test_prompt_assembly.py",
+        "tests/test_external_model_final_prompt.py",
+        "tests/test_tab2_dynamic_duration_contract.py"
+      ],
+      "what_is_evidenced": "Seedance profile/template/adapter are checked in and PromptEngine is the production final compiler."
+    },
+    {
+      "id": "quality-audit-and-frozen-regression",
+      "known_gaps": [
+        "No Gemini Web full-pipeline benchmark or quality threshold is present."
+      ],
+      "production_sources": [
+        "architecture/writer_contract_freeze_v1.json",
+        "architecture/director_contract_freeze_v1.json",
+        "architecture/TAB2_FROZEN_CONTRACTS.md"
+      ],
+      "source_skill": "skills/07-quality-audit/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_writer_frozen_contracts.py",
+        "tests/test_director_frozen_contracts.py",
+        "tests/test_writer_action_grounding_benchmark.py",
+        "tests/test_tab2_canonical_pipeline_phase1.py"
+      ],
+      "what_is_evidenced": "Frozen contracts, stage regression and enrichment baseline are mapped to executable production tests."
+    },
+    {
+      "id": "style-resolution-user-intake",
+      "known_gaps": [
+        "No production persistence or runtime gate for PROJECT_VISUAL_PROFILE."
+      ],
+      "production_sources": [
+        "architecture/TAB2_PROMPT_SKILL_ARCHITECTURE.md"
+      ],
+      "source_skill": "skills/09-style-resolution/manifest.yaml",
+      "status": "NOT_IMPLEMENTED",
+      "tests": [
+        "tests/test_gemini_seedance_skill_contracts.py"
+      ],
+      "what_is_evidenced": "PROJECT_VISUAL_PROFILE and style questionnaire are portable additions; no production-owned style-intake service is claimed."
+    },
+    {
+      "id": "dola-ui-reference-binding",
+      "known_gaps": [
+        "Do not emit @ImageN/@VideoN tags unless confirmed by current UI/user; otherwise REFERENCE_BINDING_UNVERIFIED."
+      ],
+      "production_sources": [
+        "architecture/TAB2_MODEL_ADAPTERS.md"
+      ],
+      "source_skill": "skills/08-seedance/manifest.yaml",
+      "status": "UNKNOWN",
+      "tests": [
+        "tests/test_gemini_seedance_skill_contracts.py"
+      ],
+      "what_is_evidenced": "No checked-in evidence verifies Dola UI tag syntax or reference-binding semantics."
+    },
+    {
+      "id": "gemini-web-full-pipeline-equivalence",
+      "known_gaps": [
+        "Synthetic portable tests do not establish Gemini model quality or web UI behavior."
+      ],
+      "production_sources": [
+        "architecture/GEMINI_STABLE_LIVE_ACCEPTANCE.md",
+        "architecture/GEMINI_LIVE_STORY_REPAIR_ACCEPTANCE.md"
+      ],
+      "source_skill": "skills/07-quality-audit/manifest.yaml",
+      "status": "NOT_IMPLEMENTED",
+      "tests": [
+        "tests/test_gemini_seedance_skill_contracts.py",
+        "tests/test_tab2_canonical_pipeline_phase1.py"
+      ],
+      "what_is_evidenced": "Repository has offline production regressions and historical Gemini API reports; no Gemini Web Tab 2 full-pipeline benchmark is checked in."
+    },
+    {
+      "id": "prompt-language-rendering",
+      "known_gaps": [
+        "Production prompt_language is a prompt-rendering setting, not a project-wide source/spoken-language profile."
+      ],
+      "production_sources": [
+        "ai_agent_brain/prompt_assembly/language_renderer.py",
+        "ai_agent_brain/prompt_assembly/prompt_engine.py"
+      ],
+      "source_skill": "skills/language-policy/manifest.yaml",
+      "status": "VERIFIED",
+      "tests": [
+        "tests/test_prompt_engine.py"
+      ],
+      "what_is_evidenced": "PromptLanguageRenderer normalizes English/Vietnamese/Chinese and renders technical prompt text when configured; tests exercise language normalization and engine behavior."
+    },
+    {
+      "id": "source-text-language-independence",
+      "known_gaps": [
+        "No frozen production PROJECT_LANGUAGE_PROFILE or end-to-end assurance that every spoken/voice-over field is separated from technical prompt rendering."
+      ],
+      "production_sources": [
+        "skills/03-writer/SKILL.md",
+        "ai_agent_brain/prompt_assembly/prompt_engine.py",
+        "ai_agent_brain/prompt_assembly/language_renderer.py"
+      ],
+      "source_skill": "skills/language-policy/manifest.yaml",
+      "status": "PARTIAL",
+      "tests": [
+        "tests/test_writer_frozen_contracts.py",
+        "tests/test_prompt_engine.py"
+      ],
+      "what_is_evidenced": "Writer owns exact source dialogue; PromptLanguageRenderer can protect source text supplied by PromptEngine callers, including typed narrative-expression source text."
+    },
+    {
+      "id": "portable-project-language-profile-and-typed-speech",
+      "known_gaps": [
+        "This profile and typed export policy are Gemini-facing additions, not production runtime behavior."
+      ],
+      "production_sources": [
+        "ai_agent_brain/prompt_assembly/language_renderer.py",
+        "ai_agent_brain/prompt_assembly/prompt_engine.py"
+      ],
+      "source_skill": "skills/language-policy/manifest.yaml",
+      "status": "MISSING",
+      "tests": [
+        "tests/test_gemini_language_chibi_contracts.py"
+      ],
+      "what_is_evidenced": "New portable package defines independent user-selected source, prompt, dialogue, internal-monologue, voice-over and on-screen-text languages."
+    },
+    {
+      "id": "profile-gated-basic-chibi-insert",
+      "known_gaps": [
+        "Existing reference did not define typed inner-monologue routing, symbolic action namespace, or a full real-vs-non-diegetic state contract."
+      ],
+      "production_sources": [
+        "skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json",
+        "skills/08-seedance/vfx/comedic.yaml",
+        "skills/08-seedance/examples/good/comedy_reaction.yaml"
+      ],
+      "source_skill": "skills/09-style-resolution/manifest.yaml",
+      "status": "PARTIAL",
+      "tests": [
+        "tests/test_gemini_seedance_skill_contracts.py"
+      ],
+      "what_is_evidenced": "Existing portable style profile and Seedance examples permit brief nonverbal chibi reactions and forbid invented lines/confessions."
+    },
+    {
+      "id": "chibi-inner-monologue-symbolic-performance",
+      "known_gaps": [
+        "No production chibi performance service or frozen contract is evidenced."
+      ],
+      "production_sources": [
+        "skills/03-writer/SKILL.md",
+        "skills/08-seedance/vfx/comedic.yaml",
+        "skills/08-seedance/examples/good/chinese_3d_chibi.yaml"
+      ],
+      "source_skill": "skills/04e-chibi-performance/manifest.yaml",
+      "status": "MISSING",
+      "tests": [
+        "tests/test_gemini_language_chibi_contracts.py"
+      ],
+      "what_is_evidenced": "New portable reference distinguishes source monologue, nonverbal response and non-diegetic chibi action; it does not claim production behavior."
+    },
+    {
+      "id": "dola-reference-tags",
+      "known_gaps": [
+        "Current Dola UI syntax requires direct current UI confirmation; no @ImageN/@VideoN syntax is assumed."
+      ],
+      "production_sources": [
+        "skills/08-seedance/platforms/dola.yaml"
+      ],
+      "source_skill": "skills/08-seedance/manifest.yaml",
+      "status": "UNKNOWN",
+      "tests": [
+        "tests/test_gemini_language_chibi_contracts.py"
+      ],
+      "what_is_evidenced": "The existing package explicitly records Dola tag syntax as unknown and fails closed."
+    }
+  ],
+  "classification_values": [
+    "VERIFIED",
+    "PARTIAL",
+    "MISSING",
+    "UNKNOWN",
+    "NOT_IMPLEMENTED"
+  ],
+  "gemini_repository_runtime_authority": false,
+  "production_is_source_of_truth": true
+}

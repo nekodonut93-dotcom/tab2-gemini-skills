@@ -1,0 +1,10 @@
+candidate_family: gaze
+status: PORTABLE_PROPOSAL_ONLY
+candidates:
+  - gaze_shift_to_explicit_scene_focus
+  - gaze_held_on_current_focus
+  - head_turn_toward_explicit_sound_or_motion
+constraints:
+  - Target must be present or source-evidenced in the current scene.
+  - Do not reveal knowledge of an unseen or future event.
+  - If target or awareness is unclear, leave unresolved.

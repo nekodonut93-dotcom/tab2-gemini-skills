@@ -1,0 +1,26 @@
+router_id: INNER_MONOLOGUE_TO_CHIBI_ROUTING_V1
+ordered_checks:
+  - preserve_exact_source_text
+  - resolve_PROJECT_LANGUAGE_PROFILE
+  - resolve_PROJECT_VISUAL_PROFILE
+  - check_profile_inner_monologue_enabled
+  - confirm_chibi_insertions_enabled
+  - select_contextual_mode_or_voice_only
+if_inner_monologue_false:
+  render_source_monologue: false
+  allowed_fallback: SOURCE_SUPPORTED_NONVERBAL_REACTION
+if_inner_monologue_true_and_chibi_insertions_false: VOICE_ONLY_OR_SOURCE_FAITHFUL_REACTION
+if_chibi_insertions_true:
+  allowed_modes:
+    - VOICE_ONLY
+    - CHIBI_SPOKEN_MONOLOGUE
+    - CHIBI_NONVERBAL_REACTION
+    - CHIBI_SYMBOLIC_PANTOMIME
+    - CHIBI_EMOTION_BURST
+  selection_rule: contextual_scene_tone_personality_style_intensity_timing_adjacent_beats
+  force_chibi_for_every_monologue: false
+if_source_monologue_absent:
+  invent_monologue: false
+  optional_mode: CHIBI_NONVERBAL_REACTION
+  requires_profile_and_context_support: true
+return_to_main_scene: required_unless_full_chibi_scene_explicitly_enabled

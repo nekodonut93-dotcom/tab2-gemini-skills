@@ -1,0 +1,5 @@
+case_id: blocked_invented_inner_monologue
+source_internal_monologue: null
+proposed_internal_monologue: "I will reveal a new secret."
+expected: BLOCKED
+failure_code: INVENTED_INTERNAL_MONOLOGUE

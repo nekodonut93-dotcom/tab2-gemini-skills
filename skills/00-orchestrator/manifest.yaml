@@ -1,0 +1,47 @@
+distribution_id: 00-long-novel-orchestrator
+source_skill_id: tab2.orchestrator-boundaries
+source_skill_version: 1.1.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/00-orchestrator/SKILL.md"
+source_manifest: "skills/00-orchestrator/manifest.yaml"
+runtime_owner: "The current stage's source authority and its validated result; this orchestrator has no story or creative authority."
+source_files:
+  - "application/professional_canonical_pipeline.py"
+  - "application/runtime/application_factory.py"
+  - "application/api/routes.py"
+  - "ui/application-adapter.js"
+source_functions:
+  - "ProfessionalCanonicalPipelineService.execute"
+  - "ApplicationFactory.create"
+related_tests:
+  - "tests/test_tab2_canonical_pipeline_phase1.py"
+  - "tests/test_professional_writer_workflow.py"
+  - "tests/test_tab2_output_projection_phase2.py"
+dependencies:
+  - "references/TAB2_WORKFLOW.md"
+  - "references/CORE_CONTRACTS.md"
+  - "references/OUTPUT_SCHEMAS.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "not_applicable"
+source_schema_version: "DirectorHandoffV2"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

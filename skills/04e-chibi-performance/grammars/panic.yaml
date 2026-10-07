@@ -1,0 +1,5 @@
+grammar_id: CHIBI_PANIC_CANDIDATES_V1
+candidates: [run_in_tiny_circles, frantic_arm_movement, rapid_head_shake, stylized_sweat_marks]
+fixed_emotion_mapping: forbidden
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE

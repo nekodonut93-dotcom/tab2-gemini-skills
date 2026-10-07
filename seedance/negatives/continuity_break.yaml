@@ -1,0 +1,7 @@
+negative_constraints:
+  - no_unapproved_location_change
+  - no_time_or_weather_change_without_source
+  - no_future_knowledge
+  - no_outcome_change
+  - no_unintended_wardrobe_change
+  - preserve_established_screen_direction

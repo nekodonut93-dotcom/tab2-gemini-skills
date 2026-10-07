@@ -1,0 +1,5 @@
+{
+  "characters": [],
+  "rule": "Only use identities and aliases explicitly present in trusted source records.",
+  "state_scope": "PORTABLE_WEB_STATE_ONLY"
+}

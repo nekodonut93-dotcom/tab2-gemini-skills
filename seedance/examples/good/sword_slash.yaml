@@ -1,0 +1,11 @@
+case_id: synthetic_sourced_sword_slash
+status: READY_FOR_USER_REVIEW
+style_profile: wuxia_cinematic
+source_action: "The identified character performs a downward sword slash."
+action_class: VERTICAL_DOWNWARD_SLASH
+choreography:
+  primary_action: "downward slash"
+  follow_through: "include only if supported by the established movement"
+vfx:
+  policy: stylized
+  decision: "No energy trail unless separately allowed by source/context and explicit policy."

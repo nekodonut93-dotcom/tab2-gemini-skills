@@ -1,0 +1,22 @@
+policy_id: SOURCE_INNER_MONOLOGUE_POLICY_V1
+source_text_required: true
+preserve_verbatim: true
+language_field: inner_monologue_language
+if_source_has_no_inner_monologue:
+  invent_inner_monologue: false
+  allowed_comedic_fallback: NONVERBAL_CHIBI_REACTION
+  fallback_requires:
+    - resolved visual profile permits chibi
+    - scene context supports a nonverbal reaction
+    - representation_scope is NON_DIEGETIC
+    - story_state_effect is NONE
+chibi_routing:
+  chibi_disabled: normal_source_faithful_voice_or_reaction
+  chibi_enabled: choose_contextually_not_automatically
+  modes:
+    - voice_only
+    - CHIBI_SPOKEN_MONOLOGUE
+    - CHIBI_NONVERBAL_REACTION
+    - CHIBI_SYMBOLIC_PANTOMIME
+    - CHIBI_EMOTION_BURST
+preserve_exact_source_monologue: true

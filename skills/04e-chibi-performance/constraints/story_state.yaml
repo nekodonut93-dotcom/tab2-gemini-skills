@@ -1,0 +1,16 @@
+constraint_id: CHIBI_STORY_STATE_LOCK_V1
+writer_what_unchanged: true
+story_memory_mutation: forbidden
+chibi_action:
+  representation_scope: NON_DIEGETIC
+  story_state_effect: NONE
+actual_action_requires_source_event: true
+actual_crying_requires_source_event: true
+symbolic_crying:
+  REAL_WORLD_CRYING: false
+  CHIBI_SYMBOLIC_CRYING: true
+  requires_established_emotional_beat: true
+source_dialogue_and_monologue:
+  preserve_verbatim: true
+  translate: false
+  invent: false

@@ -1,0 +1,5 @@
+{
+  "relationships": [],
+  "rule": "No inferred escalation; each record needs source_refs and visibility.",
+  "state_scope": "PORTABLE_WEB_STATE_ONLY"
+}

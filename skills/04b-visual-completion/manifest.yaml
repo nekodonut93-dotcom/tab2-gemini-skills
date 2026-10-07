@@ -1,0 +1,36 @@
+skill_id: tab2.visual-completion-reference
+version: 1.0.0
+owner: Portable presentation-detail proposal
+category: VISUAL_COMPLETION
+description: Propose context-sensitive physical presentation detail without changing story state.
+use_when:
+  - An accepted Writer scene lacks visible physical detail needed for a video draft
+avoid_when:
+  - Production Canon or Writer readiness is blocked
+  - The proposal requires a new narrative fact or unsupported actor
+inputs:
+  - Accepted Writer scene, visible source context, resolved identities, project visual preference
+outputs:
+  - Portable detail candidates with origin, evidence references and story-state impact
+requires:
+  - Source and temporal visibility checks
+  - Writer WHAT remains immutable
+conflicts_with:
+  - New event, dialogue, relationship, location, important prop or outcome
+compatible_models:
+  - model-neutral proposal semantics
+authority:
+  - Writer owns WHAT; this add-on proposes presentation-only detail
+must_not_change:
+  - Story Memory authority or temporal visibility
+  - Writer FROZEN_V1, Director FROZEN_V1, or DirectorHandoffV2
+  - Production enrichment acceptance behavior
+source_files:
+  - skills/04b-visual-completion/
+source_functions: []
+related_tests:
+  - tests/test_writer_scene_action_enrichment.py
+  - tests/test_writer_action_grounding_benchmark.py
+prompt_version: GEMINI_CREATIVE_BOUNDARY_CONTRACT_V1
+schema_version: VISUAL_COMPLETION_CANDIDATE_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

@@ -1,0 +1,62 @@
+taxonomy_id: SOURCE_ACTION_TAXONOMY_V1
+status: PORTABLE_DERIVED_CLASSIFICATION
+classes:
+  sword:
+    - SWORD_SLASH
+    - VERTICAL_DOWNWARD_SLASH
+    - HORIZONTAL_SLASH
+    - THRUST
+    - GENERIC_SINGLE_SLASH
+  fight:
+    - STRIKE
+    - BLOCK
+    - DODGE
+    - GRAPPLE
+    - GENERIC_FIGHT_ACTION
+  walking:
+    - WALK
+    - APPROACH
+    - RETREAT
+    - STOP
+  running:
+    - RUN
+    - PURSUE
+    - FLEE
+  driving:
+    - VEHICLE_APPROACH
+    - VEHICLE_STOP
+    - VEHICLE_DEPART
+    - VEHICLE_TURN
+  phone_interaction:
+    - HOLD_PHONE
+    - LOOK_AT_PHONE
+    - TYPE_ON_PHONE
+    - ANSWER_CALL
+    - END_CALL
+  eating:
+    - PICK_UP_FOOD
+    - BITE
+    - CHEW
+    - SWALLOW
+  object_interaction:
+    - REACH
+    - PICK_UP
+    - PLACE
+    - OPEN
+    - CLOSE
+    - TOUCH
+  romance_interaction:
+    - APPROACH_PARTNER
+    - HOLD_HANDS
+    - EMBRACE
+    - KISS
+  dialogue_performance:
+    - SPEAK
+    - LISTEN
+    - PAUSE
+    - REACT
+unknown_behavior:
+  classification: UNRESOLVED
+  do_not_guess_subtype: true
+  generic_sword_slash_requires_source_single_slash: true
+  no_new_target_or_result: true

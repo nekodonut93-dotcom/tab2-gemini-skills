@@ -1,0 +1,14 @@
+grammar_id: CHIBI_CRYING_CANDIDATES_V1
+distinction:
+  real_world_crying: requires source/event evidence
+  chibi_symbolic_crying: optional stylized representation of an established emotional beat
+candidates: [oversized_tears, waterfall_tears, tiny_ball_curl, rapid_tear_wipe, trembling_shoulders]
+required_markers:
+  REAL_WORLD_CRYING: false
+  CHIBI_SYMBOLIC_CRYING: true
+  representation_scope: NON_DIEGETIC
+  story_state_effect: NONE
+forbidden:
+  - claim_real_character_is_crying
+  - infer sadness from chibi tears as a new fact
+  - change scene outcome or relationship

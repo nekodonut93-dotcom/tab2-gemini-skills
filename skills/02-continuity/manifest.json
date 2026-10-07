@@ -1,0 +1,22 @@
+{
+  "distribution_version": "1.1.0",
+  "id": "02-continuity",
+  "known_gaps": [
+    "Gemini Web execution of the production analyzer is not established."
+  ],
+  "production_sources": [
+    "application/screenwriter_intelligence/full_story_continuity.py",
+    "architecture/TAB2_DATA_AUTHORITY.md"
+  ],
+  "related_tests": [
+    "tests/test_full_story_continuity_completeness.py",
+    "tests/test_continuity_engine.py",
+    "tests/test_story_memory_temporal_visibility.py"
+  ],
+  "runtime_loaded": false,
+  "schema_version": "operation-specific; see story_reasoning.py",
+  "source_skill_id": "tab2.continuity-and-canon",
+  "source_skill_manifest": "skills/02-continuity/manifest.yaml",
+  "source_skill_version": "1.0.0",
+  "status": "PORTABLE_GEMINI_REFERENCE_ONLY"
+}

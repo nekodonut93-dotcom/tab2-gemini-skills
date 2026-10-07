@@ -1,0 +1,49 @@
+distribution_id: 03-writer
+source_skill_id: tab2.writer-what
+source_skill_version: 1.0.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/03-writer/SKILL.md"
+source_manifest: "skills/03-writer/manifest.yaml"
+runtime_owner: "Writer and ScreenplayApplicationService own WHAT; production readiness controls Director handoff."
+source_files:
+  - "application/screenwriter_intelligence/professional_writer_workflow.py"
+  - "application/screenwriter_intelligence/screenplay_service.py"
+  - "application/screenwriter_intelligence/writer_provider.py"
+  - "application/screenwriter_intelligence/writer_maturity_service.py"
+source_functions:
+  - "ProfessionalScreenwriterWorkflow.process"
+  - "ScreenplayApplicationService.create_draft"
+  - "DeterministicWriterProvider.adapt_scene"
+related_tests:
+  - "tests/test_writer_screen_adaptation.py"
+  - "tests/test_writer_outcome_context_e2e.py"
+  - "tests/test_writer_frozen_contracts.py"
+  - "tests/test_professional_writer_workflow.py"
+dependencies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/TAB2_WORKFLOW.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "no separate Writer-generation prompt in the default deterministic adaptation path"
+source_schema_version: "Writer FROZEN_V1"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

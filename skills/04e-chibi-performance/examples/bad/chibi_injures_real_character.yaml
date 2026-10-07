@@ -1,0 +1,9 @@
+case_id: bad_symbolic_punch_causes_real_injury
+proposed_action:
+  namespace: CHIBI_SYMBOLIC_ACTION
+  action: PANTOMIME_PUNCH
+  representation_scope: NON_DIEGETIC
+  story_state_effect: INJURY
+  target: real_character
+expected: FAIL
+failure_code: CHIBI_BECAME_REAL_EVENT

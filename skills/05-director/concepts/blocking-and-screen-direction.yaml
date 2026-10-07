@@ -1,0 +1,19 @@
+id: blocking_and_screen_direction
+type: DIRECTING_KNOWLEDGE
+status: SOURCE_VERIFIED_REFERENCE
+owner: DirectorReasoning
+source:
+  - application/director_reasoning/
+  - application/director_workflow/
+related_tests:
+  - tests/test_director_workflow.py
+scope:
+  - Blocking
+  - Choreography
+  - Subject references and routes
+  - Screen direction
+constraints:
+  - Preserve screenplay subjects and continuity
+  - Do not infer unsupported action
+selectors:
+  duration: unknown

@@ -1,0 +1,19 @@
+policy_id: PORTABLE_PROMPT_RENDERING_POLICY_V1
+prompt_language_is_independent_from:
+  - spoken_dialogue_language
+  - inner_monologue_language
+  - voice_over_language
+technical_instruction_language: PROJECT_LANGUAGE_PROFILE.prompt_language
+source_text_policy:
+  source_dialogue: preserve_verbatim
+  source_internal_monologue: preserve_verbatim
+  source_narrator_voice_over: preserve_verbatim_when_enabled
+  translate_source_text: false
+  paraphrase_source_text: false
+  invent_source_text: false
+rendering_scope:
+  may_render: technical_instructions_and_descriptive_prompt_sections
+  may_not_render: source_dialogue_or_source_thought
+production_boundary:
+  prompt_language_owner: PromptFacade_then_PromptEngine
+  portable_profile_is_production_authority: false

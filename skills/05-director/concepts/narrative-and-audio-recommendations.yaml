@@ -1,0 +1,14 @@
+id: narrative_and_audio_recommendations
+type: DIRECTING_KNOWLEDGE
+status: APPROVAL_AND_COMPATIBILITY_GATED
+owner: SkillContextInjection
+source:
+  - application/skill_context_injection/
+  - application/director_knowledge/
+scope:
+  - Narrative presentation recommendation
+  - Seedance audio recommendation
+constraints:
+  - Advisory only and conditionally active
+  - Audio guidance does not establish native generation API capability
+  - The 20.4.1 package is DRAFT; do not promote its eight approved items as active

@@ -1,0 +1,47 @@
+distribution_id: 04-enrichment
+source_skill_id: tab2.writer-enrichment
+source_skill_version: 1.0.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/04-enrichment/SKILL.md"
+source_manifest: "skills/04-enrichment/manifest.yaml"
+runtime_owner: "Existing Writer enrichment proposal plus deterministic production grounding/acceptance boundary."
+source_files:
+  - "application/screenwriter_intelligence/writer_provider.py"
+  - "application/screenwriter_intelligence/screenplay_service.py"
+  - "application/screenwriter_intelligence/story_reasoning.py"
+  - "application/screenwriter_intelligence/story_memory.py"
+source_functions:
+  - "DeterministicWriterProvider.enrich_official_scene"
+  - "_visual_enrichment_rejection"
+  - "StoryMemoryService.build_action_actor_aliases"
+related_tests:
+  - "tests/test_writer_scene_action_enrichment.py"
+  - "tests/test_writer_action_grounding_benchmark.py"
+dependencies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/TAB2_WORKFLOW.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "story-reasoning-v1:scene-visual-v1"
+source_schema_version: "scene-visual-schema-v2"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

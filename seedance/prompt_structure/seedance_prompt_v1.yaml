@@ -1,0 +1,33 @@
+contract_id: SEEDANCE_PROMPT_CONTRACT_V1
+version: 1.0.0
+status: PORTABLE_PROMPT_DRAFT_ONLY
+requires:
+  - accepted_writer_scene
+  - resolved_project_visual_profile
+sections:
+  - reference_binding
+  - character_identity
+  - visual_style
+  - environment
+  - camera
+  - timeline
+  - physical_action
+  - emotion_reaction
+  - vfx
+  - negative_constraints
+must_identify:
+  - WHO
+  - WHERE
+  - WHAT
+  - HOW
+  - WHEN
+  - REFERENCE
+  - CAMERA
+  - END_STATE
+rules:
+  - "Prompt text contains no internal reasoning or audit narration."
+  - "Preserve source facts, dialogue, identity, relationships, and outcome."
+  - "Writer WHAT is read-only to Director and this adapter."
+  - "Unresolved style blocks prompt drafting."
+  - "Unverified platform syntax must not appear as a token."
+  - "A portable draft must not claim PromptEngine validation."

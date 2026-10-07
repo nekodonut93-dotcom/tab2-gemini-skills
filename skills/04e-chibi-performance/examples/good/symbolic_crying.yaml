@@ -1,0 +1,11 @@
+case_id: good_symbolic_crying_without_real_crying
+source_emotional_beat: source_established_comedic_disappointment
+visual_profile:
+  chibi_insertions: true
+REAL_WORLD_CRYING: false
+CHIBI_SYMBOLIC_CRYING: true
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE
+performance: waterfall_tears
+return_to_main_scene: true
+expected: PASS

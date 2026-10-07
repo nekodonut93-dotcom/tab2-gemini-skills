@@ -1,0 +1,7 @@
+case_id: synthetic_realistic_style
+status: READY_FOR_USER_REVIEW
+style_profile: modern_cdrama_realistic
+vfx_policy: realistic_only
+rules:
+  - "Natural physical mechanics only."
+  - "No energy trail or magical effect."

@@ -1,0 +1,40 @@
+skill_id: tab2.quality-and-regression-audit
+version: 1.1.0
+owner: Test suite and frozen-contract gates
+category: QUALITY
+description: Map Tab 2 behavior to permanent benchmark, frozen contracts, quota evidence and targeted regression tests.
+use_when:
+  - Reporting audit evidence or validating architecture packaging
+avoid_when:
+  - Replacing runtime enforcement with checklist-only compliance
+inputs:
+  - Frozen registries, tests, offline fixtures and architecture reports
+outputs:
+  - Evidence-linked status and measured test results
+requires:
+  - Exact fixture and test provenance
+conflicts_with:
+  - Silent contract/test/registry weakening
+compatible_models:
+  - model-neutral
+authority:
+  - Executable tests and production contracts
+must_not_change:
+  - Frozen Writer and Director registries
+  - Retry, cache, temporal visibility, Director currentness or prompt authority
+source_files:
+  - architecture/writer_contract_freeze_v1.json
+  - architecture/director_contract_freeze_v1.json
+  - tests/fixtures/writer_action_grounding_baseline_v1.json
+source_functions:
+  - benchmark test in tests/test_writer_action_grounding_benchmark.py
+related_tests:
+  - tests/test_writer_frozen_contracts.py
+  - tests/test_director_frozen_contracts.py
+  - tests/test_writer_action_grounding_benchmark.py
+  - tests/test_tab2_targeted_quota_acceptance.py
+  - tests/test_jobs.py
+  - tests/test_gemini_seedance_skill_contracts.py
+prompt_version: not_applicable
+schema_version: Writer FROZEN_V1; DIRECTOR FROZEN_V1; DirectorHandoffV2
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

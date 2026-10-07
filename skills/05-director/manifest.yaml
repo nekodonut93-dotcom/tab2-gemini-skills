@@ -1,0 +1,51 @@
+distribution_id: 05-director
+source_skill_id: tab2.director-cinematic-how
+source_skill_version: 1.0.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/05-director/SKILL.md"
+source_manifest: "skills/05-director/manifest.yaml"
+runtime_owner: "DirectorWorkflowService / Director FROZEN_V1; web index is reference-only and current store state is UNKNOWN."
+source_files:
+  - "application/director_facade.py"
+  - "application/director_reasoning/"
+  - "application/director_workflow/"
+  - "application/director_knowledge/"
+  - "application/director_intelligence/"
+  - "application/skill_intelligence_router/"
+  - "application/skill_context_injection/"
+source_functions:
+  - "DirectorFacade"
+  - "DirectorWorkflowService"
+related_tests:
+  - "tests/test_director_frozen_contracts.py"
+  - "tests/test_director_workflow.py"
+  - "tests/test_director_quality_facade.py"
+dependencies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/director_contract.md"
+  - "references/director_index.md"
+  - "references/director_prompt_structure.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "no active Director-owned LLM prompt template was found in inspected production scope"
+source_schema_version: "DIRECTOR FROZEN_V1"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

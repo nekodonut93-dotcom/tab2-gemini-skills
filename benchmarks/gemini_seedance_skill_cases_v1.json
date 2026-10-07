@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "GEMINI_SEEDANCE_PORTABLE_CONTRACT_CASES_V1",
+  "status": "SYNTHETIC_OFFLINE_CONTRACT_REGRESSION_NOT_MODEL_QUALITY",
+  "cases": [
+    {"id": "style_unresolved", "expected": "STYLE_UNRESOLVED", "must_not_emit_prompt": true},
+    {"id": "explicit_style_selection", "expected": "RESOLVED", "selected_by": "USER"},
+    {"id": "safe_visual_completion", "expected": "SAFE_VISUAL_INFERENCE", "changes_story_state": false},
+    {"id": "story_state_mutation", "expected": "REJECT", "changes_story_state": true},
+    {"id": "ambiguous_sword_subtype", "expected": "GENERIC_SINGLE_SLASH_OR_UNRESOLVED"},
+    {"id": "unsupported_attack_method", "expected": "UNRESOLVED"},
+    {"id": "choreography_is_optional", "expected": "OPTIONAL_PHASES"},
+    {"id": "realistic_vfx", "expected": "NO_ENERGY_TRAIL"},
+    {"id": "wuxia_vfx", "expected": "CONTEXT_AND_PROFILE_REQUIRED"},
+    {"id": "unknown_dola_syntax", "expected": "REFERENCE_BINDING_UNVERIFIED"},
+    {"id": "adaptive_10s_timing", "expected": "TARGET_NOT_FRAME_LOCK"},
+    {"id": "writer_director_boundary", "expected": "WRITER_WHAT_UNCHANGED"},
+    {"id": "complete_seedance_prompt", "expected": "TEN_ORDERED_SECTIONS"},
+    {"id": "invented_plot", "expected": "REJECT"},
+    {"id": "future_knowledge_leak", "expected": "REJECT"},
+    {"id": "identity_drift", "expected": "NEGATIVE_CONSTRAINT"},
+    {"id": "wrong_relationship", "expected": "REJECT"},
+    {"id": "unsupported_vfx", "expected": "REJECT"},
+    {"id": "director_mutating_what", "expected": "REJECT"},
+    {"id": "sheet_export_blocked", "expected": "EMPTY_PROMPT"}
+  ]
+}

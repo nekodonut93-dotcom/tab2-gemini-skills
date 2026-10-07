@@ -1,0 +1,51 @@
+skill_id: tab2.gemini-chibi-inner-monologue-performance
+version: 1.0.0
+owner: Portable Gemini visual-performance reference
+category: NON_DIEGETIC_PRESENTATION_REFERENCE
+description: Contextually visualize source-established internal monologue or reaction as a bounded non-diegetic chibi insert without creating a real story event.
+use_when:
+  - Accepted Writer scene contains a source-backed inner monologue or supported reaction
+  - Resolved user-selected visual profile explicitly permits chibi inserts
+avoid_when:
+  - Chibi is disabled or style/language profile is unresolved
+  - Proposed action, injury, target or outcome would become diegetic
+inputs:
+  - Accepted Writer WHAT with typed source expressions and source refs
+  - PROJECT_VISUAL_PROFILE
+  - PROJECT_LANGUAGE_PROFILE
+  - Scene tone, character personality and adjacent timeline beats
+outputs:
+  - Contextual chibi mode or no chibi insert
+  - Separate REAL_ACTION and CHIBI_SYMBOLIC_ACTION records
+requires:
+  - Source text preserved verbatim and separately typed
+  - representation_scope NON_DIEGETIC
+  - story_state_effect NONE
+  - immediate return to the same main-world scene unless full_chibi_scene is explicitly selected
+conflicts_with:
+  - Invented inner monologue or dialogue
+  - Real-world event, target, injury or state change from symbolic performance
+  - Fixed one-emotion-to-one-gesture mapping
+compatible_models:
+  - model-neutral portable reference
+authority:
+  - Writer WHAT remains authoritative
+  - Director HOW and PromptFacade / PromptEngine production boundaries remain unchanged
+must_not_change:
+  - Story Memory, Writer or Director authority
+  - Frozen Writer/Director contracts
+  - Production runtime behavior
+source_files:
+  - skills/03-writer/SKILL.md
+  - skills/08-seedance/vfx/comedic.yaml
+  - skills/08-seedance/examples/good/chinese_3d_chibi.yaml
+  - skills/08-seedance/examples/good/comedy_reaction.yaml
+  - skills/09-style-resolution/PROJECT_VISUAL_PROFILE.schema.json
+related_architecture:
+  - architecture/TAB2_DATA_AUTHORITY.md
+  - architecture/TAB2_FROZEN_CONTRACTS.md
+related_tests:
+  - tests/test_gemini_language_chibi_contracts.py
+prompt_version: CHIBI_PERFORMANCE_REFERENCE_V1
+schema_version: CHIBI_PERFORMANCE_REFERENCE_V1
+status: REFERENCE_ONLY_NOT_RUNTIME_LOADED

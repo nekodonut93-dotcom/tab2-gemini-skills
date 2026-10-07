@@ -1,0 +1,299 @@
+{
+  "benchmark": "STORY_ENRICHMENT_GENERALIZATION_BASELINE_V1",
+  "historical_matrix_status": "BASELINE_V1",
+  "historical_matrix_note": "The prior 20-safe/10-unsafe audit cases could not be reconstructed from available repository logs or session artifacts. This is a new, permanently frozen matrix and is not an exact historical replay.",
+  "cases": [
+    {
+      "id": "vi-direct",
+      "language": "vi",
+      "category": "Vietnamese direct",
+      "expected": "ACCEPT",
+      "source": "Lan nhìn về phía cửa.",
+      "proposal": "Lan nhìn về phía cửa.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "vi-literary",
+      "language": "vi",
+      "category": "Vietnamese literary",
+      "expected": "ACCEPT",
+      "source": "Ánh mắt Lan dừng lại nơi cánh cửa.",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "vi-passive",
+      "language": "vi",
+      "category": "Vietnamese passive",
+      "expected": "ACCEPT",
+      "source": "Chiếc cốc bị Lan siết chặt trong tay.",
+      "proposal": "Lan grips the cup.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "vi-object-first",
+      "language": "vi",
+      "category": "Vietnamese object-first",
+      "expected": "ACCEPT",
+      "source": "Bàn tay Lan khựng lại trên tay nắm cửa.",
+      "proposal": "Lan's hand pauses at the doorknob.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "vi-pronoun",
+      "language": "vi",
+      "category": "Vietnamese pronoun",
+      "expected": "ACCEPT",
+      "source": "Cô nắm chiếc cốc.",
+      "proposal": "Lan grips the cup.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}],
+      "tags": ["pronoun"]
+    },
+    {
+      "id": "en-direct",
+      "language": "en",
+      "category": "English direct",
+      "expected": "ACCEPT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "en-paraphrase",
+      "language": "en",
+      "category": "English paraphrase",
+      "expected": "ACCEPT",
+      "source": "Lan's gaze shifts to the doorway.",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "first-person",
+      "language": "en",
+      "category": "first person",
+      "expected": "ACCEPT",
+      "source": "I grip the cup.",
+      "proposal": "Lan grips the cup.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}],
+      "tags": ["pronoun"]
+    },
+    {
+      "id": "third-person",
+      "language": "en",
+      "category": "third person",
+      "expected": "ACCEPT",
+      "source": "She looks toward the doorway.",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}],
+      "tags": ["pronoun"]
+    },
+    {
+      "id": "reordered-clauses",
+      "language": "en",
+      "category": "reordered clauses",
+      "expected": "ACCEPT",
+      "source": "Lan reads the message and Lan looks toward the doorway.",
+      "proposal": "Lan looks toward the doorway and Lan reads the message.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "zh-direct",
+      "language": "zh",
+      "category": "Simplified Chinese direct",
+      "expected": "ACCEPT",
+      "source": "兰看向门口。",
+      "proposal": "兰望向门口。",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan", "兰"], "gender": "female"}]
+    },
+    {
+      "id": "rereading",
+      "language": "en",
+      "category": "rereading paraphrases",
+      "expected": "ACCEPT",
+      "source": "Lan rereads the message.",
+      "proposal": "Lan reads the message once more.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "gaze-paraphrase",
+      "language": "en",
+      "category": "gaze paraphrases",
+      "expected": "ACCEPT",
+      "source": "Lan shifts her gaze toward the doorway.",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [
+        {"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"},
+        {"character_id": "LINH_001", "canonical_name": "Linh", "known_aliases": ["Linh"], "gender": "female"}
+      ]
+    },
+    {
+      "id": "hand-object",
+      "language": "en",
+      "category": "hand/object actions",
+      "expected": "ACCEPT",
+      "source": "Lan grips the cup.",
+      "proposal": "Lan briefly grips the cup.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "body-reaction",
+      "language": "en",
+      "category": "body reactions",
+      "expected": "ACCEPT",
+      "source": "Lan flinches at the noise.",
+      "proposal": "Lan briefly flinches at the noise.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "posture-change",
+      "language": "en",
+      "category": "posture changes",
+      "expected": "ACCEPT",
+      "source": "Lan's shoulders tense.",
+      "proposal": "Lan's shoulders tense slightly.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "emotion-only",
+      "language": "vi",
+      "category": "emotion-only negative control",
+      "expected": "UNRESOLVED_ACTION_STRUCTURE",
+      "source": "Cô thấy bất an.",
+      "proposal": "Lan feels uneasy.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}],
+      "tags": ["negative_control"]
+    },
+    {
+      "id": "cross-script-known-alias",
+      "language": "cross_script",
+      "category": "cross-script alias",
+      "expected": "ACCEPT",
+      "source": "兰看向门口。",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan", "兰"], "gender": "female"}],
+      "tags": ["cross_script_alias"]
+    },
+    {
+      "id": "cross-script-unmapped",
+      "language": "cross_script",
+      "category": "cross-script without mapping",
+      "expected": "UNRESOLVED_ACTOR",
+      "source": "兰看向门口。",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}],
+      "tags": ["cross_script_alias"]
+    },
+    {
+      "id": "ambiguous-pronoun",
+      "language": "vi",
+      "category": "ambiguous pronoun",
+      "expected": "UNRESOLVED_ACTOR",
+      "source": "Cô nhìn về phía cửa.",
+      "proposal": "Lan looks toward the doorway.",
+      "scene_characters": [
+        {"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"},
+        {"character_id": "LINH_001", "canonical_name": "Linh", "known_aliases": ["Linh"], "gender": "female"}
+      ],
+      "tags": ["pronoun", "ambiguous"]
+    },
+    {
+      "id": "new-event",
+      "language": "en",
+      "category": "new event",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan receives a phone call.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "new-prop",
+      "language": "en",
+      "category": "new prop",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan reaches for the unsupported key.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "unsupported-location",
+      "language": "en",
+      "category": "unsupported location",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan leaves the room.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "future-knowledge",
+      "language": "en",
+      "category": "future knowledge",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan knowingly looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "relationship-escalation",
+      "language": "en",
+      "category": "relationship escalation",
+      "expected": "REJECT",
+      "source": "Lan looks toward Minh.",
+      "proposal": "Lan affectionately looks toward Minh.",
+      "scene_characters": [
+        {"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"},
+        {"character_id": "MINH_001", "canonical_name": "Minh", "known_aliases": ["Minh"], "gender": "male"}
+      ]
+    },
+    {
+      "id": "dialogue-addition",
+      "language": "en",
+      "category": "dialogue addition",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan tells Minh the secret.",
+      "scene_characters": [
+        {"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"},
+        {"character_id": "MINH_001", "canonical_name": "Minh", "known_aliases": ["Minh"], "gender": "male"}
+      ]
+    },
+    {
+      "id": "outcome-state-change",
+      "language": "en",
+      "category": "outcome/state change",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan opens the box.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "wrong-actor",
+      "language": "en",
+      "category": "wrong actor",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Minh looks toward the doorway.",
+      "scene_characters": [
+        {"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"},
+        {"character_id": "MINH_001", "canonical_name": "Minh", "known_aliases": ["Minh"], "gender": "male"}
+      ]
+    },
+    {
+      "id": "wrong-object",
+      "language": "en",
+      "category": "wrong object",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan looks at the box.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    },
+    {
+      "id": "cross-scene-reveal",
+      "language": "en",
+      "category": "cross-scene reveal leakage",
+      "expected": "REJECT",
+      "source": "Lan looks toward the doorway.",
+      "proposal": "Lan already knows who sent the message and looks toward the doorway.",
+      "scene_characters": [{"character_id": "LAN_001", "canonical_name": "Lan", "known_aliases": ["Lan"], "gender": "female"}]
+    }
+  ]
+}

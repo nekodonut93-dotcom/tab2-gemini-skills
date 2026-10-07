@@ -1,0 +1,30 @@
+contract_id: GEMINI_CREATIVE_BOUNDARY_CONTRACT_V1
+version: 1.0.0
+status: PORTABLE_PROPOSAL_ONLY
+candidate_pool:
+  - gaze_shift
+  - head_turn
+  - breathing
+  - posture_adjustment
+  - hand_position
+  - foot_placement
+  - weight_shift
+  - body_orientation
+  - reaction_pause
+  - hair_secondary_motion
+  - clothing_secondary_motion
+selection:
+  requires_scene_actor_resolution: true
+  requires_temporal_visibility: true
+  requires_contextual_support: true
+  fixed_emotion_to_gesture_mapping: forbidden
+  unsupported_detail_fallback: BLOCKED_OR_UNRESOLVED
+metadata_required:
+  - origin
+  - source_refs
+  - changes_story_state
+allowed_origins:
+  - SOURCE_EXPLICIT
+  - SAFE_VISUAL_INFERENCE
+  - DIRECTOR_CREATIVE_CHOICE
+rule: Reject any detail whose changes_story_state value is true.

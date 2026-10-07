@@ -1,0 +1,10 @@
+mode: CHIBI_NONVERBAL_REACTION
+spoken_text: none
+requires:
+  - resolved_visual_profile
+  - profile.chibi_insertions: true
+  - contextual_scene_support
+optional_without_source_monologue: true
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE
+must_return_to_main_scene: true

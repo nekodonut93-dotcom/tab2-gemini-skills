@@ -1,0 +1,12 @@
+case_id: good_nonverbal_chibi_no_new_monologue
+source_inner_monologue: null
+visual_profile:
+  chibi_insertions: true
+source_supported_reaction: true
+mode: CHIBI_NONVERBAL_REACTION
+spoken_text: null
+performance: brief_freeze_then_exaggerated_glare
+representation_scope: NON_DIEGETIC
+story_state_effect: NONE
+return_to_main_scene: true
+expected: PASS

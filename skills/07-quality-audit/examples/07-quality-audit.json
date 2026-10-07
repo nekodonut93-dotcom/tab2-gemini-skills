@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "temporal_visibility": "UNRESOLVED"
+  },
+  "failed_stage": "STORY MEMORY",
+  "reason": "A required record has UNKNOWN visibility.",
+  "recommended_return_stage": "STORY MEMORY",
+  "source_refs": [],
+  "state_scope": "PORTABLE_WEB_STATE_ONLY",
+  "status": "BLOCKED"
+}

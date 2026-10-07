@@ -1,0 +1,11 @@
+case_id: synthetic_confirmed_multireference
+status: READY_FOR_USER_REVIEW
+binding_status: UI_CONFIRMED
+references:
+  - ui_tag: "exact tag copied from the current UI"
+    role: CHARACTER_IDENTITY
+  - ui_tag: "exact tag copied from the current UI"
+    role: ENVIRONMENT
+rules:
+  - "These placeholders are not Dola syntax; in use, preserve only tags confirmed by the current UI."
+  - "Keep reference roles separate."

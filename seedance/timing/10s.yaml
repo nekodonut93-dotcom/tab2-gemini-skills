@@ -1,0 +1,23 @@
+duration_seconds: 10
+contract: TIMING_TARGET_NOT_FRAME_LOCK
+strategy: adaptive_scene_rhythm
+segments:
+  - beat: establish
+    allocation: adaptive
+    required: false
+  - beat: anticipation_or_setup
+    allocation: adaptive
+    required: false
+  - beat: primary_sourced_action
+    allocation: adaptive
+    required: true
+  - beat: follow_through_or_reaction
+    allocation: adaptive
+    required: false
+  - beat: source_supported_end_state
+    allocation: adaptive
+    required: false
+rules:
+  - "Choose boundaries from actual scene rhythm, not equal fixed intervals."
+  - "No filler beat may create new story state."
+  - "Target segments sum to ten seconds; they are not frame-perfect locks."

@@ -1,0 +1,380 @@
+{
+  "active_skill_store_status": "UNKNOWN",
+  "default_bounded_retrieval": {
+    "maximum": 8,
+    "minimum": 3,
+    "scope": "web distribution only"
+  },
+  "excluded": [
+    "DRAFT or REVIEW_PENDING model-knowledge records",
+    "unverified active Skill-store contents"
+  ],
+  "index_version": 1,
+  "knowledge_types": [
+    "DIRECTING_KNOWLEDGE",
+    "MODEL_ADAPTER",
+    "PROMPT_STRUCTURE",
+    "DETERMINISTIC_CODE"
+  ],
+  "lookup_fields": [
+    "id",
+    "category",
+    "subcategory",
+    "intent",
+    "scene_type",
+    "energy",
+    "duration",
+    "framing",
+    "camera_motion",
+    "blocking",
+    "pacing",
+    "compatible_models",
+    "requires",
+    "conflicts_with",
+    "source_reference",
+    "status"
+  ],
+  "records": [
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "scene_geometry_and_continuity",
+      "intent": "scene geography and multi-shot consistency",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/scene-geometry-and-continuity.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "blocking_and_screen_direction",
+      "intent": "subject-bound blocking and screen direction",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/blocking-and-screen-direction.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "shot_design_and_coverage",
+      "intent": "shot purpose, size, sequence, and coverage",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/shot-design-and-coverage.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "camera_motivation_and_composition",
+      "intent": "motivated camera, lens/focus intent, and composition",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/camera-and-composition.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "performance_environment_and_look",
+      "intent": "performance, environment, lighting, and look",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/performance-environment-and-look.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "pacing_and_diagnostics",
+      "intent": "pacing, rhythm, complexity, and diagnostics",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/pacing-and-diagnostics.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DIRECTING_KNOWLEDGE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "narrative_and_audio_recommendations",
+      "intent": "conditional narrative/audio recommendation",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/narrative-and-audio-recommendations.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "SOURCE_VERIFIED_REFERENCE"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "DETERMINISTIC_CODE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Writer WHAT mutation",
+        "unsupported facts"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "deterministic_constraints",
+      "intent": "code-enforced constraints; not selectable as creative advice",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "READY Writer scene",
+        "source-backed current scene facts"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/05-director/concepts/deterministic-constraints.yaml",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "CODE_ENFORCED"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "PROMPT_STRUCTURE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Director core owning literal syntax"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "prompt_syntax",
+      "intent": "Model-specific section structure and literal syntax",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "PromptEngine profile/template/adapter evidence"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "skills/06-prompt-engine/model_adapters/README.md",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "PROMPT_ENGINE_OWNED"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "MODEL_ADAPTER",
+      "compatible_models": [
+        "seedance"
+      ],
+      "conflicts_with": [
+        "Unverified model capability inference"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "model_adapter_seedance",
+      "intent": "Profile, template, and adapter registration found.",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "PromptEngine profile/template/adapter evidence"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "model_profiles/seedance.json; prompt_templates/seedance.json when present",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "PROMPT_ENGINE_OWNED"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "MODEL_ADAPTER",
+      "compatible_models": [
+        "veo"
+      ],
+      "conflicts_with": [
+        "Unverified model capability inference"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "model_adapter_veo",
+      "intent": "Profile, template, and adapter registration found.",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "PromptEngine profile/template/adapter evidence"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "model_profiles/veo.json; prompt_templates/veo.json when present",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "PROMPT_ENGINE_OWNED"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "MODEL_ADAPTER",
+      "compatible_models": [
+        "kling"
+      ],
+      "conflicts_with": [
+        "Unverified model capability inference"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "model_adapter_kling",
+      "intent": "Profile, template, and adapter registration found.",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "PromptEngine profile/template/adapter evidence"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "model_profiles/kling.json; prompt_templates/kling.json when present",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "PROMPT_ENGINE_OWNED"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "MODEL_ADAPTER",
+      "compatible_models": [
+        "sora"
+      ],
+      "conflicts_with": [
+        "Unverified model capability inference"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "model_adapter_sora",
+      "intent": "Profile and adapter registration found; checked-in template not found; UNVERIFIED / INCOMPLETE.",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "PromptEngine profile/template/adapter evidence"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "model_profiles/sora.json; prompt_templates/sora.json when present",
+      "status": "UNKNOWN",
+      "subcategory": "PROMPT_ENGINE_OWNED"
+    },
+    {
+      "blocking": "UNKNOWN",
+      "camera_motion": "UNKNOWN",
+      "category": "PROMPT_STRUCTURE",
+      "compatible_models": [],
+      "conflicts_with": [
+        "Director core owning final prompt syntax"
+      ],
+      "duration": "UNKNOWN",
+      "energy": "UNKNOWN",
+      "framing": "UNKNOWN",
+      "id": "prompt_structure_sections",
+      "intent": "Template-driven section ordering and structured prompt assembly",
+      "pacing": "UNKNOWN",
+      "requires": [
+        "PromptEngine template evidence"
+      ],
+      "scene_type": "UNKNOWN",
+      "source_reference": "ai_agent_brain/prompt_assembly/prompt_assembler.py; prompt_templates/",
+      "status": "VERIFIED_REFERENCE",
+      "subcategory": "PROMPT_ENGINE_OWNED"
+    }
+  ],
+  "selection_rule": "Select only source-supported relevant records; unknown values stay UNKNOWN. Target 3-8 records per scene where supported; select fewer when fewer apply; exceed eight only with scene-specific evidence.",
+  "status": "REFERENCE_ONLY_NOT_RUNTIME_LOADED",
+  "status_values": [
+    "VERIFIED_ACTIVE",
+    "VERIFIED_REFERENCE",
+    "DRAFT",
+    "LEGACY",
+    "UNKNOWN"
+  ]
+}

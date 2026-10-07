@@ -1,0 +1,9 @@
+id: model_adapter_sora
+type: MODEL_ADAPTER
+status: UNKNOWN
+model_id: sora
+profile_source: model_profiles/sora.json
+template_source: UNVERIFIED / INCOMPLETE: checked-in template not found
+prompt_engine_owner: PromptEngine
+runtime_provider_capability: UNKNOWN
+note: "Formatting evidence only; does not establish API capability."

@@ -1,0 +1,25 @@
+{
+  "$id": "PORTABLE_EVENTS_COLLECTION_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "events": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    }
+  },
+  "required": [
+    "state_scope",
+    "events"
+  ],
+  "title": "Portable events collection",
+  "type": "object"
+}

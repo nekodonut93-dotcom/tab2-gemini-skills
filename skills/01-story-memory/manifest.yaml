@@ -1,0 +1,47 @@
+distribution_id: 01-story-memory
+source_skill_id: tab2.story-memory-authority
+source_skill_version: 1.0.0
+distribution_version: 1.1.0
+generated_from_inventory_version: 2
+compatible_architecture_version: TAB2-REFERENCE-1
+generated_at: 2026-10-07
+platform_semantics: shared
+status: WEB_DISTRIBUTION_REFERENCE_ONLY
+portable_state_marker: PORTABLE_WEB_STATE_ONLY
+source_skill: "skills/01-story-memory/SKILL.md"
+source_manifest: "skills/01-story-memory/manifest.yaml"
+runtime_owner: "Production StoryMemoryService/Character Bible remain authoritative; portable state is not production memory."
+source_files:
+  - "application/screenwriter_intelligence/story_memory.py"
+  - "application/screenwriter_intelligence/memory_models.py"
+  - "application/screenwriter_intelligence/story_memory_repository.py"
+source_functions:
+  - "StoryMemoryService.ingest_chapter"
+  - "StoryMemoryService.build_context_package"
+  - "StoryMemoryService.build_relevant_canon_slice"
+related_tests:
+  - "tests/test_screenwriter_story_memory.py"
+  - "tests/test_story_memory_canonical_character_identity.py"
+  - "tests/test_story_memory_temporal_visibility.py"
+dependencies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/TAB2_WORKFLOW.md"
+required_common_references:
+  - "dist/common/CORE_CONTRACTS.md"
+  - "dist/common/TAB2_WORKFLOW.md"
+  - "dist/common/DATA_AUTHORITY.md"
+  - "dist/common/OUTPUT_SCHEMAS.md"
+  - "dist/common/FAILURE_RULES.md"
+  - "dist/common/MODEL_NEUTRAL_RULES.md"
+portable_copies:
+  - "references/CORE_CONTRACTS.md"
+  - "references/TAB2_WORKFLOW.md"
+  - "references/DATA_AUTHORITY.md"
+  - "references/OUTPUT_SCHEMAS.md"
+  - "references/FAILURE_RULES.md"
+  - "references/MODEL_NEUTRAL_RULES.md"
+source_prompt_version: "not_applicable"
+source_schema_version: "Story Memory semantic v1"
+known_gaps:
+  - "No additional package-specific gap asserted beyond the shared audit unknowns."

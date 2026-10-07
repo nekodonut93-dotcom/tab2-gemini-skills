@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "blocking": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "camera_motion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "compatible_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "framing": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_adapter_status": {
+      "enum": [
+        "VERIFIED_ACTIVE",
+        "VERIFIED_REFERENCE",
+        "DRAFT",
+        "LEGACY",
+        "UNKNOWN"
+      ]
+    },
+    "pacing": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "selected_concepts": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 8,
+      "type": "array"
+    },
+    "source_references": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "state_scope": {
+      "const": "PORTABLE_WEB_STATE_ONLY"
+    },
+    "status": {
+      "enum": [
+        "READY",
+        "BLOCKED",
+        "UNRESOLVED"
+      ]
+    },
+    "writer_scene_ref": {
+      "type": "string"
+    },
+    "writer_what_unchanged": {
+      "const": true
+    }
+  },
+  "required": [
+    "state_scope",
+    "status",
+    "scene_id",
+    "writer_scene_ref",
+    "selected_concepts",
+    "source_references",
+    "writer_what_unchanged"
+  ],
+  "type": "object"
+}

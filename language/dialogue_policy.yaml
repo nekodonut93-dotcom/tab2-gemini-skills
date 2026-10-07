@@ -1,0 +1,37 @@
+policy_id: TYPED_DIALOGUE_POLICY_V1
+content_types:
+  SPOKEN_DIALOGUE:
+    source_text_required: true
+    preserve_verbatim: true
+    language_field: spoken_dialogue_language
+    prompt_label: "Spoken dialogue in {language}:"
+    may_invent: false
+    may_translate: false
+  INTERNAL_MONOLOGUE:
+    source_text_required: true
+    preserve_verbatim: true
+    language_field: inner_monologue_language
+    prompt_label: "Internal monologue in {language}:"
+    may_invent: false
+    may_translate: false
+  NARRATOR_VOICE_OVER:
+    source_text_required: true
+    preserve_verbatim: true
+    language_field: voice_over_language
+    prompt_label: "Narrator voice-over in {language}:"
+    enabled_by: PROJECT_LANGUAGE_PROFILE.voice_over_enabled
+    may_invent: false
+    may_translate: false
+  NONVERBAL_REACTION:
+    source_text_required: false
+    language_field: null
+    prompt_label: "Nonverbal reaction:"
+    may_create_when_contextually_supported: true
+    may_contain_new_words: false
+  ON_SCREEN_TEXT:
+    source_text_required: true
+    preserve_verbatim: true
+    language_field: on_screen_text_language
+    may_invent: false
+    may_translate: false
+never_collapse_types_into_generic_dialogue: true

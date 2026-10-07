@@ -1,0 +1,9 @@
+case_id: bad_real_punch_without_source_event
+source_action: "Cô nghĩ: 'Tên này thật đáng ghét!'"
+proposed_action:
+  namespace: REAL_ACTION
+  action: PUNCH
+  target: another_character
+  source_event_evidence: false
+expected: FAIL
+failure_code: REAL_ACTION_WITHOUT_SOURCE

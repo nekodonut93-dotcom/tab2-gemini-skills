@@ -1,0 +1,11 @@
+{
+  "current_chapter_order": null,
+  "current_scene_id": null,
+  "project_id": "UNRESOLVED",
+  "project_language_profile_ref": "PROJECT_LANGUAGE_PROFILE.json",
+  "project_visual_profile_ref": "PROJECT_VISUAL_PROFILE.json",
+  "source_document_refs": [],
+  "stage": "INGEST",
+  "state_scope": "PORTABLE_WEB_STATE_ONLY",
+  "visibility_filter_status": "UNRESOLVED"
+}
